@@ -1,4 +1,4 @@
-Wed Jan 11 08:35:59 2023
+Wed Jan 11 10:13:17 2023
 Windows-10-10.0.19044
 Ren'Py 8.0.3.22090809
  
@@ -11,7 +11,7 @@ Loading script took 0.15s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
+Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -22,7 +22,7 @@ Initial gc. took 0.01s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.19s
+Creating interface object took 0.18s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -46,42 +46,53 @@ Version: b'4.6.0 NVIDIA 522.25'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 1705, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'prologue'.
-
-While running game code:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-ScriptError: could not find label 'prologue'.
 Resetting cache.
-Bootstrap to the start of init.init took 17.12s
+Bootstrap to the start of init.init took 278.19s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.12s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 328.51s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.02s
@@ -89,51 +100,6 @@ Loading script took 0.10s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 522.25'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 28.07s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
 Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
@@ -146,6 +112,78 @@ Initial gc. took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 356.06s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/scenes/default_scenes.rpy", line 145: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+            aphrodite "Yes
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 398.46s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
 Creating interface object took 0.17s
 Cleaning stores took 0.00s
 Init translation took 0.02s
@@ -171,7 +209,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 37.39s
+Bootstrap to the start of init.init took 445.90s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
@@ -216,134 +254,11 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 40.68s
+Bootstrap to the start of init.init took 493.22s
 Early init took 0.00s
 Loader init took 0.03s
 Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 522.25'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 63, in script
-    Aphrodite "Oh...Arent you?"
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Aphrodite' is not defined.
-
-While running game code:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 63, in script
-    Aphrodite "Oh...Arent you?"
-Exception: Sayer 'Aphrodite' is not defined.
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 68, in script
-    Aphrodite "Yes, you clicked yes on the message didnt you?"
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Aphrodite' is not defined.
-
-While running game code:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 68, in script
-    Aphrodite "Yes, you clicked yes on the message didnt you?"
-Exception: Sayer 'Aphrodite' is not defined.
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 68, in script
-    Aphrodite "Yes, you clicked yes on the message didnt you?"
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Aphrodite' is not defined.
-
-While running game code:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 68, in script
-    Aphrodite "Yes, you clicked yes on the message didnt you?"
-Exception: Sayer 'Aphrodite' is not defined.
-Resetting cache.
-Bootstrap to the start of init.init took 110.93s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.01s
-Loading script took 0.08s
+Loading script took 0.09s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -384,97 +299,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 156.99s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 522.25'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 173.90s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 522.25'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 197.06s
+Bootstrap to the start of init.init took 508.66s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
@@ -519,11 +344,11 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 232.29s
+Bootstrap to the start of init.init took 530.10s
 Early init took 0.00s
 Loader init took 0.03s
 Loading error handling took 0.01s
-Loading script took 0.08s
+Loading script took 0.09s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -564,324 +389,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 334.26s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 522.25'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion."
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'B'
-
-While processing text tag {B} in 'There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion.'.:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion."
-Exception: Unknown text tag 'B'
-Resetting cache.
-Bootstrap to the start of init.init took 340.63s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 522.25'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion."
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'B'
-
-While processing text tag {B} in 'There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion.'.:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion."
-Exception: Unknown text tag 'B'
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion."
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'B'
-
-While processing text tag {B} in 'There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion.'.:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{B} champion."
-Exception: Unknown text tag 'B'
-Resetting cache.
-Bootstrap to the start of init.init took 357.55s
+Bootstrap to the start of init.init took 536.44s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
@@ -901,7 +409,7 @@ Initial gc. took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.18s
+Creating interface object took 0.17s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -925,168 +433,16 @@ Version: b'4.6.0 NVIDIA 522.25'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion."
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'B'
-
-While processing text tag {B} in 'There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion.'.:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion."
-Exception: Unknown text tag 'B'
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion."
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'B'
-
-While processing text tag {B} in 'There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion.'.:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion."
-Exception: Unknown text tag 'B'
 Resetting cache.
-Bootstrap to the start of init.init took 363.34s
+Bootstrap to the start of init.init took 556.37s
 Early init took 0.00s
 Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
+Loading error handling took 0.02s
+Loading script took 0.09s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.02s
+Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -1121,88 +477,12 @@ Version: b'4.6.0 NVIDIA 522.25'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion."
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\text\text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'B'
-
-While processing text tag {B} in 'There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion.'.:
-  File "game/scripts/script.rpy", line 17, in script call
-    call age_check
-  File "game/scripts/scenes/default_scenes.rpy", line 30, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 8, in script call
-    call prologue
-  File "game/scripts/scenes/default_scenes.rpy", line 73, in script
-    aphrodite "There is no way to go back, besides, there are very good advantages in being the {B}Goddes of pleasure{/B} champion."
-Exception: Unknown text tag 'B'
 Resetting cache.
-Bootstrap to the start of init.init took 374.20s
+Bootstrap to the start of init.init took 570.31s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
-Loading script took 0.08s
+Loading script took 0.09s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -1231,6 +511,144 @@ Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 593.37s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1152.33s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/scenes/default_scenes.rpy", line 154: expected ':' not found.
+    menu
+        ^
+
+File "game/scripts/scenes/default_scenes.rpy", line 169: Say menuitems and captions may not exist in the same menu.
+    p_char "A Book....Really?"
+                              ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1166.08s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/scenes/default_scenes.rpy", line 154: expected ':' not found.
+    menu
+        ^
+
+File "game/scripts/scenes/default_scenes.rpy", line 168: choice menuitem expects a non-empty block.
+    "A book?":
+              ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1476.77s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/scenes/default_scenes.rpy", line 154: expected ':' not found.
+    menu
+        ^
+
+File "game/scripts/scenes/default_scenes.rpy", line 168: choice menuitem expects a non-empty block.
+    "A book?":
+              ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.21s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)

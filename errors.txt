@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/scripts/scenes/default_scenes.rpy", line 65: expected menuitem
-    return
-    ^
+File "game/scripts/scenes/default_scenes.rpy", line 154: expected ':' not found.
+    menu
+        ^
+
+File "game/scripts/scenes/default_scenes.rpy", line 168: choice menuitem expects a non-empty block.
+    "A book?":
+              ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Jan 11 08:35:40 2023
+Wed Jan 11 10:37:54 2023

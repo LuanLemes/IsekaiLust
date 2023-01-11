@@ -14,5 +14,5 @@ image money_icon = "icons/money.png"
 define focus_location = ""
 label start:
     call deactive_quick
-    call age_check
+    jump age_check
 return
