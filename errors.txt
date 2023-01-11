@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/scenes/default_scenes.rpy", line 65: expected menuitem
+    return
+    ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Wed Jan 11 08:35:40 2023

@@ -1,0 +1,5 @@
+# define z = Character("xman", color="FD97E2")
+# define e = Character("Eileen", color="FD97E2")
+# define d = Character("Dave")
+define aphrodite = Character("Aphrodite", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
+define aphrodite_shout = Character("Aphrodite",  what_size=43, namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
