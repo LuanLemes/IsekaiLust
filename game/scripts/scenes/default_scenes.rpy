@@ -6,13 +6,13 @@ label input_player_name:
     menu:
         p_char "My name is [player.name]"
         "Confirm":
-            call prologue
+            jump prologue
         "Change name":
-            call input_player_name
+            jump input_player_name
 
 
 label age_check:
-    "This game have NSFW contents"
+    "This game have NSFW contents."
     menu:
         "Are you +18 years old?"
         "Yes":
@@ -52,7 +52,7 @@ label deactive_quick:
 
 label prologue:
     # white_screen
-    aphrodite "[player.name]...[player.name]....Awake"
+    aphrodite "[player.name]...[player.name]....Awake..."
     # aphrodite appears on the screen (giant)
     p_char "What? What is it? Omg it is you you are the girl from the message on my game!"
     aphrodite "You accepted my call, and now you are my champion in this world."
@@ -124,52 +124,179 @@ label goddes_of_pleasure:
         aphrodite "Yes you are, I see you watching reading and researching porns and hentais everyday."
         p_char_thought "(oh my god)"
         aphrodite "Yes I saw you getting hard and masturbating every day again and again and again."
+        p_char_thought "(what in the harry potter?!?)"
         p_char "Ok I think I got it…"
         aphrodite "I saw as you were aroused for the little things, and as you imagined fucking every cute girl in your schooll…and as you masturbated to them in secret."
-        p_char "Ok I think thats enough..."
+        p_char_thought "(I cant believe i just cant believe...)"
+        p_char "Ok that was suposted to be private..."
         aphrodite "I even know about last summer on the vocation with your family when you masturbated and cum in the...."
         p_char_shout "OOkay I think I got it!!!"
         aphrodite "Anyway, In opinion yes you are a great boy, and this {b}task{/b} will be both good for you and for the people of this world."
-        p_char_thought "(I knew it...I knew there was a catch)"
+        p_char_thought "(\"Task\" I knew it...I knew there was a catch)"
         menu:
-            "task?":
+            "Task?":
                 p_char "Task? What task?"
             "What do you mean by task?":
                 p_char "What do you mean by task?"
         jump task
 
     label task:
-        aphrodite "Of Course...your task as my champion if to fuck all the girls in this world and to realease the lustfull side of the people of the planet"
+        aphrodite "Of Course...your task as my champion is to fuck all the girls in this world and to realease the lustfull side of the people of the planet"
         p_char_shout "I knew it!"
         p_char "Wait...fuck all the girls? Did I hear that right?"
         aphrodite "Yes you did, you are to fuck all the girls in this wolrd... no exception, friend or enemy, strange or even your own family."
         aphrodite "They all are to be fucked. No exceptions allowed. And you are to make them more and more lustfull for you."
         p_char_thought "(Well....that seems like fun, very very very fun.)"
-        p_char "Well...I accept your terms"
+        p_char "Well...After taking a lot of thought..."
+        p_char "Well...I accept your terms."
         aphrodite "As I said, You have already signed the contract."
-        p_char "Hey Goddes"
-        aphrodite_shout "Great Goddes Aphrodite"
+        p_char "Hey Goddes."
+        aphrodite_shout "Its \"Great Goddes Aphrodite\""
         p_char "Ok... Great Goddes Aphrodite...."
-        P_char"Not Willing to borther you but..."
-        menu
-            "how the hell am i supposed to do that?!?":
-                p_char "how the hell am I supposed to do that?!?!?"
+        p_char "Not Willing to borther you but..."
+        menu:
+            "How the hell am i supposed to do that?!?":
+                p_char "How the hell am I supposed to do that?!?!?"
             "I can´t do that":
-                p_char "I dont know how much of my life you saw but...Im not the kind of person that can fuck every girl in a world"
+                p_char "I dont know how much of my life you saw but...Im not the kind of person that can fuck every girl in a world."
         jump how
         return
 
 label how:
     p_char "I mean.... Im ugly, I got a very small dick and Im not very social..."
-    aphrodite "Little [player.name], you are in the hands of the goddess of pleasure now."
-    aphrodite "I give you The {i} Bless of the blood of the sex warlocks and my power in it{/i}."
+    aphrodite "Little [player.name], you are in the hands of the Goddess of Pleasure now."
+    aphrodite "I give you The {i} Bless of the magic blood of the sex warlocks and my power in it{/i}."
+    p_char_thought "(\"Magic blood of Warlocks of sex? and her power?\")"
     aphrodite "Also a little gift from your Goddes... This Book."
     menu:
         "A book?":
-        p_char "A Book....Really?"
-        "Is that a joke?"
-        p_char "A Book..is That a Joke?"
+            p_char "A Book....Really?"
+        "Is that a joke?":
+            p_char "A Book..is That a Joke?"
     aphrodite "No Joke Dear [player.name]. Only you can truly read this book, besides me of course."
     aphrodite "This book has the power to know the path for everyone pleasure, use it wisely."
     p_char "But thats a book!! how will I be able to..."
-    aphrodite "Relax......and sleep"
+    aphrodite "Relax......and sleep."
+    jump awake_at_home
+
+label awake_at_home:
+    p_char "It was just a dream...after all"
+    linda "Hi step bro, did you sleep well?"
+    p_char "Liiiiinda what are you doing here?!?!?"
+    p_char_thought "(Wait...How do I know her name is Linda? This is just so strange.....Im Not from this world and I know her name, I even have memoirs with her.)"
+    p_char_thought "(I Remember I was adopted, the people, the names and everything, thats awesome.)"
+    p_char_thought "(Well...I guess thats all part of Aprhodite´s power.)"
+    linda "Step Bro?"
+    p_char "Good morning Linda..."
+    p_char_thought "(Seems like I also know theyr language and culture as well.)"
+    linda "Good morning step bro."
+    p_char "Where is Step Mom?"
+    p_char_thought "(Wait...Step Mom? At Least I think remember having one, man thats so strange.)"
+    linda "Well, she is in the Kitchen I think."
+    p_char "Ok, Well guess its time to wake up."
+    linda "Step Bro are you Ok?"
+    p_char_thought "(Oh no, she is looking at me weird, am I acting so different? I have to be \"myself\" or she will suspect.)"
+    menu:
+        "I am":
+            p_char "I am very ok thanks for asking."
+            linda "No you arent."
+            p_char "What do you mean?"
+            linda "You didnt say \"I love you\". "
+        "Why do you ask?":
+            p_char "I...think I am, why do you ask?"
+            linda "Well...you havent told you love your little step sister...thats not like you.."
+    p_char "What?"
+    p_char_thought "Wow, she is really serious about it..."
+        # she makes a face
+    p_char_thought "She is even making a face now, guess she is really mad about it."
+    jump linda_do_you_love_me
+    return
+
+
+label linda_do_you_love_me:
+    linda "So...will you say you love me or not?"
+    menu:
+        "I love you":
+            p_char "I love you."
+            # she smiles
+            linda "I love you too big bro."
+            jump linda_hug
+        "No I wont say that":
+            p_char "No I wont, you are already too grown up for this kind of stuff."
+            linda "Why are you mean to me step bro?"
+            p_char "As I Said you are already a Grown up."
+            linda "Gi gi gi gi gi gi gi gi gi gi gi gi gi"
+            p_char_Thought "(Geeeez what is this? is she crying? what a strange way to cry)"
+            menu:
+                "Ok...I love you so stop it already.":
+                    p_char_thought "(ok, she is too cute for me to treat her this way)"
+                    p_char "Ok ok, stop it already...I love you ok?"
+                    # stops crying
+                    linda "Really?"
+                    p_char "Yeah... now go"
+                "Stop Crying!":
+                    p_char_thought "(Man...she just wont stop)"
+                    p_char_shout "Stop Crying!"
+                    # she stops and look at you
+                    linda "Why are you yelling at me?"
+                    p_char "Because you cry too loud"
+                    linda "Okay...Im....Im gonna leave....ok?"
+                    # she leaves slowsly
+                    p_char_thought "(She is so cute, she is like a cute pet, I cant leave her like that)"
+                    p_char "Hey little sister"
+                    # she looks at you
+                    linda "what?"
+                    menu:
+                        "I love you little sister.":
+                            p_char "I love you."
+                            linda "Really big bro?!!?!? I love you too! you are the best!!"
+                        "Im sorry for making you cry.":
+                            p_char "Im sorry for make you cry."
+                            linda "I see..."
+                            p_char "And I really love you"
+                            linda_shout "Really?!?!? Oh big bro!!! I love you tooo thank you!!"
+                            # she leaves
+    return
+
+label linda_hug:
+    # she hugs you
+    p_char_thought "(Wow she has a pretty amazing body for a little sister. Maybe I should...)"
+    menu:
+        "Stop hugging":
+            p_char "Okay, thats enough hugging."
+        "Enjoy the hug a little more":
+            p_char_thought "Yes, I think I will enjoy this \"hug\" a little more..."
+            jump linda_enjoy_the_hug
+    return
+
+label linda_enjoy_the_hug:
+    p_char_thought "(Yes....like that...Thats an interesting view, Im loving it.)"
+    menu:
+        "Enjoy a little more":
+            jump linda_enjoy_the_hug_2
+        "Stop the Hug":
+            jump linda_stop_hugging
+    return
+
+# randomize phrases latter
+label linda_enjoy_the_hug_2:
+    linda "Big bro?"
+    p_char "What?"
+    linda "Isnt this hug taking a little too long?"
+    menu:
+        "I love hugging you":
+            p_char "The thing is that I like huging my little step sister."
+            linda "Is that so? In that case...go on hug me all you like."
+        "You are right.":
+            p_char "You are right little Linda."
+            jump linda_stop_hugging
+        "Stop Hugging":
+            p_char_thought "(Okay)"
+            jump linda_stop_hugging
+
+# randomize phrases latter
+label linda_stop_hugging:
+    p_char_thought "(Man that was one good way to start a day.)"
+    linda "Its ok if you want to hug me more big bro...I understand."
+    jump start_3
+    return

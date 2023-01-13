@@ -16,7 +16,7 @@ screen home():
             ypos 0
             hover ("overlays/bedroom_door1.webp")
             idle ("overlays/bedroom_door0.webp")
-            action Call("change_location_to", "Home Bedroom")
+            action Call("change_location_to", "Bedroom")
 label home:
     "ok go"
     window hide

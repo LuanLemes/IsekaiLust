@@ -28,7 +28,7 @@ screen top_screen:
                     xoffset 9.5
                     hover im.Scale("icons/bed_hover.png",80,80)
                     idle im.Scale("icons/bed.png",80,80)
-                    action Call("change_location_to", "Home Bedroom")
+                    action Call("change_location_to", "Bedroom")
             else:
                 imagebutton:
                     hover im.Scale("icons/map_hover.png", 90, 90)

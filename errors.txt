@@ -2,13 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/scripts/scenes/default_scenes.rpy", line 154: expected ':' not found.
-    menu
-        ^
+The label little_sister_room is defined twice, at File "game/scripts/map/locations/big sister room.rpy", line 23:
+label little_sister_room:
+and File "game/scripts/map/locations/little sister room.rpy", line 23:
+label little_sister_room:
 
-File "game/scripts/scenes/default_scenes.rpy", line 168: choice menuitem expects a non-empty block.
-    "A book?":
-              ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Jan 11 10:37:54 2023
+Fri Jan 13 19:20:05 2023

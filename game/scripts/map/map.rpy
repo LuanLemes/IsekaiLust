@@ -4,7 +4,7 @@ define status_function = "x"
 define map_image = ""
 # define location_object = Place()
 label enter_map:
-    call change_location_to("Forest Wall")
+    call change_location_to("Bedroom")
     return
 
 
@@ -63,6 +63,7 @@ label update_image:
             $ image_to_select = calendar.current_day_time - count
             $ map_image = str("maps/" +location + list_of_images_sufix[image_to_select] + ".webp")
             $ image_found = True
+    $ map_image = str(map_image.lower())
     show expression map_image
 
     return

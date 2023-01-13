@@ -22,9 +22,15 @@ init python:
         t += 1
         places.append(Place(-1, "", 0, 0, False, False, 0, False, False))
 
-    places[0] = Place( 0, "Home Garage",700, 500, True, True, 0, False, True)
-    places[1] = Place( 1, "Home",950, 470, True, True, 1, False, True)
-    places[2] = Place( 2, "Home Bedroom", 710, 820, True, True, 1, False, True)
-    places[4] = Place( 4, "Map", 1200, 100, False, False, 0, True, False)
-    places[5] = Place( 5, "Forest Wall", 1200, 100, False, True, 1, True, False)
+    places[0] = Place( 0, "Garage",700, 500, True, True, 0, False, True )
+    places[1] = Place( 1, "Home",950, 470, True, True, 1, False, True )
+    places[2] = Place( 2, "Bedroom", 710, 820, True, True, 1, False, True )
+    places[4] = Place( 4, "Map", 1200, 100, False, False, 0, True, False )
+    places[5] = Place( 5, "Forest Wall", 1200, 100, False, True, 1, True, False )
+    places[6] = Place( 6, "Hallway", 1200, 100, False, True, 1, False, False )
+    places[7] = Place( 7, "Bathroom", 1200, 100, False, True, 1, False, False )
+    places[7] = Place( 8, "Little Sister Room", 1200, 100, False, True, 1, False, False )
+    places[7] = Place( 9, "Big Sister Room", 1200, 100, False, True, 1, False, False )
+    places[7] = Place( 10, "Living Room", 1200, 100, False, True, 1, False, False )
+
     location_object = Place(-1, "", 0, 0, False, False, 0, False, False)

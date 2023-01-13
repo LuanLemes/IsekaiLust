@@ -93,7 +93,6 @@ style frame:
 ## This screen must create a text displayable with id "what", as Ren'Py uses
 ## this to manage text display. It can also create displayables with id "who"
 ## and id "window" to apply style properties.
-##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 screen say(who, what):

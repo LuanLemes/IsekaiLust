@@ -4,3 +4,7 @@
 define aphrodite = Character("Aphrodite", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
 define aphrodite_shout = Character("Aphrodite",  what_size=43, namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
 define aphrodite_thought = Character("Aphrodite",  what_color = "#96989E", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
+
+define linda = Character("Linda", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
+define linda_shout = Character("Linda",  what_size=43, namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
+define linda_thought = Character("Linda",  what_color = "#96989E", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
