@@ -22,18 +22,30 @@ screen top_screen:
             xoffset 5
             yoffset 3
             spacing 10
-            # if location != "Forest Map":
-            if location_object.can_map == False:
-                imagebutton:
-                    xoffset 9.5
-                    hover im.Scale("icons/bed_hover.png",80,80)
-                    idle im.Scale("icons/bed.png",80,80)
-                    action Call("change_location_to", "Bedroom")
+            if location_object.can_map == True:
+                if location_object.is_inside == False:
+                    imagebutton:
+                        xoffset 9.5
+                        hover im.Scale("icons/bed_hover.png",80,80)
+                        idle im.Scale("icons/bed.png",80,80)
+                        action Call("change_location_to", "Bedroom")
+                else:
+                    imagebutton:
+                        hover im.Scale("icons/map_hover.png", 90, 90)
+                        idle im.Scale("icons/map.png", 90, 90)
+                        action Call("change_location_to", "Forest Wall")
             else:
-                imagebutton:
-                    hover im.Scale("icons/map_hover.png", 90, 90)
-                    idle im.Scale("icons/map.png", 90, 90)
-                    action Call("change_location_to", "Forest Wall")
+                if location_object.is_inside == False:
+                    imagebutton:
+                        xoffset 9.5
+                        hover im.Scale("icons/bed disabled.png",80,80)
+                        idle im.Scale("icons/bed disabled.png",80,80)
+                        action NullAction()
+                else:
+                    imagebutton:
+                        hover im.Scale("icons/map disabled.png", 90, 90)
+                        idle im.Scale("icons/map disabled.png", 90, 90)
+                        action NullAction()
         vbox:
             xalign 0.063 yoffset -7
             frame:

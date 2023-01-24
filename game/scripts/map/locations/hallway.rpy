@@ -14,29 +14,29 @@ screen hallway():
             ypos 0
             hovered SetVariable("focus_location", "Bathroom")
             unhovered SetVariable("focus_location", location_object.name)
-            hover ("overlays/hallway to little sister bedroom hover.webp")
-            idle ("overlays/hallway to little sister bedroom.webp")
+            hover ("overlays/hallway to bathroom hover.webp")
+            idle ("overlays/hallway to bathroom.webp")
             action Call("change_location_to", "Bathroom")
 
         imagebutton:
             focus_mask True
             xpos 0
             ypos 0
-            hovered SetVariable("focus_location", " Big Sister Room")
+            hovered SetVariable("focus_location", " Ashley Room")
             unhovered SetVariable("focus_location", location_object.name)
-            hover ("overlays/hallway to bathroom hover.webp")
-            idle ("overlays/hallway to bathroom.webp")
-            action Call("change_location_to", "Big Sister Room")
+            hover ("overlays/hallway to big sister bathroom hover.webp")
+            idle ("overlays/hallway to big sister bathroom.webp")
+            action Call("change_location_to", "Ashley Room")
 
         imagebutton:
             focus_mask True
             xpos 0
             ypos 0
-            hovered SetVariable("focus_location", " Little Sister Room")
+            hovered SetVariable("focus_location", " Linda Room")
             unhovered SetVariable("focus_location", location_object.name)
-            hover ("overlays/hallway to mom bedroom hover.webp")
-            idle ("overlays/hallway to mom bedroom.webp")
-            action Call("change_location_to", "Little Sister Room")
+            hover ("overlays/hallway to little sister bedroom hover.webp")
+            idle ("overlays/hallway to little sister bedroom.webp")
+            action Call("change_location_to", "Linda Room")
 
         imagebutton:
             focus_mask True
@@ -52,8 +52,8 @@ screen hallway():
             xpos 0.5
             xanchor 0.5
             ypos 0.95
-            hover im.Scale("gui/idle.png", 340, 47)
-            idle im.Scale("gui/hover.png", 340, 47)
+            hover im.Scale("gui/idle.png", 340, 46)
+            idle im.Scale("gui/hover.png", 340, 46)
             hovered SetVariable("focus_location", "Living Room")
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Living Room")
@@ -61,4 +61,9 @@ screen hallway():
 
 
 label hallway:
+    return
+
+label hallway_check:
+    if big_sister_prologue == True:
+        call ashley_prologue
     return

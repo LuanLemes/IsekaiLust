@@ -1,4 +1,4 @@
-Fri Jan 13 19:43:05 2023
+Mon Jan 23 23:29:38 2023
 Windows-10-10.0.19044
 Ren'Py 8.0.3.22090809
  
@@ -8,13 +8,14 @@ Early init took 0.00s
 Loader init took 0.03s
 Loading error handling took 0.02s
 Loading script took 0.18s
-Loading save slot metadata. took 0.01s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
 Running init code took 0.04s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
 Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -22,13 +23,13 @@ Initial gc. took 0.01s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.20s
+Creating interface object took 0.18s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
@@ -39,10 +40,1019 @@ Interface start took 0.07s
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Fullscreen mode.
+Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 522.25'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 862.92s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 902.75s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 936.40s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 3: 'background' is not a keyword argument or valid child for the screen statement.
+    background Solid("0000")
+              ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 951.68s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 3: 'Solid' is not a keyword argument or valid child for the add statement.
+    add background Solid("0000")
+                        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 952.94s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 3: 'Solid' is not a keyword argument or valid child for the add statement.
+    add background Solid("0000")
+                        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 953.49s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 3: 'Solid' is not a keyword argument or valid child for the add statement.
+    add background Solid("0000")
+                        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 954.02s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 3: 'Solid' is not a keyword argument or valid child for the add statement.
+    add background Solid("0000")
+                        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 954.73s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 3: 'Solid' is not a keyword argument or valid child for the add statement.
+    add background Solid("0000")
+                        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 955.26s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 3: 'Solid' is not a keyword argument or valid child for the add statement.
+    add background Solid("0000")
+                        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 958.53s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 972.51s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1057) drawable=(2560, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1099.01s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1057) drawable=(2560, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1134.24s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1057) drawable=(2560, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2295.06s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 20: 'text' is not a keyword argument or valid child for the textbutton statement.
+    text "{color=#b8b8b8}[item.name]{/color}"
+        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1057) drawable=(2560, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2302.08s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scripts/ui_screens/store.rpy", line 20: 'text' is not a keyword argument or valid child for the textbutton statement.
+    text "{color=#b8b8b8}[item.name]{/color}"
+        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1057) drawable=(2560, 1057)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2312.83s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2366.35s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2398.62s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2418.65s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2424.76s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2440.22s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2445.80s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2461.25s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2472.20s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2484.71s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Luan\\AppData\\Roaming/RenPy/backups\\IsekaiLust':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2487.01s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Luan\\Documents\\Work\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3080/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 522.25'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
 Maximum texture size: 4096x4096

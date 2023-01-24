@@ -25,7 +25,9 @@ screen bedroom():
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
 
 label bedroom:
+    return
 
+label bedroom_check:
     return
     # menu:
     #     "Are you +18 years old?"

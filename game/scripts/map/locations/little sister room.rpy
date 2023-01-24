@@ -1,4 +1,4 @@
-screen little_sister_room():
+screen linda_room():
 
     frame:
 
@@ -20,7 +20,7 @@ screen little_sister_room():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Hallway")
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
-label little_sister_room:
+label linda_room:
     return
     # menu:
     #     "Are you +18 years old?"

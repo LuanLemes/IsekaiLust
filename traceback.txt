@@ -1,134 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/scenes/default_scenes.rpy", line 31, in script call
+  File "game/scripts/scenes/default_scenes.rpy", line 66, in script call
     call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 39, in script call
+  File "game/scripts/scenes/default_scenes.rpy", line 72, in script call
     call enter_map
-  File "game/scripts/map/map.rpy", line 7, in script call
+  File "game/scripts/map/map.rpy", line 13, in script call
     call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  [Previous line repeated 10 more times]
-  File "game/scripts/map/map.rpy", line 72, in script call
+  File "game/scripts/map/map.rpy", line 119, in script call
     call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 11 more times]
-  File "game/scripts/map/map.rpy", line 24, in script call
+  File "game/scripts/map/map.rpy", line 65, in script call
     call expression screen_name
-  File "game/scripts/scenes/default_scenes.rpy", line 31, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 39, in script call
-    call enter_map
-  File "game/scripts/map/map.rpy", line 7, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 10 more times]
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 11 more times]
-  File "game/scripts/map/map.rpy", line 24, in script call
-    call expression screen_name
-ScriptError: could not find label 'living_room'.
+  File "game/scripts/map/locations/forest.rpy", line 25, in script
+    $ player_inventory.list_items()
+  File "game/scripts/map/locations/forest.rpy", line 25, in <module>
+    $ player_inventory.list_items()
+  File "game/scripts/player/storage.rpy", line 26, in list_items
+    mc (x)
+Exception: Character expects its what argument to be a string, got 1.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/scenes/default_scenes.rpy", line 31, in script call
+  File "game/scripts/scenes/default_scenes.rpy", line 66, in script call
     call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 39, in script call
+  File "game/scripts/scenes/default_scenes.rpy", line 72, in script call
     call enter_map
-  File "game/scripts/map/map.rpy", line 7, in script call
+  File "game/scripts/map/map.rpy", line 13, in script call
     call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  [Previous line repeated 10 more times]
-  File "game/scripts/map/map.rpy", line 72, in script call
+  File "game/scripts/map/map.rpy", line 119, in script call
     call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
+  File "game/scripts/map/map.rpy", line 74, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 11 more times]
-  File "game/scripts/map/map.rpy", line 24, in script call
+  File "game/scripts/map/map.rpy", line 65, in script call
     call expression screen_name
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 1705, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/scripts/scenes/default_scenes.rpy", line 31, in script call
-    call input_player_name
-  File "game/scripts/scenes/default_scenes.rpy", line 39, in script call
-    call enter_map
-  File "game/scripts/map/map.rpy", line 7, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 10 more times]
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 72, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 26, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 11 more times]
-  File "game/scripts/map/map.rpy", line 24, in script call
-    call expression screen_name
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'living_room'.
+  File "game/scripts/map/locations/forest.rpy", line 25, in script
+    $ player_inventory.list_items()
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/map/locations/forest.rpy", line 25, in <module>
+    $ player_inventory.list_items()
+  File "game/scripts/player/storage.rpy", line 26, in list_items
+    mc (x)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1187, in __call__
+    raise Exception("Character expects its what argument to be a string, got %r." % (what,))
+Exception: Character expects its what argument to be a string, got 1.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 Koitatsu GUI 1.0.0
-Fri Jan 13 19:37:30 2023
+Mon Jan 23 23:20:17 2023

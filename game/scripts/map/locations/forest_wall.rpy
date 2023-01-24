@@ -3,9 +3,10 @@ screen forest_wall():
     text "thats the map babe"
 
     frame:
-        xalign 0.0
-        yalign 0.0
-
+        # xalign 0.0
+        # yalign 0.0
+        xpos 0.0
+        ypos 0.0
         xsize 1920
         ysize 1080
 
@@ -23,6 +24,7 @@ screen forest_wall():
                     xpos place.x
                     ypos place.y
                     imagebutton:
+                        focus_mask True
                         hover im.Scale(hover_name, 100, 100)
                         hovered SetVariable("focus_location", place.name)
                         unhovered SetVariable("focus_location", location_object.name)

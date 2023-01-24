@@ -13,5 +13,5 @@ label start_time_variables:
 
 label time_next():
     $ calendar.add_current_day_time(1)
-
+    window hide
     return

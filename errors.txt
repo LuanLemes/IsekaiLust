@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label little_sister_room is defined twice, at File "game/scripts/map/locations/big sister room.rpy", line 23:
-label little_sister_room:
-and File "game/scripts/map/locations/little sister room.rpy", line 23:
-label little_sister_room:
-
+File "game/scripts/ui_screens/store.rpy", line 20: 'text' is not a keyword argument or valid child for the textbutton statement.
+    text "{color=#b8b8b8}[item.name]{/color}"
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Jan 13 19:20:05 2023
+Tue Jan 24 00:08:00 2023
