@@ -10,9 +10,6 @@ screen bedroom():
 
         background (str(map_image))
 
-
-
-
         imagebutton:
             xpos 0.5
             xanchor 0.5
@@ -25,15 +22,16 @@ screen bedroom():
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
 
 label bedroom:
+    if linda_prologue:
+        $ only_location = "Hallway"
+        $ only_location_message = ["I should go see what Monica has to say.", "I really should go see my Monica downstairs", "Not time to go there yet"]
+        $ linda_prologue = False
     return
 
-label bedroom_check:
+label bedroom_before_enter:
     return
-    # menu:
-    #     "Are you +18 years old?"
-    #     "Yes":
-    #         "option 1"
-    #         call bedroom
-    #     "No":
-    #         "option 2"
-    #         return
+
+label bedroom_exit_check:
+    "i dont know how i got here"
+    "This is the exit check, you can´t leave this room, now get to work you bitch."
+    return True

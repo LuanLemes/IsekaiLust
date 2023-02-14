@@ -21,8 +21,6 @@ screen forest():
             action Call("change_location_to", "Forest Wall")
         text "Village" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
 label forest:
-    $ start_inventory_items()
-    # $ player_inventory.list_items()
     call screen magister_store
 
     return

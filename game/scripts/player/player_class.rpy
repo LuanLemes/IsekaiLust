@@ -5,4 +5,8 @@ init python:
             self.age = age
             self.money = money
 
-    player = Player("Almir", 0, 100)
+        def add_money(self, value):
+            self.money += (value)
+
+        def remove_money(self, value):
+            self.money -= (value)

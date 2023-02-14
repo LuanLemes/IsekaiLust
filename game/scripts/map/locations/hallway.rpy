@@ -61,9 +61,13 @@ screen hallway():
 
 
 label hallway:
-    return
-
-label hallway_check:
     if big_sister_prologue == True:
-        call ashley_prologue
+        $ big_sister_prologue = False
+        $ only_location = "Living Room"
+        $ only_location_message = ["I have to see Monica (She is on the Kitchen)"]
+        $ prologue_to_living_room = True
+        jump ashley_prologue
+        window hide
+
+label hallway_before_enter:
     return

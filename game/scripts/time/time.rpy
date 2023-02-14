@@ -1,9 +1,9 @@
 label start_time_variables:
     $ week_days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     $ day_time = ["Morning", "Afternoon", "Evening", "Dawn", "Late Down"]
-    $ current_week_day = 3
-    $ current_day_time = 3
-    $ current_day = 0
+    $ current_week_day = 0
+    $ current_day_time = 0
+    $ current_day = 1
     $ calendar = Calendar(0, week_days, day_time, 0, 0)
     $ event_one = Event(-1, -1, 10, "event_one", True)
     $ Events[0] = event_one

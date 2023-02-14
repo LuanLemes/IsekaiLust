@@ -60,12 +60,13 @@ screen living_room():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Hallway")
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
-label living_room:
-    return
 
-label living_room_check:
+label living_room:
     if prologue_to_living_room == True:
         $ only_location = "Kitchen"
-        $ only_location_message = "I have to see Monica (She is on the Kitchen)"
+        $ only_location_message = ["I have to see Monica (She is on the Kitchen)"]
         $ prologue_to_living_room = False
+
+label living_room_before_enter:
+
     return
