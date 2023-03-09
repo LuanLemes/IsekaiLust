@@ -1,5 +1,4 @@
 screen hallway():
-
     frame:
         xalign 0.0
         yalign 0.0
@@ -7,6 +6,7 @@ screen hallway():
         ysize 1080
 
         background (str(map_image))
+
 
         imagebutton:
             focus_mask True
@@ -58,6 +58,7 @@ screen hallway():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Living Room")
         text "Living Room" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
 
 
 label hallway:

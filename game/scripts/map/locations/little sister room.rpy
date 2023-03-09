@@ -9,6 +9,7 @@ screen linda_room():
         ysize 1080
 
         background (str(map_image))
+        use top_screen()
 
         imagebutton:
             xpos 0.5
@@ -20,6 +21,8 @@ screen linda_room():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Hallway")
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
+    
 label linda_room:
     return
     # menu:

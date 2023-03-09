@@ -31,7 +31,12 @@ style button:
 style button_text is gui_text:
     properties gui.text_properties("button")
     yalign 0.5
-
+#mine 
+style button_text_mine :
+    properties gui.text_properties("button")
+    yalign 0.5
+    insensitive_color "#ff00005d"
+    size 32
 
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
@@ -97,7 +102,6 @@ style frame:
 
 screen say(who, what):
     style_prefix "say"
-
     window:
         id "window"
 
@@ -206,6 +210,13 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
+# screen choice(items):
+#     style_prefix "choice"
+
+#     vbox:
+#         for i in items:
+#             textbutton i.caption action i.action
+
 screen choice(items):
     style_prefix "choice"
 
@@ -213,11 +224,9 @@ screen choice(items):
         for i in items:
             textbutton i.caption action i.action
 
-
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
 define config.narrator_menu = True
-
 
 style choice_vbox is vbox
 style choice_button is button

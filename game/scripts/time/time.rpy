@@ -15,3 +15,8 @@ label time_next():
     $ calendar.add_current_day_time(1)
     window hide
     return
+
+label day_next():
+    $ calendar.add_current_day(1)
+    window hide
+    return

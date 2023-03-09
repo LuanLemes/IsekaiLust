@@ -9,7 +9,6 @@ screen bathroom():
         ysize 1080
 
         background (str(map_image))
-
         imagebutton:
             xpos 0.5
             xanchor 0.5
@@ -20,6 +19,8 @@ screen bathroom():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Hallway")
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
+    
 label bathroom:
     return
     # menu:

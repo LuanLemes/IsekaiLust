@@ -1,4 +1,5 @@
 screen forest_wall():
+    use top_screen()
     $ show_subtitle = False
     text "thats the map babe"
 
@@ -20,6 +21,10 @@ screen forest_wall():
             if place.is_active == True and place.map_to_show == 1:
                 $ hover_name = place.avatar
                 $ hover_name = hover_name.replace(".png", " hover.png")
+                $ hover_name = hover_name.replace(" ", "_")
+                $ idle_name = place.avatar
+                $ idle_name = idle_name.replace(".png", " idle.png")
+                $ idle_name = idle_name.replace(" ", "_")
                 vbox:
                     xpos place.x
                     ypos place.y
@@ -28,8 +33,13 @@ screen forest_wall():
                         hover im.Scale(hover_name, 100, 100)
                         hovered SetVariable("focus_location", place.name)
                         unhovered SetVariable("focus_location", location_object.name)
-                        idle im.Scale(place.avatar, 100, 100)
+                        idle im.Scale(idle_name, 100, 100)
                         action Call("change_location_to", place.name)
+    use top_screen()
+    
 
 label forest_wall:
+    if flower_camp_first == True:
+        $ only_location = "Flower Camp"
+        $ only_location_message = ["(I should go help monica at the Flower Camps.)"]
     return

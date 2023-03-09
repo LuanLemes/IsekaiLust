@@ -1,7 +1,7 @@
 init -25:
     define gui.use_side_image = True
 
-    define gallery.enabled = True
+    define gallery.enabled = False
 
     # If true, items in the gallery will be unlocked based on variables and instead of automatically after the player has seen them
     define gallery.variable_mode = False

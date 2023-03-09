@@ -30,6 +30,7 @@ screen home():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Forest Wall")
         text "Village" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
 
 label home_check:
     if calendar.current_day_time == 0:
@@ -39,6 +40,7 @@ label home_check:
         $ can_enter = False
         $ not_enter_message = "You you cant go home now."
     return can_enter
+
 
 
 label home:

@@ -9,7 +9,7 @@ screen ashley_room():
         ysize 1080
 
         background (str(map_image))
-
+        use top_screen()
         imagebutton:
             xpos 0.5
             xanchor 0.5
@@ -20,10 +20,12 @@ screen ashley_room():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Hallway")
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
+    
 label ashley_room:
     return
 
 label ashley_room_check:
-    $ can_enter = False
-    $ not_enter_message = "(Her door is locked...)"
-    return can_enter
+    if ashley_room_locked == True:
+        $ not_enter_message = "(The door is locked...)"
+        return False

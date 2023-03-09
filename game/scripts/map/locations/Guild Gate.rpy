@@ -9,6 +9,7 @@ screen guild_gate():
         ysize 1080
 
         background (str(map_image))
+        use top_screen()
 
         # imagebutton:
         #     focus_mask True
@@ -30,6 +31,8 @@ screen guild_gate():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Forest Wall")
         text "Village" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
+    
 
 label guild_gate:
     window hide

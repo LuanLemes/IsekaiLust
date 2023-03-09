@@ -23,6 +23,8 @@ screen map():
                     button:
                         xalign 0.5
                         text place.name
+    use top_screen()
+    
 
 label map:
 return

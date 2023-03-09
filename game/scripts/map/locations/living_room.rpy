@@ -1,19 +1,18 @@
 screen living_room():
 
     frame:
-
-        xalign 0.0
+        yoffset 0
         yalign 0.0
 
         xsize 1920
         ysize 1080
 
-        background (str(map_image))
+        background (str(map_image)) 
+
 
         imagebutton:
             focus_mask True
-            xpos 0
-            ypos 0
+            xpos -15
             hovered SetVariable("focus_location", "Monica Room")
             unhovered SetVariable("focus_location", location_object.name)
             hover ("overlays/living room to mom bedroom hover.webp")
@@ -22,7 +21,7 @@ screen living_room():
 
         imagebutton:
             focus_mask True
-            xpos 0
+            xpos -15
             ypos 0
             hovered SetVariable("focus_location", "Kitchen")
             unhovered SetVariable("focus_location", location_object.name)
@@ -32,7 +31,7 @@ screen living_room():
 
         imagebutton:
             focus_mask True
-            xpos 0.0
+            xpos -15
             ypos 0.0
             hovered SetVariable("focus_location", "Room")
             unhovered SetVariable("focus_location", location_object.name)
@@ -42,7 +41,7 @@ screen living_room():
 
         imagebutton:
             focus_mask True
-            xpos 0.0
+            xpos -15
             ypos 0.0
             hovered SetVariable("focus_location", "Leave")
             unhovered SetVariable("focus_location", location_object.name)
@@ -60,6 +59,8 @@ screen living_room():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Hallway")
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
+    
 
 label living_room:
     if prologue_to_living_room == True:

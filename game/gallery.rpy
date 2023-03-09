@@ -55,7 +55,8 @@ init python:
 init +1 python:
     #Here we create the thumbnails. 
     for gal_item in gallery_thumbnails:
-        renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
+        pass
+        # renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
         
 screen auto_gallery:
     tag menu
@@ -88,7 +89,7 @@ screen auto_gallery:
                     elif prev_cg_page == -1:
                         $ prev_cg_page = 0
 
-                    for gal_item in gallery_thumbnails:
+                    for gal_item in gal_item:
                         $ i += 1
                         if i <= (cg_page+1)*gal_cells and i>cg_page*gal_cells:
                             add g_cg.make_button(gal_item + " butt", gal_item + " butt","gui/gallery/locked.png", xalign=0.5, yalign=0.5, idle_border=None, background=None, bottom_margin=24)

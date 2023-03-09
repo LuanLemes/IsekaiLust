@@ -1,16 +1,18 @@
 default ui_show_top_screen = True
-default ui_show_foward_time = True
+default ui_show_foward_time = False
 default ui_show_time =  True
 default ui_show_money = True
 default ui_show_location = True
 default ui_show_maps = True
-default ui_can_change_map = True
+default ui_can_change_map = False
 default ui_show_inventory = True
 default ui_can_inventory = True
 default ui_can_book = True
 default ui_show_book = True
+default creation_tools = True
 
 screen top_screen:
+    default this_current_week_day = ""
     zorder 1
     add Solid("0000")
     if ui_show_top_screen == True:
@@ -81,7 +83,8 @@ screen top_screen:
                             xsize 270
                             ysize 49
                         # background im.Scale("gui/hover.png", 250, 45)
-                        $ this_current_week_day = calendar.week_days[current_week_day]
+                        $ this_current_week_day = calendar.week_days[calendar.current_week_day]
+                        # $ this_current_week_day = calendar.current_week_day
                         text "  [this_current_week_day]" yoffset 5 color "ffffff"
 
             if ui_show_time:
@@ -157,7 +160,7 @@ screen top_screen:
                 imagebutton:
                     xoffset 37
                     yoffset -18
-                    hover im.Scale("icons/inventory_icon_hover.webp", 90,80)
-                    idle im.Scale("icons/inventory_icon_idle.webp", 90,80)
+                    hover im.Scale("icons/book_hover.webp", 80,80)
+                    idle im.Scale("icons/book.webp", 80,80)
                     action [Show("book")]
                     # action Call("inventory")

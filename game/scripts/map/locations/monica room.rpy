@@ -20,6 +20,7 @@ screen monica_room():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Living Room")
         text "Hallway" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+    use top_screen()
 
 label monica_room:
     return

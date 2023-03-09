@@ -2,13 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/scripts/characters/characters.rpy", line 39: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
-    Girl(08, "Elyse", True, 0, "Human", "Friend", "Friendly", 0, "Nothing for now", 1, "Single", "She loves chocolat")
-           ^
-
-File "game/scripts/characters/characters.rpy", line 40: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
-    Girl(09, "Makoto", True, 0, "Human", "Friend", "Friendly", 0, "Nothing for now", 1, "Single", "She loves chocolat")
-           ^
+File "game/scripts/map/locations/flower_camp.rpy", line 113: 'return' outside function
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Feb 14 00:44:44 2023
+Mon Feb 27 04:06:02 2023
