@@ -9,17 +9,6 @@ screen guild_gate():
         ysize 1080
 
         background (str(map_image))
-        use top_screen()
-
-        # imagebutton:
-        #     focus_mask True
-        #     xpos 0
-        #     ypos 0
-        #     hovered SetVariable("focus_location", " Enter House")
-        #     unhovered SetVariable("focus_location", location_object.name)
-        #     hover ("overlays/house to living room hover.webp")
-        #     idle ("overlays/house to living room.webp")
-        #     action Call("change_location_to", "Living Room")
 
         imagebutton:
             xpos 0.5

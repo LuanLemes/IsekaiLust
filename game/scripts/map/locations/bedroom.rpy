@@ -8,7 +8,6 @@ screen bedroom():
         ysize 1080
 
         background (str(map_image))
-        use top_screen()
         imagebutton:
             xpos 0.5
             xanchor 0.5
@@ -60,10 +59,15 @@ label bed:
     return
 
 label sleep:
+    if first_sleep == True:
+        $ first_sleep = False
+        $ ui_show_foward_time = True
     call day_next
+    scene black with dissolve
     mc "That was a really good night sleep."
-    # mc "define = [defined].... default = [defaulted]."
-
+    # scene bedroom morning 
+    # with dissolve
+    call check_character_updates
     return
 
 label take_a_nap:
@@ -72,4 +76,8 @@ label take_a_nap:
     else: 
         "Oh...I slept all night."
     call time_next
+    return
+
+label check_character_updates:
+    
     return

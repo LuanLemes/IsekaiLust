@@ -250,8 +250,13 @@ label prologue:
     scene bedroom night with dissolve
     mc_thought "(So...thats it, today Is my birthday...18 years old and I didnt even care to tell anyone. I mean...there is nothing to  celebrate....Im still a total loser.)"
     scene black with dissolve
-    mc "Anyway.. at least I have a home now...better go to sleep."
+    menu:
+        "Anyway.. at least I have a home now...better go to sleep."
+        "sleep":
+            pass
     pause 2.0
+    jump prologue_1
+    return
 
 
 label prologue_1:
@@ -508,6 +513,7 @@ label linda_will_you_hug_me:
 
                     lin_shout "Really?"
                     mc "Yeah... its just a hug after all."
+                    jump linda_hug
                 "Stop Crying!":
                     mc_thought "(Man...she just wont stop)"
                     mc_shout "Stop Crying!"
@@ -530,14 +536,14 @@ label linda_will_you_hug_me:
                             mc "Hey Linda."
                             show linda prologue leaving5 with dissolve
                             lin "What?"
-                        "Do nothing":
-                            jump start_3
+                        # "Do nothing":
+                        #     jump start_3
                     menu:
                         "Let me hug you please":
                             mc "Let me hug you please?"
                             show linda prologue happy with dissolve
                             pause 1.0
-                            lin "Really big bro?!!?!? best!!"
+                            lin "Really [player.name] ?!!?!? best!!"
                             jump linda_hug
                         "Im sorry for making you cry.":
                             mc "Im sorry for make you cry."
@@ -545,7 +551,7 @@ label linda_will_you_hug_me:
                             mc "Came here and let me give you a big hug"
                             show linda prologue happy with dissolve
                             pause 1.0
-                            lin_shout "Really?!?!? Oh big bro!!! I love you tooo thank you!!"
+                            lin_shout "Really?!?!? Oh [player.name]!!! I love you tooo thank you!!"
                             jump linda_hug
     return
 
@@ -582,7 +588,7 @@ label linda_enjoy_the_hug:
 
 # randomize phrases latter
 label linda_enjoy_the_hug_2:
-    lin "Big bro?"
+    lin "[player.name]?"
     mc "What?"
     lin "Isnt this hug taking a little too long?"
     menu:
@@ -658,7 +664,7 @@ label ashley_prologue:
     scene hallway morning
     show ashley half sleepover angry2
     with dissolve
-    mc "Good Ashley."
+    mc "Good morning Ashley."
     show ashley half sleepover angry
     with dissolve
     ash "Dont try that with me brat."

@@ -37,7 +37,8 @@ screen living_room():
             unhovered SetVariable("focus_location", location_object.name)
             hover ("overlays/living room to secret room hover.webp")
             idle ("overlays/living room to secret room.webp")
-            action Call("change_location_to", "Kitchen")
+            # action Call("change_location_to", "Kitchen")
+            action Call("secret_room")
 
         imagebutton:
             focus_mask True
@@ -64,10 +65,17 @@ screen living_room():
 
 label living_room:
     if prologue_to_living_room == True:
+        show linda running livingroom
+        lin_shout "Out of the way pleeeeease!!!!!" with vpunch
+        mc "What?"
+        lin_shout "Moooom Im Hungry!!!!"
+        hide linda with dissolve
+        mc "I guess, she is hungry."
         $ only_location = "Kitchen"
         $ only_location_message = ["I have to see Monica (She is on the Kitchen)"]
         $ prologue_to_living_room = False
-
 label living_room_before_enter:
 
     return
+label secret_room:
+    mc "This room is locked since the day I got here, no idea whats in there."

@@ -1,4 +1,4 @@
-image image_to_show = im.Scale("maps/store test.png", 1920, 1080)
+
 image picture_1 = im.Scale("bg cave.jpg", 1920, 1080)
 image picture_2 = im.Scale("bg panorama.webp", 1920, 1080)
 image picture_3 = im.Scale("bg whitehome.jpg", 1920, 1080)

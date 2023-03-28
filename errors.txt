@@ -2,7 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/flower_camp.rpy", line 113: 'return' outside function
+File "game/scripts/map/locations/flower_camp.rpy", line 491: invalid syntax
+    phrase = renpy.random.randint(0,5):
+                                       ^
+    
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Feb 27 04:06:02 2023
+Tue Mar 28 12:26:09 2023

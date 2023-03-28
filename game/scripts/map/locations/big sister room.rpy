@@ -25,7 +25,8 @@ screen ashley_room():
 label ashley_room:
     return
 
-label ashley_room_check:
+label ashley_room_on_enter:
     if ashley_room_locked == True:
-        $ not_enter_message = "(The door is locked...)"
+        $phrase = renpy.random.choice(["(The door is locked...)", "(why does she always leave the door locked?)"])
+        mc_thought "[phrase]"
         return False

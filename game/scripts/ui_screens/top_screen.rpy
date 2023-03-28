@@ -74,6 +74,8 @@ screen top_screen:
                             # xalign 0.055
                             # yalign 0.057
                         text " [focus_location]" xalign 0.05 yoffset 4 color "ffffff"
+                        #  debug only
+                        # text " [map_image]" xalign 0.05 yoffset 90 color "ffffff"
 
                     frame:
                         background Solid("0000")
@@ -136,8 +138,13 @@ screen top_screen:
                     yoffset -18
                     hover im.Scale("icons/next_hover.png", 100,90)
                     idle im.Scale("icons/next.png", 100,90)
+                    # action [Return ("reload"), Function(function_time_next) ]
+                    # action [Function(function_time_next), Call("update_image") ]
+                    # action [Function(function_time_next), Function(function_update_image)]
+                    action [Function(function_time_next) , Function(function_update_image)]
+                    # action [Function(function_time_next) ]
                     # action Call("time_next")
-                    action [Return ("reload"), Call("time_next")]
+                    # action [Return ("reload"), Call("time_next")]
                     # [ SetVariable("saved_game", True), Load("saved_game"), SetVariable("saved_game", False), Jump("start") ]
 
         frame:

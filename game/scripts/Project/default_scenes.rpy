@@ -3,6 +3,7 @@ label input_player_name:
     default mc = Character("[player.name]", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
     default mc_shout = Character("[player.name]", what_size = 37, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
     default mc_thought = Character("[player.name]", what_color = "#98969E", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
+    default mc_whisper = Character("[player.name]", what_size = 14, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
     menu:
         mc "My name is [player.name]"
         "Confirm":
@@ -33,3 +34,7 @@ label start_3:
     # show  screen top_screen
     call enter_map
 return
+
+label camera_reset:
+    camera:
+        pos ( 0, 0) yzoom 1.0 zoom 1.0 

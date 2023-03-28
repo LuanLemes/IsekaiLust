@@ -1,3 +1,4 @@
+
 default location_in_string = ""
 default location = ""
 define default_location = "Bedroom"
@@ -16,6 +17,10 @@ default map_black_pause_time_default = 0.1
 default map_dissolve_black = map_dissolve_black_default
 default map_dissolve_time = map_dissolve_time_default
 default map_black_pause_time = map_black_pause_time_default
+default map_reload_name = ""
+default transition_on_reload = False
+
+
 
 label enter_map:
     call change_location_to(default_location)
@@ -73,9 +78,11 @@ label change_location_to(new_location):
                 location_object = place
 # clear screen and show black
     if map_dissolve_black != 0 or map_black_pause_time != 0 or map_dissolve_time!= 0    :
-        if is_reloading == False:
+        if is_reloading == False and transition_on_reload == False:
             scene black with Dissolve(map_dissolve_black)
             pause(map_black_pause_time)
+            $ transition_on_reload = False
+
     else:
         scene
     $ map_dissolve_black  = map_dissolve_black_default
@@ -84,6 +91,11 @@ label change_location_to(new_location):
     hide screen expression location
 # update iamges
     call update_image
+# call reload name
+    $ map_reload_name = screen_name + "_reload"
+    if renpy.has_label(map_reload_name):
+        call expression map_reload_name
+# update_screen name
     if is_reloading == False:
         call expression screen_name
     call focus_location_to(location_object.show_name)
@@ -150,3 +162,8 @@ label reload_location:
 
 label focus_location_to(new_value):
     $ focus_location = new_value
+    return
+
+
+
+    

@@ -9,8 +9,6 @@ screen linda_room():
         ysize 1080
 
         background (str(map_image))
-        use top_screen()
-
         imagebutton:
             xpos 0.5
             xanchor 0.5
@@ -24,6 +22,10 @@ screen linda_room():
     use top_screen()
     
 label linda_room:
+    if linda_room_first == True:
+        $ linda_room_first = False
+        mc "thats linda room, well she sure keep all the toys from her childhood."
+        return
     return
     # menu:
     #     "Are you +18 years old?"

@@ -1,7 +1,15 @@
 init python:
+    def function_time_next():
+        if calendar.current_day_time < 4:
+            calendar.add_current_day_time(1)
+            return
+        if config.developer == True:
+            calendar.add_current_day_time(1)
+            return
+        return
+
     class Calendar(object):
         def __init__(self, current_day, week_days, day_time, current_week_day, current_day_time):
-            xxx = 0
             self.week_days = week_days
             self.day_time = day_time
             self.current_week_day = current_week_day
@@ -12,8 +20,11 @@ init python:
             return   self.week_days[self.current_week_day] + " " + self.day_time[self.current_day_time] + " day " + str(self.current_day)
 
         def add_current_day(self, days):
+            breakfasted = False
+
             self.current_day += days
             self.current_day_time = 0
+
             if self.current_week_day == 6:
                 self.current_week_day = 0
             else:
@@ -56,3 +67,9 @@ init python:
         Inventory.append(Event(0,0,0, "", False))
         Events.append(Event(0,0,0, "", False))
         t += 1
+
+# if calendar.current_day_time > 3:
+#     return
+# $ calendar.add_current_day_time(1)
+# window hide
+# return

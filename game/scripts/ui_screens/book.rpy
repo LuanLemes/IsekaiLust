@@ -82,12 +82,12 @@ screen book():
                         idle im.Scale( "character_screen/" + girl.name + " hidden.webp" ,192,108)
                         action [Show("character_screen", dissolve, girl.id)]
                     imagebutton :
+                        focus_mask True
                         xoffset 37
                         yoffset -18
                         hover im.Scale( "visible background.webp" ,192,108)
                         idle im.Scale( "transparent background.webp" ,192,108)
                         action [Show("character_screen", dissolve, girl.id), ]
-
         for i in range(offset_size):
             null
 

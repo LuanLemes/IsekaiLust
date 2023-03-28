@@ -222,7 +222,13 @@ screen choice(items):
 
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            if not "::" in i.caption:
+                textbutton i.caption action i.action
+        if "::" in i.caption:
+            $ var = i.caption.split("::")
+            $ var = eval(var[len(var)-1])
+            if var:
+                textbutton i.caption.split('::')[0] action i.action
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
