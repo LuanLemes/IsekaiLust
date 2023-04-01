@@ -1,9 +1,9 @@
 label input_player_name:
     $ player.name = renpy.input("What is your name?", length = 21, default = "Bill" )
-    default mc = Character("[player.name]", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
-    default mc_shout = Character("[player.name]", what_size = 37, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
-    default mc_thought = Character("[player.name]", what_color = "#98969E", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
-    default mc_whisper = Character("[player.name]", what_size = 14, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
+    define mc = Character("[player.name]", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
+    define mc_shout = Character("[player.name]", what_size = 37, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
+    define mc_thought = Character("[player.name] Thought", what_color = "#858585", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
+    define mc_whisper = Character("[player.name]", what_size = 14, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
     menu:
         mc "My name is [player.name]"
         "Confirm":

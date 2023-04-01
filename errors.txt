@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/flower_camp.rpy", line 491: invalid syntax
-    phrase = renpy.random.randint(0,5):
-                                       ^
-    
+File "game/scripts/map/locations/living_room.rpy", line 463: end of line expected.
+    jump change_location_to("Bedroom")
+                           ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Mar 28 12:26:09 2023
+Sat Apr  1 14:20:42 2023

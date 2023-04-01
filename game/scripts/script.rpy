@@ -15,7 +15,7 @@ image money_icon = "icons/money.png"
 define focus_location = ""
 define config.menu_include_disabled = True
 define config.layers = ["under_bg", "under_gui", 'master', 'transient', 'screens', 'overlay' ]
-default player = Player("Almir", 0, 100)
+default player = Player("Almir", 0, 10)
 
 default player_inventory = Inventoryx([])
 default collected_items = Inventoryx([])

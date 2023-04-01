@@ -359,7 +359,7 @@ label goddes_of_pleasure:
         aph "Well, I can see all living creatures in all universes, and you [player.name] between the most sexual  beings in all universe."
         mc "Am I?"
         aph "Yes you are, I see you watching reading and researching porns and hentais everyday."
-        mc_thought "(oh my god)"
+        mc_thought "(Oh my god)"
         aph "Yes I saw you getting hard and masturbating every day again and again and again."
         mc_thought "(what in the harry p#tter?!?)"
         mc "Ok I think I got it…"
@@ -414,7 +414,7 @@ label how:
     mc "I mean.... Im ugly, and Im not very social..."
     show aphrodite throne thinking with dissolve
     aph "Little [player.name], you are in the hands of the Goddess of Pleasure now."
-    aph "I give you The {i} {color=#4d0537}Bless of the magic blood of the sex warlocks and my power{/i}{/color} with it."
+    aph "I give you The {i} {color=#ff67d1}Bless of the magic blood of the sex warlocks and my power{/i}{/color} with it."
     aph "besides...you alraedy have a big....\"Talent\".. but you are not aware of that just yet."
     show aphrodite throne with dissolve
     mc_thought "(\"Magic blood of Warlocks of sex? and her power?\")"

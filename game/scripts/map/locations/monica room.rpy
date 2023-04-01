@@ -23,8 +23,11 @@ screen monica_room():
     use top_screen()
 
 label monica_room:
+    "Monica room is always so peacefull."
     return
 
-label monica_room_check:
-
+label monica_room_on_enter:
+    if calendar.current_day_time > 1:
+        mc_thought "Its locked."
+        return False
     return

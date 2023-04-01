@@ -3,6 +3,8 @@
 # define d = Character("Dave")
 default all_girls = []
 
+define dev = Character("Developer", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
+
 default monmc = "landlady"
 default mcmon = "tenant"
 default ashmc = "friend"
@@ -12,7 +14,7 @@ default mclin = "friend"
 
 default unk = Character("?????", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
 
-default aphrodite = Girl(1, "Aphrodite", False, 0, "Goddes", "Your Boss", "Friendly", 0, "0", 1, "Single", "She is nymphomaniac")
+default aphrodite = Girl(1, "Aphrodite", False, 0, "Goddes", "Your Boss", "Friendly", 0, "0", 1, "?????", "She is nymphomaniac")
 define aph = Character("Aphrodite", what_color = "#c02566ff", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"))
 define aph_shout = Character("Aphrodite", what_color = "#c02566ff",  what_size=43, namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"))
 define aph_thought = Character("Aphrodite",  what_color = "#96989E", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"))
@@ -52,10 +54,10 @@ define ami = Character("Anita", namebox_background=AlphaMask(Solid("#FF7F7F"), "
 define ani_shout = Character("Anita",  what_size=43, namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
 define ani_thought = Character("Anita",  what_color = "#96989E", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
 
-default makoto = Girl(9, "Makoto", False, 0, "Human", "Adventurer", "Neutral", 0, "0", 1, "Single", "She wants to become the st")
-define mak = Character("Makoto", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
-define mak_shout = Character("Makoto",  what_size=43, namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
-define mak_thought = Character("Makoto",  what_color = "#96989E", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
+default makoto = Girl(9, "Makoto", False, 0, "Human", "Adventurer", "Neutral", 0, "Take the guild exam", 1, "Single", "She wants to become strong as her master" )
+define mak = Character("Makoto", namebox_background=AlphaMask(Solid("#3a180e"), "gui/namebox.png"), what_color = "#3a180e")
+define mak_shout = Character("Makoto",  what_size=43, namebox_background=AlphaMask(Solid("#3a180e"), "gui/namebox.png"), what_color = "#3a180e")
+define mak_thought = Character("Makoto",  what_color = "#96989E", namebox_background=AlphaMask(Solid("#3a180e"), "gui/namebox.png"))
 
 default nina = Girl(10, "Nina", False, 0, "Human", "Friend", "Friendly", 0, "0", 1, "Single", "She loves chocolat")
 define nin = Character("Nina", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))

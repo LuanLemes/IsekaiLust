@@ -42,4 +42,14 @@ label forest_wall:
     if flower_camp_first == True:
         $ only_location = "Flower Camp"
         $ only_location_message = ["(I should go help monica at the Flower Camps.)"]
+        return
+    if grocery_store_first == True:
+        $ only_location = "Grocery Store"
+        $ only_location_message = ["(Monica recomended the grocery store to sell these flowers.)"]
+        return
+    if calendar.current_day >= 1 and makoto_first == True and calendar.current_day_time <= 1:
+        mc_thought "Today seems like a good day to spent go to the guild and see how to become a member."
+        $ only_location = "Guild Gate"
+        $ only_location_message = ["Today seems like a good day to spent go to the guild and see how to become a member."]
+        return
     return

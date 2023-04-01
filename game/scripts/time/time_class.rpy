@@ -1,4 +1,5 @@
 init python:
+
     def function_time_next():
         if calendar.current_day_time < 4:
             calendar.add_current_day_time(1)
@@ -20,7 +21,6 @@ init python:
             return   self.week_days[self.current_week_day] + " " + self.day_time[self.current_day_time] + " day " + str(self.current_day)
 
         def add_current_day(self, days):
-            breakfasted = False
 
             self.current_day += days
             self.current_day_time = 0
@@ -29,8 +29,12 @@ init python:
                 self.current_week_day = 0
             else:
                 self.current_week_day += 1
+            renpy.call("day_vars_reset")
+            return
+
 
         def add_current_day_time(self, times):
+
             if self.current_day_time == 4:
                 self.add_current_day(1)
                 return
@@ -67,6 +71,7 @@ init python:
         Inventory.append(Event(0,0,0, "", False))
         Events.append(Event(0,0,0, "", False))
         t += 1
+
 
 # if calendar.current_day_time > 3:
 #     return

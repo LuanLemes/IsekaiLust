@@ -157,7 +157,7 @@ label grocery_store_first:
     sar "Sorry."
     sar "Ok, The truth is I work in the field with monica so...we like to talk."
     show monica half overall talking with dissolve:
-            xpos 572 alpha 0.33 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+            xpos 572 alpha 0.33 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
     mc_thought "Indeed..."
     mc_thought "She is wearing clothes very similar to monicas."
     hide monica with dissolve

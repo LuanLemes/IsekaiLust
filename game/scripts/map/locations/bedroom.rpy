@@ -1,5 +1,4 @@
 screen bedroom():
-
     frame:
         xalign 0.0
         yalign 0.0
@@ -25,9 +24,20 @@ screen bedroom():
             ypos -5
             action Call("bed")
     use top_screen()
-    
+
+label bedroom_reload:
+    if calendar.current_week_day == 6 or calendar.current_week_day == 0:
+        dev "The game weekend has not yet prepared so the game is going to skip the weekend, (Im so very sorry updates are coming.)"
+        call sleep
+        return
+    return
 
 label bedroom:
+    
+    if sleep_when_enter == True:
+        $ sleep_when_enter = False
+        call sleep
+        return
     if linda_prologue == True:
         $ only_location = "Hallway"
         scene bedroom morning
@@ -43,8 +53,6 @@ label bedroom_before_enter:
     return
 
 label bedroom_exit_check:
-    "i dont know how i got here"
-    "This is the exit check, you can´t leave this room, now get to work you bitch."
     return True
 
 label bed:
@@ -65,9 +73,15 @@ label sleep:
     call day_next
     scene black with dissolve
     mc "That was a really good night sleep."
-    # scene bedroom morning 
-    # with dissolve
+    if renpy.get_screen("say"):
+        pass
+    else:
+        call change_location_to("Bedroom")
     call check_character_updates
+    call wake_up
+    return
+
+label wake_up:
     return
 
 label take_a_nap:

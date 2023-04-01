@@ -42,7 +42,7 @@ screen kitchen():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("kitchen_door")
 
-        if calendar.current_day_time == 0 and calendar.current_day > 0 and breakfasted == False:
+        if calendar.current_day_time == 0 and calendar.current_day > 1 and breakfasted == False:
             imagebutton auto "overlays/monica_kitchen_%s.webp":
                 focus_mask True
                 xpos -5
@@ -89,6 +89,10 @@ label kitchen_door:
     return
 
 label monica_kitchen_morning:
+    if monica_morning_kitchen == True:
+        mc_thought "I just talked to her."
+        return
+    $ monica_morning_kitchen = True
     show monica half talking
     mon "Oh, good morning [player.name]."
     mon "So good to see you are awake already."
@@ -125,6 +129,7 @@ label monica_kitchen_morning:
                         show monica half talking3
                         "this part has not yet been developed yet."
                         pass
+    hide monica
     return
 
     label girls_kitchen_morning:
@@ -183,4 +188,10 @@ label monica_kitchen_morning:
         ash "Let me eat in peace please."
         $ breakfasted = True
         scene
+    return
+
+label kitchen_on_exit:
+    if monica_prologue == True:
+        mc_thought "I should talk to monica before leaving."
+        return False
     return

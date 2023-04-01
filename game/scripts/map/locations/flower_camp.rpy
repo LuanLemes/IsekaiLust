@@ -18,22 +18,29 @@ screen flower_camp():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Forest Wall")
         text "Village" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
-        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_week_day != 4 and calendar.current_day > 12:
+        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_week_day != 4 and calendar.current_day > 8:
             imagebutton auto "overlays/sarah flower field %s.webp":
                 focus_mask True
                 xpos -5
                 ypos -5
                 action Call("sarah_flower_field")
-        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_week_day != 3 and calendar.current_day > 0:
-            imagebutton auto "overlays/monica flower field %s.webp":
-                focus_mask True
-                xpos -5
-                ypos -5
-                action Call("monica_flower_field")
+        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_day > 0:
+            if calendar.current_week_day != 3 and calendar.current_day >= 12:
+                imagebutton auto "overlays/monica flower field %s.webp":
+                    focus_mask True
+                    xpos -5
+                    ypos -5
+                    action Call("monica_flower_field")
+            if calendar.current_week_day and calendar.current_day < 12:
+                imagebutton auto "overlays/monica flower field %s.webp":
+                    focus_mask True
+                    xpos -5
+                    ypos -5
+                    action Call("monica_flower_field")
     use top_screen()
 
 label flower_camp_reload:
-    if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_week_day != 4 and calendar.current_day > 12 and calendar.current_day_time == 0 and sarah_field_first == True:
+    if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_week_day != 4 and calendar.current_day > 8 and calendar.current_day_time == 0 and sarah_field_first == True:
         $ sarah_field_first = False
         call sarah_field_first
         return
@@ -702,7 +709,6 @@ label collect_flowers:
 
 label check_sarah_flower_level:
     # update collect var
-    "flowers to next level is [flowers_to_next_level_sarah]"
     # check if it is at max level already
     if len(sarah_flower_levels) == flowers_sarah_level:
         $ level_up_expression =  ""
@@ -722,7 +728,6 @@ label check_sarah_flower_level:
         if len(sarah_flower_levels) > flowers_sarah_level:
             "added the next level objective"
             $ flowers_to_next_level_sarah = sarah_flower_levels[flowers_sarah_level]
-    "and now is flowers to next level is [flowers_to_next_level_sarah]"
     $ level_up_expression =  ""
     $ level_up_expression =  str("sarah_flowers_level_") + str(flowers_sarah_level)
     call expression level_up_expression
@@ -730,7 +735,6 @@ label check_sarah_flower_level:
 
 label check_monica_flower_level:
     # update collect var
-    "flowers to next level is [flowers_to_next_level_monica]"
     # check if it is at max level already
     if len(monica_flower_levels) == flowers_monica_level:
         $ level_up_expression =  ""
@@ -750,7 +754,6 @@ label check_monica_flower_level:
         if len(monica_flower_levels) > flowers_monica_level:
             "added the next level objective"
             $ flowers_to_next_level_monica = monica_flower_levels[flowers_monica_level]
-    "and now is flowers to next level is [flowers_to_next_level_monica]"
     $ level_up_expression =  ""
     $ level_up_expression =  str("monica_flowers_level_") + str(flowers_monica_level)
     call expression level_up_expression

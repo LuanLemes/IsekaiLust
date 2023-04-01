@@ -27,6 +27,7 @@ init python:
         def avatar(self):
             icon = "locations/" + self.name.lower() + ".png"
             return(icon)
+            
 
     def function_update_image():
         list_of_images_bool = [False, False, False, False, False]

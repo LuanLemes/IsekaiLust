@@ -11,7 +11,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Koitatsu GUI")
+define config.name = _("Isekai Lust")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -21,7 +21,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0.0"
+define config.version = "1.0.0 Beta"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -61,6 +61,8 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 # define config.main_menu_music = ""
+
+define config.main_menu_music = "audio/Adolescence.ogg"
 
 
 ## Transitions #################################################################

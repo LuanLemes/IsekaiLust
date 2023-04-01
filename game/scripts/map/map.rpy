@@ -19,6 +19,7 @@ default map_dissolve_time = map_dissolve_time_default
 default map_black_pause_time = map_black_pause_time_default
 default map_reload_name = ""
 default transition_on_reload = False
+default dont_show_map_image = False
 
 
 
@@ -148,8 +149,11 @@ label update_image:
             $ map_image = str("maps/" +location + list_of_images_sufix[image_to_select] + ".webp")
             $ image_found = True
     $ map_image = str(map_image.lower())
-
-    show expression map_image 
+    if dont_show_map_image == True:
+        $ dont_show_map_image = False
+        pass
+    else:
+        show expression map_image 
     with Dissolve(map_dissolve_time) 
     $ map_dissolve_time = map_dissolve_time_default
     return
