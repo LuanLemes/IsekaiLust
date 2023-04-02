@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/living_room.rpy", line 463: end of line expected.
-    jump change_location_to("Bedroom")
-                           ^
+File "game/scripts/map/locations/flower_camp.rpy", line 729: if statement expects a non-empty block.
+    if len(sarah_flower_levels) == flowers_sarah_level:
+                                                       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Apr  1 14:20:42 2023
+Sun Apr  2 02:14:30 2023

@@ -27,7 +27,7 @@ default show_grocery_debbie = True
 default debbie_first = True
 default sarah_field_first = True
 default flowers_collected = 0
-default sarah_flowers_level_2_first = True
+default sarah_flowers_level_2_first = False
 default kitchen_first = True
 default breakfasted = False
 default sarah_flower_camp_today = True
@@ -45,7 +45,7 @@ define monica_flower_levels = [0, 8]
 default flowers_collected_sarah = 0
 default flowers_sarah_level = 1
 default flowers_to_next_level_sarah = 0
-define sarah_flower_levels = [0, 11]
+define sarah_flower_levels = [0, 7]
 
 default level_up_expression = ""
 default phrase = ""

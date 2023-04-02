@@ -20,7 +20,7 @@ screen guild_gate():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Forest Wall")
         text "Village" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
-        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_week_day != 3 and calendar.current_day > 0:
+        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_day > 0:
             imagebutton auto "overlays/makoto overlay %s.webp":
                 focus_mask True
                 xpos -5
@@ -104,7 +104,8 @@ label makoto_menu:
                 call makoto_menu
             else:
                 menu:
-                    "Pay 50 coins" if player.money >= 50:
+                    "Pay 50 coins (wait for the next updates)" if player.money >= 50:
+                        "This will be ready on the next updates."
                         $ player.money -= 50
                         pass
                     "I dont have the money yet":

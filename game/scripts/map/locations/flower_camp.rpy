@@ -24,7 +24,7 @@ screen flower_camp():
                 xpos -5
                 ypos -5
                 action Call("sarah_flower_field")
-        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_day > 0:
+        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_day > 1:
             if calendar.current_week_day != 3 and calendar.current_day >= 12:
                 imagebutton auto "overlays/monica flower field %s.webp":
                     focus_mask True
@@ -232,16 +232,20 @@ label sarah_flower_field:
         "Collect flowers together":
             call collect_flowers_with_sarah
         "Talk":
+            dev "In development."
+            return
             call talk_with_sarah
     return
 
 label sarah_flowers_level_1:
     show sarah first0 with dissolve
     "Today Sarah taught me a lot of things about plants."
+    return
 
 label sarah_flowers_level_2:
     if sarah_flowers_level_2_first == False:
         $ sarah_flowers_level_2_first = True
+        $ sarah.tips = "Its all for this update."
         show sarah level21
         sar "Ok [player.name], just one more flower and thats it."
         show sarah level21
@@ -492,9 +496,8 @@ label sarah_flowers_level_2:
         sar "I think its time for me to go...."
         sar "See you [player.name]."
         scene black with dissolve
-
         return
-    if sarah_flowers_level_2_first == True:
+    elif sarah_flowers_level_2_first == True:
         $ phrase = renpy.random.randint(1,7)
         $ phrase = renpy.random.randint(1,7)
         if phrase == 1:
@@ -721,12 +724,13 @@ label check_sarah_flower_level:
     $ flowers_to_next_level_sarah -= 1
     # em caso de evoluir de level 
     if flowers_to_next_level_sarah == 0:
-        "level uped"
+        # "level uped"
         $ flowers_sarah_level += 1
         if len(sarah_flower_levels) == flowers_sarah_level:
-            "returned because there arent more levels"
+            pass
+            # "returned because there arent more levels"
         if len(sarah_flower_levels) > flowers_sarah_level:
-            "added the next level objective"
+            # "added the next level objective"
             $ flowers_to_next_level_sarah = sarah_flower_levels[flowers_sarah_level]
     $ level_up_expression =  ""
     $ level_up_expression =  str("sarah_flowers_level_") + str(flowers_sarah_level)
@@ -762,7 +766,6 @@ label check_monica_flower_level:
 label monica_flowers_level_1:
     show monica flower2
     mc "There are days that Monica is just too cute."
-
     return
 
 label monica_flowers_level_2:
@@ -772,6 +775,7 @@ label monica_flowers_level_2:
 
 
     if monica_flowers_level_2 == False:
+        $ monica.tips = "Its all for this update."
         mc_thought "Monica is so good to me, today im going to make a surprise."
         show monica red flower with dissolve
         mc "Hey Monica, look at what I found."
@@ -803,7 +807,7 @@ label monica_flowers_level_2:
         mon "Oh [player.name], you are such a good boy, such a good [mcmon]." 
         mon "Everything will be ok."
         show monica red flower5 with dissolve
-        mon "He is so warm even tho he is asleep"
+        mon "He is so warm even tho he is asleep."
         show monica red flower6 with dissolve
         mc "What... Ha..Happened?"
         show monica red flower7 with dissolve

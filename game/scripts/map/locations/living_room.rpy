@@ -113,6 +113,8 @@ label linda_cards:
         mc "So, what are you doing?"
         lin "Oh, Im trying to get better at this game."
         mc "Huuu cool."
+
+    show linda cards3 with dissolve
     lin "Do you want to play?"
     menu:
         "Yes I do":
@@ -126,7 +128,9 @@ label linda_cards:
                     pass
                 "Not this time little linda":
                     lin "You are so meeeeeaaan."
+                    scene
                     return
+
     scene cards_bg
     show linda cards6
     show card_2_diamonds
