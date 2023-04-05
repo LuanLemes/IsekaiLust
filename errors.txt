@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/flower_camp.rpy", line 729: if statement expects a non-empty block.
-    if len(sarah_flower_levels) == flowers_sarah_level:
-                                                       ^
+File "game/scripts/characters/characters.rpy", line 18: invalid syntax
+    Character("Aphrodite",image = "aphrodite" what_color = "#c02566ff", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"))
+                                               ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Apr  2 02:14:30 2023
+Tue Apr  4 11:00:20 2023

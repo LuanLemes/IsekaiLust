@@ -10,11 +10,11 @@ label input_player_name:
             jump input_characters_relations
         "Change name":
             jump input_player_name
-        "Cheat":
-            jump start_3
-        "Cheat2":
-            $ location = "forest wall"
-            jump start_3
+        # "Cheat:: ":
+        #     jump start_3
+        # "Cheat2":
+        #     $ location = "forest wall"
+        #     jump start_3
 
 label age_check:
     "This game have NSFW contents."

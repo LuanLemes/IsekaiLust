@@ -14,7 +14,7 @@ label input_characters_relations:
         pos (383, 75) zpos 0.0 xzoom 0.93 yzoom 0.93
         matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
-    "These three girls are {color=#9b006c}Monica{/color}, {color=#9b006c}Ashley{/color} and {color=#9b006c}Linda{/color}, (Mother and her dauthers), they will live with you during the game, but what are they to you?"
+    "These three girls are {color=#9b006c}Monica{/color}, {color=#9b006c}Ashley{/color} and {color=#9b006c}Linda{/color}, (Mother and her daugthers), they will live with you during the game, but what are they to you?"
     hide monica
     show monica:
         pos (-276, 10) 
@@ -25,8 +25,8 @@ label input_characters_relations:
         pos (383, 75) zpos 0.0 xzoom 0.93 yzoom 0.93
         matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
-    $ monicamc = renpy.input("{color=#9b006c}Monica{/color} (left one) is your (default landlady)?", length = 14, default = "landlady" )
-    $ mcmon = renpy.input("And you are her? (default tenant)", length = 14, default = "tenant")
+    $ monmc = renpy.input("{color=#9b006c}Monica{/color} (left one) is your (default landlady)?", length = 17, default = "landlady" )
+    $ mcmon = renpy.input("And you are her? (default tenant)", length = 17, default = "tenant")
 
     show monica:
         pos (-276, 10) 
@@ -38,8 +38,8 @@ label input_characters_relations:
         pos (383, 75) zpos 0.0 xzoom 0.93 yzoom 0.93
         matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
     
-    $ ashmc = renpy.input("{color=#9b006c}Ashley{/color} (Middle one) is your?", length = 14, default = "friend" )
-    $ mcash = renpy.input("And you are her (default friend)", length = 14, default = "friend" )
+    $ ashmc = renpy.input("{color=#9b006c}Ashley{/color} (Middle one) is your?", length = 17, default = "friend" )
+    $ mcash = renpy.input("And you are her (default friend)", length = 17, default = "friend" )
 
     show monica:
         pos (-276, 10) 
@@ -51,10 +51,10 @@ label input_characters_relations:
     show linda:
         pos (383, 75) zpos 0.0 xzoom 0.93 yzoom 0.93
 
-    $ linmc = renpy.input("{color=#9b006c}Linda{/color}  (Right one) is your(default friend?)", length = 14, default = "friend" )
-    $ mclin = renpy.input("And you are her? (default friend)", length = 14, default = "friend")
+    $ linmc = renpy.input("{color=#9b006c}Linda{/color}  (Right one) is your(default friend?)", length = 17, default = "friend" )
+    $ mclin = renpy.input("And you are her? (default friend)", length = 17, default = "friend")
 
-    $ monicamc = str(monicamc.lower())
+    $ monmc = str(monmc.lower())
     $ mcmon = str(mcmon.lower())
 
     $ ashmc = str(ashmc.lower())
@@ -62,6 +62,7 @@ label input_characters_relations:
 
     $ linmc = str(linmc.lower())
     $ mclin = str(mclin.lower())
+
 
     hide monica
     show monica:
@@ -72,7 +73,7 @@ label input_characters_relations:
     show linda:
         pos (383, 75) zpos 0.0 xzoom 0.93 yzoom 0.93
         matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
-    "So {color=#9b006c}Monica{/color}  is your {color=#9b006c}[monicamc]{/color} and you are her {color=#9b006c}[mcmon]{/color}."
+    "So {color=#9b006c}Monica{/color}  is your {color=#9b006c}[monmc]{/color} and you are her {color=#9b006c}[mcmon]{/color}."
 
     show monica:
         pos (-276, 10) 
@@ -108,14 +109,25 @@ label input_characters_relations:
     menu:
         "Is that right?"
         "Yes":
+            $ monica.role = monmc
+            $ ashley.role = ashmc
+            $ linda.role = linmc
+            $ monica.role = str(str(monmc).capitalize())
+            $ linda.role = str(str(linmc).capitalize())
+            $ ashley.role = str(ashmc).capitalize()
             "Alright."
+            menu:
+                "Skip intro?"
+                "Skip the intro":
+                    $ aphrodite.revealed = True
+                    scene black
+                    jump awake_at_home
+                "Dont skip the intro":
+                    pass
             jump prologue
         "No(I want to try again)":
             "Lets fix that then."
             jump input_characters_relations
-    $ monica.role = monmc
-    $ ahsley.role = ashmc
-    $ linda.role = linmc
     return
 
 label start_2:
@@ -149,9 +161,9 @@ label prologue:
     pause (1.0)
     mc "Man I like this game already, she hot!!!"
     aph "[player.name]."
-    aph "[player.name] Im the Great Goddes Aphrodite!"
+    aph "[player.name] Im the Great Goddess Aphrodite!"
     aph "Im in this game to make an invitation to you and only you."
-    aph "Do you want to become the goddes Aphrodite powerfull champion, to live an awesome adventure with lots of sex and action?"
+    aph "Do you want to become the goddess Aphrodite powerfull champion, to live an awesome adventure with lots of sex and action?"
     mc "Of course!!! I mean..... would I ever say no to such a question?"
     mc "And I wonder...till this day...why..why why!? did I click yes?!!"
     scene black with dissolve
@@ -159,7 +171,7 @@ label prologue:
     scene tavern bg with fade
     mc "Because I ended in a world full of fantasy and magic yes."
     mc "But I didnt know any one on this other world, I didnt have any help or family. I was homeless, it was really awfull."
-    mc "I wasnt powerfull, I didnt become any goddes champion and sure as hell I didnt have sex till this day!"
+    mc "I wasnt powerfull, I didnt become any Goddess champion and sure as hell I didnt have sex till this day!"
     scene tavern bg 2 with fade
     pause (1.5)
     mc "And many times I ate spoiled food from other people so I wouldnt starve to death. {color=#c02566ff} \"Please help the patreon so the developer dont end up that way.\" {/color}"
@@ -288,7 +300,7 @@ label prologue_1:
     return
 
 label champion:
-    aph "You clicked yes on the message didnt you?"
+    aph "Im the developer...really."
     mc_shout "Thats not how it works!!!"
     mc "Lady, do you know what I have been through since I got here? I almost starved to death since you sended me here on this planet."
     mc "You cant just send someone to another universe just because they clicked \"yes\" on some random message."
@@ -299,14 +311,14 @@ label champion:
     aph_shout "Silence!!!"
     mc_thought "What was that? An earthquake?"
     aph "I mean, Im sorry little one. I needed you to be the right age so I could reach you in a more direct way. today is your birthday so now its the right time."
-    aph "There is no way to go back, besides, there are very good advantages in being the {b}Goddes of pleasure{/b} champion."
+    aph "There is no way to go back, besides, there are very good advantages in being the {b}Goddess of pleasure{/b} champion."
     menu:
         "I dont care who you are!":
             mc_shout "I dont care who you are!!!"
-            mc "Wait...{b}Goddes of Pleasure?{/b}"
+            mc "Wait...{b}Goddess of Pleasure?{/b}"
             jump goddes_of_pleasure
-        "Goddes of Pleasure?":
-            mc "\"{b}Goddes of Pleasure{/b}\"???"
+        "Goddess of Pleasure?":
+            mc "\"{b}Goddess of Pleasure{/b}\"???"
             jump goddes_of_pleasure
 
     return
@@ -325,12 +337,12 @@ label goddes_of_pleasure:
     with vpunch
     aph_shout "Im The Great Aphrodite!"
     with vpunch
-    aph_shout "the Goddes of pleasure!"
-    aph "the Goddes of sex."
-    aph "Goddes of  and all that there is to do with masturbation."
-    aph "The Goddes of...gangbangs and threesomes."
-    aph "The Goddes of foursomes and fivesomes."
-    aph "The Goddes of..."
+    aph_shout "the Goddess of pleasure!"
+    aph "the Goddess of sex."
+    aph "Goddess of  and all that there is to do with masturbation."
+    aph "The Goddess of...gangbangs and threesomes."
+    aph "The Goddess of foursomes and fivesomes."
+    aph "The Goddess of..."
     menu:
         "Ok I get it":
             mc "Ok...I think I get it"
@@ -341,7 +353,7 @@ label goddes_of_pleasure:
     with vpunch
     aph_shout "Shut up mortal!"
     aph "And Sex and casual sex, fellatios, sexual pleasure and orgys….anal sex vaginal sex double penetration sex and......."
-    aph "The Goddes creampies and pee action and cum and bukkakes and public sex and furry and….."
+    aph "The Goddess creampies and pee action and cum and bukkakes and public sex and furry and….."
     "..."
     "(That did go on for 20 minutes or so........)"
     show aphrodite throne with dissolve
@@ -395,12 +407,12 @@ label goddes_of_pleasure:
         scene
         show aphrodite throne thinking
         with vpunch
-        aph_shout "Its \"Great Goddes Aphrodite\""
+        aph_shout "Its \"Great Goddess Aphrodite\""
         show aphrodite throne 4 with dissolve
         scene
         show aphrodite throne 4
         mc_thought "(Damn...she is serious about this...better say her way...she is shaking everything here.)"
-        mc "Ok... Great Goddes Aphrodite...."
+        mc "Ok... Great Goddess Aphrodite...."
         mc "Not Willing to borther you but..."
         menu:
             "How the hell am i supposed to do that?!?":

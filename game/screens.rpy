@@ -341,6 +341,31 @@ style quick_button_text:
 
 screen navigation():
 
+    imagebutton:
+        idle im.Scale("icons/discord server idle.png", 90, 90)
+        hover im.Scale("icons/discord server hover.png", 90, 90)
+        focus_mask True
+        yalign 0.0
+        xpos 10
+        ypos 10
+        action OpenURL("https://discord.gg/CkTBa8Evpd")
+    imagebutton:
+        idle im.Scale("icons/buy me a coffe idle.png", 280, 69)
+        hover im.Scale("icons/buy me a coffe hover.png", 280, 69)
+        focus_mask True
+        yalign 0.0
+        xpos 198
+        ypos 22
+        action OpenURL("https://www.buymeacoffee.com/thelustarca")
+    imagebutton:
+        idle im.Scale("icons/patreon idle.png", 77, 77)
+        hover im.Scale("icons/patreon hover.png", 77, 77)
+        focus_mask True
+        yalign 0.0
+        xpos 105
+        ypos 15
+        # action OpenURL("http://your_url.com")
+        action NullAction()
     vbox:
         style_prefix "navigation"
 

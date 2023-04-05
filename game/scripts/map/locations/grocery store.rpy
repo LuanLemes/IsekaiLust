@@ -64,7 +64,7 @@ label grocery_store_first:
     menu:
         "Should I do something?"
         "Say Hello":
-            mc_whisper "Hello"
+            mc_whisper "Hello."
             mc_thought "Oh...thats a pitty...I think they didnt hear me."
             mc_thought "What can I say... I tried didnt I?"
         "Keep quiet":

@@ -21,7 +21,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0.0 Beta"
+define config.version = "1.0.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -36,7 +36,7 @@ GUI by NovelKit
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "RoundedGUI"
+define build.name = "IsekaiLust"
 
 
 ## Sounds and music ############################################################

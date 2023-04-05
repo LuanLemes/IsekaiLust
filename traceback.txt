@@ -1,39 +1,12 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/scripts/Project/project_scenes.rpy", line 123, in script call
+While loading <renpy.display.im.Image object ('side/makoto.webp') at 0x0000000006723490>:
+  File "game/scripts/Project/project_scenes.rpy", line 135, in script call
     call input_player_name
   File "game/scripts/Project/default_scenes.rpy", line 35, in script call
     call enter_map
   File "game/scripts/map/map.rpy", line 27, in script call
     call change_location_to(default_location)
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
@@ -41,32 +14,44 @@ While running game code:
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
   [Previous line repeated 1 more time]
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 3 more times]
   File "game/scripts/map/locations/grocery store.rpy", line 259, in script call
     call debbie_grocery_choices
   File "game/scripts/map/locations/grocery store.rpy", line 277, in script call
     call change_location_to("Forest Wall")
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/living_room.rpy", line 380, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 442, in script call
-    call awake_night_sofa
-  File "game/scripts/map/locations/living_room.rpy", line 467, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 3 more times]
   File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
     call change_location_to("Bedroom")
   File "game/scripts/map/map.rpy", line 108, in script call
@@ -83,368 +68,22 @@ While running game code:
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
-  [Previous line repeated 5 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 37 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/flower_camp.rpy", line 237, in script call
-    call talk_with_sarah
-  File "game/scripts/Project/project_scenes.rpy", line 123, in script call
-    call input_player_name
-  File "game/scripts/Project/default_scenes.rpy", line 35, in script call
-    call enter_map
-  File "game/scripts/map/map.rpy", line 27, in script call
-    call change_location_to(default_location)
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 1 more time]
-  File "game/scripts/map/locations/grocery store.rpy", line 259, in script call
-    call debbie_grocery_choices
-  File "game/scripts/map/locations/grocery store.rpy", line 277, in script call
-    call change_location_to("Forest Wall")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/living_room.rpy", line 380, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 442, in script call
-    call awake_night_sofa
-  File "game/scripts/map/locations/living_room.rpy", line 467, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 5 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 37 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/flower_camp.rpy", line 237, in script call
-    call talk_with_sarah
-ScriptError: could not find label 'talk_with_sarah'.
+  [Previous line repeated 3 more times]
+  File "game/scripts/map/locations/Guild Gate.rpy", line 44, in script call
+    call makoto_first
+  File "game/scripts/map/locations/Guild Gate.rpy", line 59, in script
+    mak "Hi there."
+OSError: Couldn't find file 'side/makoto.webp'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/Project/project_scenes.rpy", line 123, in script call
+  File "game/scripts/Project/project_scenes.rpy", line 135, in script call
     call input_player_name
   File "game/scripts/Project/default_scenes.rpy", line 35, in script call
     call enter_map
   File "game/scripts/map/map.rpy", line 27, in script call
     call change_location_to(default_location)
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
@@ -452,32 +91,44 @@ Full traceback:
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
   [Previous line repeated 1 more time]
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 3 more times]
   File "game/scripts/map/locations/grocery store.rpy", line 259, in script call
     call debbie_grocery_choices
   File "game/scripts/map/locations/grocery store.rpy", line 277, in script call
     call change_location_to("Forest Wall")
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/living_room.rpy", line 380, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 442, in script call
-    call awake_night_sofa
-  File "game/scripts/map/locations/living_room.rpy", line 467, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 163, in script call
+    call change_location_to(location)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 3 more times]
   File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
     call change_location_to("Bedroom")
   File "game/scripts/map/map.rpy", line 108, in script call
@@ -494,337 +145,74 @@ Full traceback:
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
-  [Previous line repeated 5 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 37 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/flower_camp.rpy", line 237, in script call
-    call talk_with_sarah
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 1705, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/scripts/Project/project_scenes.rpy", line 123, in script call
-    call input_player_name
-  File "game/scripts/Project/default_scenes.rpy", line 35, in script call
-    call enter_map
-  File "game/scripts/map/map.rpy", line 27, in script call
-    call change_location_to(default_location)
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 1 more time]
-  File "game/scripts/map/locations/grocery store.rpy", line 259, in script call
-    call debbie_grocery_choices
-  File "game/scripts/map/locations/grocery store.rpy", line 277, in script call
-    call change_location_to("Forest Wall")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/living_room.rpy", line 380, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 446, in script call
-    call ashley_train
-  File "game/scripts/map/locations/living_room.rpy", line 442, in script call
-    call awake_night_sofa
-  File "game/scripts/map/locations/living_room.rpy", line 467, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 101, in script call
-    call expression screen_name
-  File "game/scripts/map/locations/bedroom.rpy", line 39, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 5 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 2 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 98, in script call
-    call expression map_reload_name
-  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
-    call sleep
-  File "game/scripts/map/locations/bedroom.rpy", line 79, in script call
-    call change_location_to("Bedroom")
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  [Previous line repeated 4 more times]
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  File "game/scripts/map/map.rpy", line 163, in script call
-    call change_location_to(location)
-  [Previous line repeated 37 more times]
-  File "game/scripts/map/map.rpy", line 108, in script call
-    $ renpy.call_screen(screen_name)
-  File "game/scripts/map/locations/flower_camp.rpy", line 237, in script call
-    call talk_with_sarah
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'talk_with_sarah'.
+  [Previous line repeated 3 more times]
+  File "game/scripts/map/locations/Guild Gate.rpy", line 44, in script call
+    call makoto_first
+  File "game/scripts/map/locations/Guild Gate.rpy", line 59, in script
+    mak "Hi there."
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
+    display_say(who,
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\image.py", line 506, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\image.py", line 309, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
+    surf = image.load()
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
+    raise e
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
+    filelike = renpy.loader.load(self.filename)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'side/makoto.webp'.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
-Isekai Lust 1.0.0 Beta
-Sun Apr  2 02:10:18 2023
+Isekai Lust 1.0.0
+Tue Apr  4 11:57:09 2023

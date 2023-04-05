@@ -6,10 +6,11 @@ label day_vars_reset:
 default linda_cards_first = True
 default first_sleep = True
 default monica_morning_kitchen = False
+# importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT 
 define config.developer = True
 default linda_floor_card = False
 # default while_var = 0
-default sleep_when_enter = True
+default sleep_when_enter = False
 default love_sister = False
 default linda_room_first = True
 default big_sister_prologue = True

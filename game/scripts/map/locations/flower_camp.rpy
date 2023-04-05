@@ -139,8 +139,9 @@ label talk_with_monica:
             show monica half overall talking2
             mon "Oh dear, please do so, I would be so happy if I ever saw one."
         "Nothing for now":
-            mc "ah, it is nothing, thank you for your time"
-            mon "ha, ok then."
+            mc "Ah, it is nothing, thank you for your time"
+            mon "Aa, ok then."
+            hide monica
             return
     call talk_with_monica
     return
@@ -233,6 +234,7 @@ label sarah_flower_field:
             call collect_flowers_with_sarah
         "Talk":
             dev "In development."
+            hide sarah
             return
             call talk_with_sarah
     return
