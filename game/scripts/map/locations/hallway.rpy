@@ -65,10 +65,12 @@ label hallway:
     if big_sister_prologue == True:
         $ big_sister_prologue = False
         $ only_location = "Living Room"
-        $ only_location_message = ["I have to see Monica (She is on the Kitchen)"]
+        $ only_location_message = ["I have to see Monica (She is in the kitchen)"]
         $ prologue_to_living_room = True
         jump ashley_prologue
         window hide
 
 label hallway_before_enter:
     return
+
+

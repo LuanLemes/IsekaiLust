@@ -50,6 +50,6 @@ label forest_wall:
     if calendar.current_day >= 1 and makoto_first == True and calendar.current_day_time <= 1:
         mc_thought "Today seems like a good day to spent go to the guild and see how to become a member."
         $ only_location = "Guild Gate"
-        $ only_location_message = ["Today seems like a good day to spent go to the guild and see how to become a member."]
+        $ only_location_message = ["Today seems like a good day to go to the guild and see how to become a member."]
         return
     return

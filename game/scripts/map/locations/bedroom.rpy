@@ -33,7 +33,6 @@ label bedroom_reload:
     return
 
 label bedroom:
-    
     if sleep_when_enter == True:
         $ sleep_when_enter = False
         call sleep
@@ -57,7 +56,7 @@ label bedroom_exit_check:
 
 label bed:
     if prologue == True:
-        "I shoudn´t go to sleep now, I have more important things to do."
+        mc_thought "I shoudn´t go to sleep now, I have more important things to do."
         return
     menu:
         "Sleep":

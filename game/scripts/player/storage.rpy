@@ -101,7 +101,8 @@ init python:
         rare_orchid = InventoryItem(8, "Z Orchid", 99, "Flower", True, 70, 21, 4,"known for its bright and cheery bloom a rare version or an orchid that can only be found in magic places.")
         blood_rose = InventoryItem(9, "Blood Rose", 99, "Flower", False, 350, 100, 5,"A Very rare rose when the seed is \"watered\" by the blood of a magic creature")
     #   Herbs
-        test_herb = InventoryItem(50, "hu", 99, "Herb", True, 150, 100, 4,"test herb")
+        test_herb = InventoryItem(50, "Ghost Herb", 99, "Herb", True, 150, 100, 4,"A Rare herb used to make some potions by wizards")
+        # test_herb = InventoryItem(50, "hu", 99, "Herb", True, 150, 100, 4,"test herb")
     #   Potions
         mana_potion = InventoryItem(150, "Lust potion", 5, "Potion", False, 150, 100, 5,"Recovers Mana of the user")
         lust_potion = InventoryItem(151, "Mana potion", 5, "Potion", False, 150, 100, 5,"You may use this potion on special situations")

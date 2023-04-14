@@ -96,7 +96,7 @@ style frame:
 ## name is given.)
 ##
 ## This screen must create a text displayable with id "what", as Ren'Py uses
-## this to manage text display. It can also create displayables with id "who"
+## this to manage text display. It can Ialso create displayables with id "who"
 ## and id "window" to apply style properties.
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
@@ -116,12 +116,15 @@ screen say(who, what):
         text what id "what"
 
     if gui.use_side_image:
-        add "gui/empty_side.png" xpos 328 yanchor -573 ypos 27
+        # if side_image_activated == True and gui.use_side_image:
+        if side_image_activated == True:
+            add "gui/empty_side.png" xpos -40 yanchor -573 ypos 100
 
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
     if not renpy.variant("small") and gui.use_side_image:
-        add SideImage() xpos 328 yanchor -573 ypos 27
+        if side_image_activated == True:
+            add SideImage() xpos -40 yanchor -573 ypos 100
 
 ## Make the namebox available for styling through the Character object.
 init python:
@@ -139,16 +142,18 @@ style namebox_label is say_label
 style window:
     xalign 0.5
     xfill True
-    yalign gui.textbox_yalign
+    # yalign gui.textbox_yalign
+    yalign 1.0
     ysize gui.textbox_height
 
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
-    xpos gui.name_xpos
+    # xpos gui.name_xpos
+    xpos  430
     xanchor gui.name_xalign
     xsize gui.namebox_width
-    ypos gui.name_ypos
+    ypos gui.name_ypos + 22
     ysize gui.namebox_height
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
@@ -161,10 +166,19 @@ style say_label:
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
+    # color = "#c5cdd0"
+    color "#ffffff"
+    outlines [ (2, "#040000") ]
+    # xpos gui.dialogue_xpos
+    xpos 350
+    # xsize gui.dialogue_width 
+    xsize 1920 - 777
+    ypos 45
+# mine
+style centered_text:
+    outlines [ (2, "#000000") ]
+    color "#ffff"
 
-    xpos gui.dialogue_xpos
-    xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
 
 
 ## Input screen ################################################################
@@ -195,9 +209,13 @@ style input_prompt is default
 
 style input_prompt:
     xalign gui.dialogue_text_xalign
+    color "#ffff"
+    outlines [ (2, "#040000") ]
     properties gui.text_properties("input_prompt")
 
 style input:
+    outlines [ (2, "#040000") ]
+    color "#ffff"
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
 
@@ -722,7 +740,36 @@ screen about():
                 if gui.about:
                     text "[gui.about!t]\n"
 
-                text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+                text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n")
+
+                hbox:
+                    textbutton ("Itch") action OpenURL("https://lustarchitect.itch.io/isekailust") 
+                    imagebutton auto "icons/itch.io about %s.webp":
+                        focus_mask True
+                        yalign 0.5
+                        action OpenURL("https://lustarchitect.itch.io/isekailust")
+
+                    textbutton ("Patreon") action OpenURL("icons/patreon about %s.webp")
+                    imagebutton auto "icons/patreon about %s.webp":
+                        focus_mask True
+                        yalign 0.5
+                        action OpenURL("https://www.patreon.com/IsekaiLust")
+                    
+                    textbutton ("Discord") action OpenURL("https://discord.gg/CkTBa8Evpd")
+                    imagebutton auto "icons/discord about %s.webp":
+                        focus_mask True
+                        yalign 0.5
+                        action OpenURL("https://discord.gg/CkTBa8Evpd")
+
+                    textbutton ("BuyMeACoffee") action OpenURL("https://www.buymeacoffee.com/thelustarca")
+                    imagebutton auto "icons/buymeacoffee %s.webp":
+                        focus_mask True
+                        yalign 0.5
+                        action OpenURL("https://www.buymeacoffee.com/thelustarca")
+                    
+
+
+
 
 
 style about_label is gui_label

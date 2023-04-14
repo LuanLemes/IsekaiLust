@@ -1,13 +1,20 @@
+default image_button_offset = -6
+define config.default_music_volume = 0.7
+define config.default_sfx_volume = 0.7
+define config.default_voice_volume = 0.8
+default side_image_activated = True
+
 label day_vars_reset:
     $ breakfasted = False
     $ monica_morning_kitchen = False
+    $ pillow_removed = False
     return
 
 default linda_cards_first = True
 default first_sleep = True
 default monica_morning_kitchen = False
 # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT 
-define config.developer = True
+define config.developer = False
 default linda_floor_card = False
 # default while_var = 0
 default sleep_when_enter = False
@@ -66,3 +73,18 @@ default linda_games = 0
 # ashley dance living rooom
 default ashley_dances = 0
 default ashley_poses_count = 0
+# makoto talk
+default witch_talk = False
+default why_tell_witch = False
+default is_witch_in_guild = False
+default where_witch = False
+default is_she_in_the_guild_now = False
+default witch_talk_first = False
+# linda bear
+default linda_bear_first = False
+default teddybear_grocery_store = False
+# linda sleep
+default pillow_removed = False
+default linda_touch_one = False
+# unkown girl sex
+default first_unknown_girl = True

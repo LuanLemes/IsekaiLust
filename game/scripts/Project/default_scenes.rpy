@@ -1,9 +1,9 @@
 label input_player_name:
     $ player.name = renpy.input("What is your name?", length = 21, default = "Bill" )
-    define mc = Character("[player.name]", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
-    define mc_shout = Character("[player.name]", what_size = 37, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
-    define mc_thought = Character("[player.name] Thought", what_color = "#858585", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
-    define mc_whisper = Character("[player.name]", what_size = 14, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"))
+    define mc = Character("[player.name]", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"), what_outlines=[ (2, "#202121") ], what_color = "#f1f0f3", image = "mc")
+    define mc_shout = Character("[player.name]", what_size = 37, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"), what_outlines=[ (2, "#202121") ], what_color = "#f1f0f3", image = "mc")
+    define mc_thought = Character("[player.name] Thought", what_color = "#f1f0f3", namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"), what_outlines=[ (2, "#202121") ],  image = "mc")
+    define mc_whisper = Character("[player.name]", what_size = 14, namebox_background=AlphaMask(Solid("#35406d"), "gui/namebox.png"), what_outlines=[ (2, "#202121") ], what_color = "#f1f0f3" , image = "mc") 
     menu:
         mc "My name is [player.name]"
         "Confirm":
@@ -17,7 +17,8 @@ label input_player_name:
         #     jump start_3
 
 label age_check:
-    "This game have NSFW contents."
+    scene black with Dissolve(0.5)
+    centered "This game contains content of adult nature and is not suited for audiences  below the age of 18. If you are easily offended or are under the age of 18, close the game now."
     menu:
         "Are you +18 years old?"
         "Yes":
@@ -37,4 +38,4 @@ return
 
 label camera_reset:
     camera:
-        pos ( 0, 0) yzoom 1.0 zoom 1.0 
+        pos ( 0, 0) yzoom 1.0 zoom 1.0

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/characters/characters.rpy", line 18: invalid syntax
-    Character("Aphrodite",image = "aphrodite" what_color = "#c02566ff", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"))
-                                               ^
+File "game/scripts/map/locations/bathroom.rpy", line 29: end of line expected.
+    call monica_bath:
+                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr  4 11:00:20 2023
+Thu Apr 13 02:49:15 2023

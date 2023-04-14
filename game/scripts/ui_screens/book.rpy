@@ -126,6 +126,8 @@ screen character_screen(id):
                     text  "{color=#D9C777}Tip:{/color} No tips for now" xalign 0.17 yalign 0.5 size 45 xanchor 0.0 style "character_screen_text"
                 elif this_girl.book_phrase == "1":
                     text  "{color=#D9C777}Tip:{/color} Progress story with other characters" xalign 0.17 yalign 0.5 size 45 xanchor 0.0 style "character_screen_text"
+                elif this_girl.book_phrase == "2":
+                    text  "{color=#D9C777}Tip:{/color} Thats all for this update" xalign 0.17 yalign 0.5 size 45 xanchor 0.0 style "character_screen_text"
                 else :
                     text  "{color=#D9C777}Tip:{/color} [this_girl.book_phrase]" xalign 0.17 yalign 0.5 size 45 xanchor 0.0 style "character_screen_text"
                 

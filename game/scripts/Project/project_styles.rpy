@@ -30,3 +30,4 @@ style yellow_buttom_character:
     hover_color "#ffed2a"
     outlines [ (absolute(4), "#000", absolute(0), absolute(0)) ]
     size 30
+
