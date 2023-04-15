@@ -78,8 +78,8 @@ screen living_room():
     use top_screen()
     
 label linda_cards:
-    show linda cards morning idle
     if linda_cards_first:
+        show linda cards morning idle
         $ linda_cards_first = False
         mc_thought "Is that linda? shouldnt she be at school?"
 

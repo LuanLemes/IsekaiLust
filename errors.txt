@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/bathroom.rpy", line 29: end of line expected.
-    call monica_bath:
-                    ^
+File "game/scripts/map/locations/flower_camp.rpy", line 1302: end of line expected.
+    call unknown_girl_after_cum:
+                               ^
+
+File "game/scripts/map/locations/flower_camp.rpy", line 1311: end of line expected.
+    call unknown_girl_after_cum:
+                               ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu Apr 13 02:49:15 2023
+Sat Apr 15 02:40:25 2023

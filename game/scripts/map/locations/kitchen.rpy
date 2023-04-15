@@ -11,8 +11,8 @@ screen kitchen():
         background (str(map_image))
         imagebutton:
             xpos 0.5
-            xanchor 0.5
             ypos 0.95
+            xanchor 0.5
             hover im.Scale("gui/idle.png", 340, 47)
             idle im.Scale("gui/hover.png", 340, 47)
             hovered SetVariable("focus_location", "Living Room")
@@ -22,14 +22,17 @@ screen kitchen():
         text "Living Room" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
         
         if monica_prologue == True:
+
             imagebutton auto "overlays/monica_kitchen_%s.webp":
                 focus_mask True
-                xpos -5
-                ypos -5
+                xpos image_button_offset
+                ypos image_button_offset
                 action Call("monica_prologue")
         
             imagebutton:
                 focus_mask True
+                xpos image_button_offset
+                ypos image_button_offset
                 hover "breakfast 1.webp"
                 idle "breakfast 1.webp"
                 action NullAction()

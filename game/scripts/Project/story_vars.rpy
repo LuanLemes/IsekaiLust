@@ -14,7 +14,7 @@ default linda_cards_first = True
 default first_sleep = True
 default monica_morning_kitchen = False
 # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT 
-define config.developer = False
+define config.developer = True
 default linda_floor_card = False
 # default while_var = 0
 default sleep_when_enter = False
@@ -88,3 +88,4 @@ default pillow_removed = False
 default linda_touch_one = False
 # unkown girl sex
 default first_unknown_girl = True
+default wolf_girl_fucked1 = False

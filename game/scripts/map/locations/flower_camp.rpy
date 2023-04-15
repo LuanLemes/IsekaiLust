@@ -40,7 +40,7 @@ screen flower_camp():
                     ypos -5
                     action Call("monica_flower_field")
         #  unkonown girl flower fields sex scenes
-        if calendar.current_day_time == 3 and calendar.current_week_day == 4 and first_unknown_girl:
+        if calendar.current_day_time == 3 and calendar.current_week_day == 4:
             if first_unknown_girl == True:
                 imagebutton auto "overlays/unknown first %s.webp":
                     focus_mask True
@@ -52,7 +52,7 @@ screen flower_camp():
                     focus_mask True
                     xpos -5
                     ypos -5
-                    action Call("sex_scene_with_unknown_girl")
+                    action Call("sex_scene_with_unknown_girl_after")
     use top_screen()
 
 label flower_camp_reload:
@@ -64,8 +64,8 @@ label flower_camp_reload:
 
 label flower_camp:
     if calendar.current_week_day == 4 and first_unknown_girl:
-        mc_thought "I dont know why....but I feel like going to the flower camp at dawn (Blue Moon) today."
-        mc_thought "Its just a feeling though."
+        mc_thought "(I dont know why....but I feel like going to the flower camp at dawn (Blue Moon) today.)"
+        mc_thought "(Its just a feeling though.)"
     if flower_camp_first == True:
         $ flower_camp_first = False
         jump flower_camp_first
@@ -177,13 +177,13 @@ label sarah_field_first:
     show sarah first3 with dissolve
     camera:
             pos (-1046, -909) yzoom 1.0 zoom 2.16 
-    mc_thought "Are you fucking kidding me?"
-    mc_thought "She is way too close and way too hot."
+    mc_thought "(Are you fucking kidding me?)"
+    mc_thought "(She is way too close and way too hot.)"
     call camera_reset
     sar "Are you...are you ok?"
     show sarah first6 with dissolve
-    mc_thought "Shit, I forgot to answer..."
-    mc_thought "Damn she is too cute, What did she ask again?"
+    mc_thought "(Shit, I forgot to answer...)"
+    mc_thought "(Damn she is too cute, What did she ask again?)"
     menu: 
         "I am":
             mc "I am."
@@ -198,17 +198,17 @@ label sarah_field_first:
     show sarah first3 with dissolve
     sar "It really is a lot of work, but the things should be easier now that Debbie is helping out."
     show sarah first6 with dissolve
-    mc_thought "She has such a nice ass."
+    mc_thought "(She has such a nice ass.)"
     show sarah first3 with dissolve
     sar "[player.name]?"
     show sarah first6 with dissolve
-    mc_thought "I...cant keep this conversation. Not like this anyway."
-    mc_thought "I need to get up or my eyes will betray me again and I will look like an idiot."
+    mc_thought "(I...cant keep this conversation. Not like this anyway.)"
+    mc_thought "(I need to get up or my eyes will betray me again and I will look like an idiot.)"
     menu:
         "Get up":
             show sarah first7 with dissolve
             mc "Man my legs are killing me."
-            mc_thought "Its better this way."
+            mc_thought "(Its better this way.)"
     show sarah first9 with dissolve
     sar "Dont tell me, all that squatting really made my legs hurt the begining too."
     show sarah first7 with dissolve
@@ -302,14 +302,14 @@ label sarah_flowers_level_2:
         sar "Just go ahead and help me pull this flower out ok?"
         mc "Ok then."
         show sarah level29
-        mc_thought "Aphrodite...I dont know how this situation happened but I give you my thanks."
+        mc_thought "(Aphrodite...I dont know how this situation happened but I give you my thanks.)"
         mc "Like this?"
         sar "Yeah, it could work I think."
         sar "But you have to be more firm."
         mc "Like this?"
         show sarah level210 with vpunch
         sar_shout "Ahhh!" with vpunch
-        mc_thought "Maybe it was too much?"
+        mc_thought "(Maybe it was too much?)"
         mc "Im sorry."
         sar "Not a problem, pull!"
         mc "Ok!"
@@ -341,7 +341,7 @@ label sarah_flowers_level_2:
                 sar "Anyway..."
         sar "I think it moved a little."
         # show sarah level213 with vpunch
-        mc_thought "Man I can fell her entire ass pressuring against me, this is way too good."
+        mc_thought "(Man I can fell her entire ass pressuring against me, this is way too good.)"
         mc "Your idea is working sarah, we will get it in no time."
         sar "I dont think I can take it much longer..."
         sar "This position is..."
@@ -363,7 +363,7 @@ label sarah_flowers_level_2:
                 mc "Ok ok."
                 mc "Did it move?"
         sar "Yes, I felt it move again."
-        mc_thought "Man, the feeling in this position, its almost like I own her."
+        mc_thought "(Man, the feeling in this position, its almost like I own her.)"
         mc "Very good then."
         sar "I think....I think I want to stop."
         mc "Are you giving up?"
@@ -384,7 +384,7 @@ label sarah_flowers_level_2:
         show sarah level215 with vpunch
         mc_shout "Three!!!!!" with vpunch
         sar_shout "Ahhhhh!!" with vpunch
-        mc_thought "Man...Im going to slowly start moving my hands up, and If she doesnt say a thing Im going to touch her boobs just to \"help\" her."
+        mc_thought "(Man...Im going to slowly start moving my hands up, and If she doesnt say a thing Im going to touch her boobs just to \"help\" her.)"
         mc "Sarah?"
         sar "hm."
         mc "Everything ok?"
@@ -393,7 +393,7 @@ label sarah_flowers_level_2:
         sar "..."
         mc "Sarah?"
         sar_wisper "What?"
-        mc_thought "She is like...wispering? thats cute."
+        mc_thought "(She is like...wispering? thats cute.)"
         menu:
             "Count till three and smash her!!!":
                 pass
@@ -401,10 +401,10 @@ label sarah_flowers_level_2:
         sar "..."
         mc "Two..."
         sar "..."
-        mc_thought "I never thought this would be so fun, I can even feel her breath in this position, I think she is a little anxious."
+        mc_thought "(I never thought this would be so fun, I can even feel her breath in this position, I think she is a little anxious.)"
         mc "And..........."
         sar "..."
-        mc_thought "I know the thrill is killing her."
+        mc_thought "(I know the thrill is killing her.)"
         show sarah level216 with vpunch
         mc_shout "Three!!!!!" with vpunch
         mc_shout "HAAAAAAAAA!!"
@@ -419,37 +419,37 @@ label sarah_flowers_level_2:
         show sarah level218 
         mc "...ahn..."
         sar "What beautifull colors."
-        mc_thought "What happened?"
+        mc_thought "(What happened?)"
         show sarah level219 
         $ renpy.notify("You can press \'H\' anytime to hide or show the dialogue box.")
         sar "Its so shiny."
         show sarah level220 
-        mc_thought "I see now, I think we fell and she landed on top of me."
-        mc_thought "Such a good place for her to land."
+        mc_thought "(I see now, I think we fell and she landed on top of me.)"
+        mc_thought "(Such a good place for her to land.)"
         show sarah level221
         sar "The smell is so good too."
-        mc_thought "She is so happy with that flower that she doesnt even realize where she is sitting."
-        mc_thought "Such a beautiful ass."
-        mc_thought "I think Im in heaven."
+        mc_thought "(She is so happy with that flower that she doesnt even realize where she is sitting.)"
+        mc_thought "(Such a beautiful ass.)"
+        mc_thought "(I think Im in heaven.)"
         show sarah level222
         camera:
                 pos (-94, -729) zoom 1.74 
-        mc_thought "Oh no.."
-        mc_thought "I think Im...I think Im getting a boner."
+        mc_thought "(Oh no..)"
+        mc_thought "(I think Im...I think Im getting a boner.)"
 
         show sarah level223
         sar "I dont think I will sell this one... I mean...its such a beautiful flower."
-        mc_thought "Im definitely getting a boner."
-        mc_thought "I cant hold on....the feeling of her ass sitting on me is just so good."
+        mc_thought "(Im definitely getting a boner.)"
+        mc_thought "(I cant hold on....the feeling of her ass sitting on me is just so good.)"
         call camera_reset
-        mc_thought "Has she noticed?"
-        mc_thought "No...I dont think so..."
+        mc_thought "(Has she noticed?)"
+        mc_thought "(No...I dont think so...)"
         sar "I think im going to put that in my house."
         camera:
             pos (-94, -729) zoom 1.74 
         sar "I will put it in a place where I can see it when I wake up."
-        mc_thought "But if this situation goes on much longer."
-        mc_thought "She will notice for sure."
+        mc_thought "(But if this situation goes on much longer.)"
+        mc_thought "(She will notice for sure.)"
         call camera_reset
         menu:
             "If I say something she might get up and I dont want that."
@@ -461,37 +461,37 @@ label sarah_flowers_level_2:
                 pass
         camera:
             pos (-94, -729) zoom 1.74 
-        mc_thought "Even so I dont think I will say nothing."
-        mc_thought "Thats it...whatever happens happens."
+        mc_thought "(Even so I dont think I will say nothing.)"
+        mc_thought "(Thats it...whatever happens happens.)"
         sar "Maybe take some pictures of this flower too."
         sar "And also I would like to...."
         show sarah level224 with vpunch
-        mc_thought "Thats it....there is no way she is not feeling it now."
-        mc_thought "I can literally feel my dick touching her ass."
+        mc_thought "(Thats it....there is no way she is not feeling it now.)"
+        mc_thought "(I can literally feel my dick touching her ass.)"
         # call camera_reset
-        mc_thought "But...she is not saying anything."
-        mc_thought "She stopped talking, she literally can feel my dick right now."
-        mc_thought "This would be so good if this wasnt so bad."
+        mc_thought "(But...she is not saying anything.)"
+        mc_thought "(She stopped talking, she literally can feel my dick right now.)"
+        mc_thought "(This would be so good if this wasnt so bad.)"
         show sarah level225
         window hide
         pause(2.0)
         camera:
                 pos (-869, -1036) zoom 2.28 
-        mc_thought "Such a nice feeling, I would like this moment to last forever if possible."
+        mc_thought "(Such a nice feeling, I would like this moment to last forever if possible.)"
         call camera_reset
-        mc_thought "Well...maybe she just stoped talking, it doesnt mean she is feeling my dick or anything."
+        mc_thought "(Well...maybe she just stoped talking, it doesnt mean she is feeling my dick or anything.)"
         show sarah level226
-        mc_thought "She looked!." with vpunch
-        mc_thought "Shit, she is not even looking at it, she is looking right into my eyes."
-        mc_thought "Why wont she stop looking?"
-        mc_thought "Such such beautiful eyes, she is so sexy"
+        mc_thought "(She looked!.)" with vpunch
+        mc_thought "(Shit, she is not even looking at it, she is looking right into my eyes.)"
+        mc_thought "(Why wont she stop looking?)"
+        mc_thought "(Such such beautiful eyes, she is so sexy)"
         camera:
             pos (-869, -1036) zoom 2.28 
         with vpunch
-        mc_thought "Its growing again!!!" with vpunch
+        mc_thought "(Its growing again!!!)" with vpunch
         call camera_reset
-        mc_thought "I think....I should say something."
-        mc_thought "What do I say what do I say what do I say?"
+        mc_thought "(I think....I should say something.)"
+        mc_thought "(What do I say what do I say what do I say?)"
         menu:
             "Say something right now!"
             "Banana":
@@ -502,17 +502,17 @@ label sarah_flowers_level_2:
                 pass
             "Cum":
                 pass
-        mc_thought "What did I just say?!?!?!" with vpunch
-        mc_thought "Im an idiot, thats it, I accept everything thats coming... its over for me"
+        mc_thought "(What did I just say?!?!?!)" with vpunch
+        mc_thought "(Im an idiot, thats it, I accept everything thats coming... its over for me)"
         show sarah level225
-        mc_thought "She...just turns again?"
+        mc_thought "(She...just turns again?)"
         show sarah level227
-        mc_thought "I see....she is getting up."
+        mc_thought "(I see....she is getting up.)"
         show sarah level229 with dissolve
         mc "Sarah...."
         sar "...."
         show sarah level228 with dissolve
-        mc_thought "Is she trying to look at my dick without me knowing?"
+        mc_thought "(Is she trying to look at my dick without me knowing?)"
         sar "I think...."
         show sarah level229 with dissolve
         sar "I think its time for me to go...."
@@ -642,8 +642,8 @@ label collect_flowers:
         mon "So Im going to teach you how to identify and collect flowers and earn money with it."
         mc "Collect flowers?"
         mon "Yes, I mean...If thats ok with you of course."
-        mc_thought "Man...What I really want is to be an adventurer, and also Im THE Aphrodite Champion!...But it would be nice to have some money for a change..."
-        mc_thought "Also...I cant take the guild entrance exam without any money so...."
+        mc_thought "(Man...What I really want is to be an adventurer, and also Im THE Aphrodite Champion!...But it would be nice to have some money for a change...)"
+        mc_thought "(Also...I cant take the guild entrance exam without any money so....)"
         mc "Yes, yes of course its ok with me, please teach me how to do it."
         show monica half overall talking
         mon "Im so glad you agreed, It will be a nice experience teaching to my [mcmon]."
@@ -684,7 +684,7 @@ label collect_flowers:
         mon "Yes yes.....We start by exploring the field and looking for flowers, let me take a look..."
         hide monica with dissolve
         menu:
-            mc_thought "I think I should go..."
+            mc_thought "(I think I should go...)"
             "Explore the field":
                 pass
             "Look for Monica":
@@ -704,7 +704,7 @@ label collect_flowers:
         show monica flower3 with dissolve
         mc "Ok..."
         show monica flower3 with dissolve
-        mc_thought "I think Im going to walk slowly so I can enjoy the view a little more."
+        mc_thought "(I think Im going to walk slowly so I can enjoy the view a little more.)"
         show monica flower4 with dissolve
         mon "This flower has been here since she was a little seed, the earth and the rain helped this flower grow up until now.."
         show monica flower5 with dissolve
@@ -712,7 +712,7 @@ label collect_flowers:
         show monica flower6 with dissolve
         mon "Im sorry little one..."
         menu:
-            mc_thought "How can someone be so pure and so hot? Damn."
+            mc_thought "(How can someone be so pure and so hot? Damn.)"
             "Its ok":
                 mc "Its ok Monica, the earth has plenty more."
             "Say Nothing":
@@ -798,7 +798,7 @@ label monica_flowers_level_2:
 
     if monica_flowers_level_2 == False:
         $ monica.tips = "thats all for this update."
-        mc_thought "Monica is so good to me, today im going to give her a surprise."
+        mc_thought "(Monica is so good to me, today im going to give her a surprise.)"
         show monica red flower with dissolve
         mc "Hey Monica, look at what I found."
         mon "What is it dear?"
@@ -841,7 +841,7 @@ label monica_flowers_level_2:
         mon "These flower are very rare and paralize whoever touches its poisonous thorns...temporarily"
         mon "But, everything will be ok, just wait a little, I will be here with you until you get better ok?"
         show monica red flower8
-        mc_thought "She is so kind as always."
+        mc_thought "(She is so kind as always.)"
         mc "Thank you Monica."
         mc "How long until the effect wears off?"
         mon "Hun...It depends the time may change from person to person."
@@ -862,9 +862,9 @@ label monica_flowers_level_2:
         mon "Now, one more time!"
         mon "try moving it again!"
         show monica red flower10
-        mc_thought "WOW...I never had seen Monicas boobs so close before."
-        mc_thought "They are so beautiful."
-        mc_thought "Where are the powers Aphrodite promised me when I need them?."
+        mc_thought "(WOW...I never had seen Monicas boobs so close before.)"
+        mc_thought "(They are so beautiful.)"
+        mc_thought "(Where are the powers Aphrodite promised me when I need them?.)"
         mon "[player.name]... are you trying?"
         show monica red flower8
         mc "Im sorry I got distracted a bit"
@@ -922,8 +922,8 @@ label sex_scene_with_unknown_girl:
         $ first_unknown_girl = False
         show unknown first idle
         play music "audio/nature sounds.ogg"
-        mc_thought "Wait...what is that?"
-        mc_thought "Is that a person?"
+        mc_thought "(Wait...what is that?)"
+        mc_thought "(Is that a person?)"
         menu:
             mc "...?"
             "Who is there?":
@@ -931,9 +931,9 @@ label sex_scene_with_unknown_girl:
             "Monica?":
                 mc "Monica is that you?"
         play audio "audio/wolf howl.ogg"  
-        mc_thought "Nothing..."
-        mc_thought "A howl?"
-        mc_thought "I never been so confused."
+        mc_thought "(Nothing...)"
+        mc_thought "(A howl?)"
+        mc_thought "(I never been so confused.)"
         mc_shout "Hey you should get out of the field, there may be a wolf nearby!"
         show unknown girl idle with Dissolve (2.0)
         ung "Human human, good smell good smell."
@@ -952,127 +952,142 @@ label sex_scene_with_unknown_girl:
         ung "Hmmmm!"
         show unknown girl sex1 with dissolve
         mc_shout "WhaAAAAt?" with vpunch
-        mc_thought "Is she really?"
-        mc_thought "NAKED? naked and on top of me."
-        mc_thought "I think im dreaming."
+        mc_thought "(Is she really?)"
+        mc_thought "(NAKED? naked and on top of me.)"
+        mc_thought "(I think im dreaming.)"
         show unknown girl sex2 with dissolve
-        mc_thought "Going to do this??"
+        mc_thought "(Is she???!?)"
+        mc_thought "(Going to do this??)"
         menu:
-            mc_thought "Man Im trembling. is it really going to?"
+            mc_thought "(Man Im trembling. is it really going to?)"
             "Who are you?":
                 pass
             "Why are you doing this?":
                 pass
             "Aaahn...":
                 pass
-        mc_thought "She doesn´t answer..."
+        mc_thought "(She doesn´t answer...)"
         
         ung "Hmmmm!"
         mc_shout "HEY YOU, TALK WITH M....HAAAAAAAAAA!!!!"
         show unknown girl sex3 with dissolve
-        play audio "audio/Single Moan 1.ogg"
+        play sound "audio/Single Moan 1.ogg"
         pause 1.0
         show unknown girl sex4 with dissolve
         ung "Ahhh!"
         mc_shout "HAAAAAAAAAA!!!!"
-        mc_thought "Omg, this is definitely NOT a dream."
-        mc_thought "This is happening, this is really happening isnt it?"
-        mc_thought "Its like my dick is in heaven!"
-        mc_thought "Man she is so warm and tight, Im not sure if I can handle it."
+        mc_thought "(Omg, this is definitely NOT a dream.)"
+        mc_thought "(This is happening, this is really happening isnt it?)"
+        mc_thought "(Its like my dick is in heaven!)"
+        mc_thought "(Man she is so warm and tight, Im not sure if I can handle it.)"
+        stop sound
+        play sound "audio/slow sex moan2.ogg" loop volume 5.1
         show unknown girl sex5 with dissolve
-        mc_thought "She started moving."
+        mc_thought "(She started moving.)"
         mc "Ahhh its so good!"
-        mc_thought "She is doing it so smoothly, is like my dick is finally complete inside her pussy."
-        mc_thought "And her hair its so close, and has such a nice smell."
-        mc_thought "I have never been in love, but I think this is it."
+        mc_thought "(She is doing it so smoothly, is like my dick is finally complete inside her pussy.)"
+        mc_thought "(And her hair its so close, and has such a nice smell.)"
+        mc_thought "(I have never been in love, but I think this is it.)"
         menu:
             mc "ahhh its so good."
             "Look at her":
-                mc_thought "I need to see her face."
+                mc_thought "(I need to see her face.)"
                 show unknown girl sex6 with dissolve
-                mc_thought "I know it could be because she is sitting on my dick."
-                mc_thought "But I dont think I have ever seen a girl as beautiful as her before."
+                mc_thought "(I know it could be because she is sitting on my dick.)"
+                mc_thought "(But I dont think I have ever seen a girl as beautiful as her before.)"
             "Just keep enjoying the view":
-                mc_thought "No, I really want to see my dick inside of her as she sits on it."
-                mc_thought "There is nothing more beautiful than that."
+                mc_thought "(No, I really want to see my dick inside of her as she sits on it.)"
+                mc_thought "(There is nothing more beautiful than that.)"
         menu:
-            mc_thought "I need to say something"
+            mc_thought "(I need to say something)"
             "You are beautiful":
                 pass
             "You are cute":
                 pass
             "You are hot!":
                 pass
-        mc_thought "I think she is about to say something."
-        mc_thought "I feel it!"
+        mc_thought "(I think she is about to say something.)"
+        mc_thought "(I feel it!)"
+        stop sound
+        play sound "audio/slow sex moan3.ogg" loop volume 5.1
         show unknown girl sex7 with dissolve
-        mc_thought "Can we do it in this position too?"
+        mc_thought "(Can we do it in this position too?)"
         mc_shout "Ahhh your pussy is so good!"
-        mc_thought "She does things on command like a wild animal!"
-        mc_thought "Damn she is hot...I dont think I can do it any longer in this position."
-        mc_thought "Wait...if I cum will she gets pregnant?"
+        mc_thought "(She does things on command like a wild animal!)"
+        mc_thought "(Damn she is hot...I dont think I can do it any longer in this position.)"
+        mc_thought "(Wait...if I cum will she gets pregnant?)"
         menu:
-            mc_thought "I need to tell her."
+            mc_thought "(I need to tell her.)"
             "Hey, be careful I think I am about to cum.":
                 pass
+        stop sound
+        play sound "audio/sex sound fast 1.ogg" loop volume 5.0
         show unknown girl sex8 with dissolve
         mc_shout "Ahhh!"
-        mc_thought "What?!?!?!?"
-        mc_thought "Its like she wants me to cum!"
+        mc_thought "(What?!?!?!?)"
+        mc_thought "(Its like she wants me to cum!)"
         mc "Hey didnt you hear me?"
-        mc_thought "I can see by her face she is tired too."
-        mc_thought "Her pussy is so gooood!"
+        mc_thought "(I can see by her face she is tired too.)"
+        mc_thought "(Her pussy is so gooood!)"
         mc "Why dont you say anything?"
         ung "grrrr!"
-        mc_thought "Am I really going to cum that fast."
+        mc_thought "(Am I really going to cum that fast.)"
         menu:
-            mc_thought "Its my first time, I cant cum too fast."
+            mc_thought "(Its my first time, I cant cum too fast.)"
             "Hold it":
                 pass    
             "Hold it":
                 pass    
             "Hold it":
                 pass    
-        mc_thought "She is like an animal!"
-        mc_thought "I try to endure it but she just keeps on going."
-        mc_thought "She is just too beautiful."
-        mc_thought "I dont know how much longer I can..." with vpunch
+        mc_thought "(She is like an animal!)"
+        mc_thought "(I try to endure it but she just keeps on going.)"
+        mc_thought "(She is just too beautiful.)"
+        mc_thought "(I dont know how much longer I can...)" with vpunch
         show unknown girl sex9 with dissolve
         mc_shout "I am!!!" with vpunch
+        stop sound
+        play sound "audio/cum sound 1.ogg" loop volume 5.2
+        play audio "audio/girl orgasm 1.ogg" 
         show unknown girl sex10 with dissolve
         mc_shout "IM CUMMING!" with vpunch
-        mc_thought "Im cumming and she isnt getting off me."
-        show unknown girl sex11 with dissolve
+        ung "AHHHHHH!" with vpunch
+        mc_thought "(Im cumming and she isnt getting off me.)"
         mc_shout "Ahhhh!!!"
+        stop sound
+        play sound "audio/after cum non loop.ogg"
+        show unknown girl sex11 with dissolve
         mc "...."
-        mc_thought "Its the best sensation on the world..."
-        mc_thought "Im very tired...."
-        mc_thought "Her pussy full of cumm, my cum this is just beautifull."
-        mc_thought "And at the same time I fell like I.."
-        mc_thought "I just have to do it again!"
-        mc_thought "She is also very tired."
+        mc_thought "(Its the best sensation on the world...)"
+        mc_thought "(Im very tired....)"
+        mc_thought "(Her pussy full of cumm, my cum this is just beautifull.)"
+        mc_thought "(And at the same time I fell like I..)"
+        mc_thought "(I just have to do it again!)"
+        mc_thought "(She is also very tired.)"
         show unknown girl sex12 with dissolve
-        mc_thought "Well, she just took my virginity without even asking."
+        mc_thought "(Well, she just took my virginity without even asking.)"
         menu:
-            mc_thought "So I dont need to ask either."
+            mc_thought "(So I dont need to ask either.)"
             "Fuck her from behind!":
                 pass
         mc "Thats it."
+        stop sound
+        play sound "audio/Moan 1.ogg" loop
         show unknown girl sex13 with dissolve
-        mc_thought "I dont care who she is."
-        mc_thought "She started this now she has to finish."
+        mc_thought "(I dont care who she is.)"
+        mc_thought "(She started this now she has to finish.)"
         menu:
             "You are my slut now!":
                 pass
             "You are my bitch now!":
                 pass
         show unknown girl sex14 with dissolve
-        mc_thought "She has such a beautiful body."
-        mc_thought "If I could I would fuck her like this every week."
+        mc_thought "(She has such a beautiful body.)"
+        mc_thought "(If I could I would fuck her like this every week.)"
         show unknown girl sex17 with dissolve
         mc "It seems like you are exhausted already."
         mc "Such a cute girl..."
-        mc "Too bad, Im not stronger."
+        mc "Too bad, Im not exhausted."
         show unknown girl sex15 with dissolve
         mc "Im going to enjoy this moment all I want."
         mc "In every way I can."
@@ -1084,20 +1099,25 @@ label sex_scene_with_unknown_girl:
                 pass
             "Isnt that right tight pussy wolf?":
                 pass
-        mc_thought "Her moans are so beautiful."
+        mc_thought "(Her moans are so beautiful.)"
+        stop sound
+        play sound "audio/Moan 2.ogg" loop
         show unknown girl sex16 with dissolve
         mc "Now show me what a wolf girl can do!"
         mc "Show me how much your pussy can take."
         mc "Im going to fuck you until you cant walk anymore."
         show unknown girl sex19 with dissolve
-        mc_thought "Man she is drooling all over herself."
+        mc_thought "(Man she is drooling all over herself.)"
         mc "You seem like you are about to faint."
         mc "But this is my day! so dont faint yet!"
         mc "You have to endure a little more!"
-        mc_thought "Ah...your body is just so beautiful."
+        mc_thought "(Ah...your body is just so beautiful.)"
         mc "Im going to cum!"
         menu:
             "Cum inside her pussy":
+                stop sound
+                play sound "audio/cum sound 1.ogg" loop volume 5.2
+                play audio "audio/girl orgasm 1.ogg" 
                 mc "You look so tired."
                 show unknown girl sex20 with dissolve
                 mc "Just relax while while your little pussy is being filled with my cum."
@@ -1105,10 +1125,13 @@ label sex_scene_with_unknown_girl:
                 ung "Yes."
                 mc "Just like that, good girl."
             "Cum on her ass":
+                stop sound
+                play sound "audio/cum sound 1.ogg" loop volume 5.2
                 mc_shout "Do as I tell you, face down and bring your ass up NOW!"
                 ung "Yes."
                 show unknown girl sex21 with dissolve
                 mc "Good girl, good girl."
+        stop sound
         mc "You are such a good girl."
         show unknown girl sex26 with dissolve
         mc "Man, look at this, you are such a mess."
@@ -1124,39 +1147,188 @@ label sex_scene_with_unknown_girl:
         mc "Another wolf?"
         ung "Agrrrr!"
         show unknown girl sex24 with dissolve
-        mc_thought "And just like that."
+        mc_thought "(And just like that.)"
         show unknown girl sex25 with dissolve
-        mc_thought "The girl that took my virginity is gone."
+        mc_thought "(The girl that took my virginity is gone.)"
         $ first_unknown_girl = False
         stop music
         play music "audio/Adolescence.ogg"
         call time_next
         return
-        
-        
+    return
 
+label sex_scene_with_unknown_girl_after:
+    show unknown girl idle
+    mc_thought "(She is there again, she hasnt seen me yet.)"
+    mc_thought "(For some reason I think she comes here every week)"
+    mc_thought "(Maybe I should go there again...you know...I need to know more of this world after all.)"
+    menu:
+        mc_thought "(should I go there?)"
+        "Yes":
+            mc_thought "(Well, I want what I want.)"
+            mc "Hey there wolf girl!!!"
+        "No":
+            mc_thought "(I better stay away from her then.)"
 
+            hide unknown
+            return
+    show unknown girl sex30
+    mc_thought "She is looking!"
+    show unknown girl sex29
+    mc_thought "I think she is....waiting for me."
+    menu:
+        "Fuck her doggy style":
+            call unknown_girl_doggy
+            return
+        "Let her go on top":
+            call unknown_girl_doggy_style
+            return
+    return
 
+label unknown_girl_doggy:
+    stop sound
+    play sound "audio/Moan 1.ogg" loop
+    show unknown girl sex13 with dissolve
+    mc "Damn is nice to use this your pussy."
+    mc "You are more wet than last time."
+    mc "Your ass is bigger too, are you going to the gym or something?"
+    ung "GRRRR!"
+    mc "\"Gr\" all you want im going deep in your pussy."
+    show unknown girl sex14 with dissolve
+    mc "Oh Im getting better at this."
+    mc "It seems like you are managing better than the last time too right?"
+    ung "Grrr!!"
+    menu:
+        mc ""
+        "Maybe I should go a little harder on you.":
+            pass
+            mc "Maybe I should go a little harder on you."
+            ung "Grrr!!"
+        "Maybe I should get easy this time.":
+            mc "I think I will go easy on you this time."
+            ung "Hmmmg!!"
+    mc "Such a cute girl."
+    mc "Such with such a sweet little pussy."
+    menu:
+        "Fuck her more!":
+            pass
+        "Cum on her ass.":
+            call unkown_girl_cum_ass
+        "Cum on inside pussy":
+            call unkown_girl_cum_inside
+    mc "Since you like to be fucked so much."
+    mc "Im going to fuck you like a little wolf every single week."
+    show unknown girl sex17 with dissolve
+    mc "It will be our little secret."
+    mc "You will come here like a little woulf and then I will fuck you."
+    ung "Grrrrrr!!!"
+    mc "Dont try to lie to met."
+    mc "If you didnt liked it you wouldt come back here since the day we first met."
+    menu:
+        "You are my little dog Now":
+            mc "You are my little dog now."
+        "You like to be fucked in a public field":
+            mc "You like to be fucked in a public field."
+    mc "Such nice tities you have, I think Im to try sucking them sometime."
+    ung "Grrrr!"
+    menu:
+        "Fuck her more!":
+            pass
+        "Cum on her ass.":
+            call unkown_girl_cum_ass
+        "Cum on inside pussy":
+            call unkown_girl_cum_inside
+    show unknown girl sex15 with dissolve
+    mc "Damn I love this view."
+    mc "Its like she´s surrended to me and only me."
+    mc_thought "I dont know why but I really fell like I want to cum inside every girl I met."
+    mc_thought "And she is not an exception."
+    mc_thought "Is like as I fuck her. a feeling I need to cum in her or cum on her."
+    stop sound
+    play sound "audio/Moan 2.ogg" loop
+    show unknown girl sex16 with dissolve
+    ung "Aaaaah!!"
+    mc "I know youa tired little wolf, but I want you to remember this tomorrow."
+    mc "So im going to fuck you some more."
+    menu:
+        "Fuck her more!":
+            pass
+        "Cum on her ass.":
+            call unkown_girl_cum_ass
+        "Cum on inside pussy":
+            call unkown_girl_cum_inside
+    show unknown girl sex19 with dissolve
+    ung "Huuuun!!!"
+    mc "Yes like that."
+    mc "Man Im enjoying this!"
+    ung "Haaaaa!!"
+    mc "Do you want me to cum?"
+    ung "Yeeeeeees!!!"
+    mc "So you talk after all."
+    menu:
+        "Fuck her more!":
+            pass
+        "Cum on her ass.":
+            call unkown_girl_cum_ass
+        "Cum on inside pussy":
+            call unkown_girl_cum_inside
+    mc "I think you cant take more."
+    ung "GrrrrrI Can not Grrrrr."
+    mc "You will even so."
+    mc_thought "(Damn...I dont think even I cant take longer now.)"
+    mc_thought "Just now that she was speaking something."
+    mc "Who are...."
+    ung "Grrr!"
+    mc_thought "I want to talk but ...Thats it, thats my limit. I need to cum"
+    $ wolf_girl_fucked1 = True
+    menu:
+        "Cum on her ass.":
+            call unkown_girl_cum_ass
+        "Cum on inside pussy":
+            call unkown_girl_cum_inside
+    return
 
-        
+label unkown_girl_cum_inside:
+    stop sound
+    play sound "audio/cum sound 1.ogg" loop volume 5.2
+    play audio "audio/girl orgasm 1.ogg" 
+    mc "Now, bend over for me ass you are a little dog"
+    show unknown girl sex20 with dissolve
+    mc "Fell my cum filling every inch of your pussy."
+    ung "Grrrrr."
+    mc "Be a good girl and obey!"
+    ung "Hmm..."
+    mc "Good girl."
+    call unknown_girl_after_cum
+    return
 
+label unkown_girl_cum_ass:
+    stop sound
+    play sound "audio/cum sound 1.ogg" loop volume 5.2
+    mc_shout "Do as I tell you, and bring your ass up NOW!"
+    ung "Yes."
+    show unknown girl sex21 with dissolve
+    mc "Good girl, good girl."
+    call unknown_girl_after_cum
+    return
 
-
-
-        
-        
-
-
-
-
-                
-
-        
+label unknown_girl_after_cum:
+    show unknown girl sex28 with dissolve
+    mc_thought "(So beautifull.)"
+    mc "I never get tired of this view."
+    play sound "audio/wolf howl.ogg"
+    mc "And there she goes again."
+    mc "Bye...again."
+    call time_next
+    hide unknown with dissolve
 
     
 
     
 
+    return
+
+label unknown_girl_doggy_style:
     return
 
 image unknown_girl_running:

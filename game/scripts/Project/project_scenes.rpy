@@ -251,7 +251,7 @@ label prologue:
     show house bg
     show family rescue
     with dissolve
-    mc_thought "(She introduced me to her family, two daughters {color=#4e25c0ff} Ashley{/color} and {color=#4e25c0ff} Linda{/color})."
+    mc_thought "(She introduced me to her family, two daughters {color=#4e25c0ff} Ashley{/color} and {color=#4e25c0ff} Linda{/color})"
     mc_thought "(The younger one is cute and lovely, the older one...not so much.)"
     scene
     show bedroom night
@@ -260,9 +260,9 @@ label prologue:
     scene
     show guild gate morning
     with dissolve
-    mc_thought "(I made numerous attempts to become a member of the guild, but they rejected me each time, because I wasn't strong enough nor possessed any magical abilities.)"
+    mc_thought "(I made numerous attempts to become a member of the guild, but they rejected me each time, because I wasn't strong enough nor) possessed any magical abilities.)"
     scene bedroom night with dissolve
-    mc_thought "(So...that's it, today is my birthday...18 years old and I didnt even care to tell anyone. I mean...there is nothing to celebrate....im still a total loser.)"
+    mc_thought "(So...that's it, today is my birthday...18 years old and I didnt even care to tell anyone. I mean...there is nothing to) celebrate....im still a total loser.)"
     scene black with dissolve
     menu:
         "Anyway.. at least I have a home now...better go to sleep."
@@ -386,7 +386,7 @@ label goddes_of_pleasure:
         show aphrodite throne thinking with dissolve
         aph "Anyway, in my opinion, you are a great young man, and this {b}task{/b} will be beneficial for both you and the people of this world."
         menu:
-            mc_thought "(\"Task\" I knew it...I knew there was a catch.)"
+            mc_thought "(\"(Task\" I knew it...I knew there was a catch.)"
             "Task?":
                 show aphrodite throne 3 with dissolve
                 mc "Task? What task?"
@@ -431,7 +431,7 @@ label how:
     aph "I bestow upon you the {i}{color=#ff67d1}magical blood of the sex warlocks and my power{/i}{/color} so that you may fulfill your task."
     aph "Besides...you already have a big....\"talent\".. but you are not aware of that just yet."
     show aphrodite throne with dissolve
-    mc_thought "(\"Magic blood of the sex warlocks and her power?\")"
+    mc_thought "(\"(Magic blood of the sex warlocks and her power?\")"
     show aphrodite throne with dissolve
     aph "And also."
     show aphrodite throne before with dissolve
@@ -541,7 +541,7 @@ label linda_will_you_hug_me:
                     show linda prologue leaving2
                     mc_thought "(Man... she is stunningly beautiful.)"
                     show linda prologue leaving3
-                    mc_thought "(I even thought about stopping her, but it's just too enjoyable to watch her beautiful ass sway as she walks away.)"
+                    mc_thought "(I even thought about stopping her, but it's just too enjoyable to watch her beautiful ass sway as she walks) away.)"
                     show linda prologue leaving4
                     mc_thought "(Well...that's it..time to make the decision.)"
                     menu:
@@ -588,7 +588,7 @@ label linda_hug:
 label linda_enjoy_the_hug:
     lin "You are just the best."
     show linda prologue hug2 with dissolve
-    mc_thought "(Yes, just like that... It's such a nice view. I'm absolutely loving it... and that ass of hers is just the best I've ever seen)"
+    mc_thought "(Yes, just like that... It's such a nice view. I'm absolutely loving it... and that ass of hers is just the best I've ever) seen)"
     menu:
         mc_thought "(Maybe I should....)"
         "Try to (move your hand a little lower)":
@@ -663,7 +663,7 @@ label linda_stop_hugging_prologue:
     with dissolve
     mc_thought "(She left.)"
     mc_thought "(So it wasn't a dream after all.)"
-    mc_thought "(This also explains a lot of my unusual behavior with hugs this morning, I never looked at Linda this way, Its like im someone else.)"
+    mc_thought "(This also explains a lot of my unusual behavior with hugs this morning, I never looked at Linda this way, Its like im someone) else.)"
     mc_thought "(I think I will like this Aphrodite champion thing. Anyway, let's open this book.)"
     show screen book
     show bedroom morning
@@ -733,7 +733,7 @@ label ashley_prologue:
     with dissolve
     ash "Wait that wasn't a joke?...oh you are more dumb than I thought, do whatever you want."
     mc_thought "(Man, she is such a drag...doesn't she know she is talking to Aphrodites chosen one?)"
-    mc_thought "She left..."
+    mc_thought "(She left...)"
     $ ashley.revealed = True
     hide ashley with dissolve
     #  she leaves

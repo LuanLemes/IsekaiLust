@@ -120,12 +120,14 @@ While running game code:
     call change_location_to(location)
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
-  [Previous line repeated 16 more times]
-  File "game/scripts/map/map.rpy", line 108, in script
+  [Previous line repeated 53 more times]
+  File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
-  File "game/scripts/map/map.rpy", line 108, in <module>
-    $ renpy.call_screen(screen_name)
-OSError: Couldn't find file 'Adolescence.ogg'.
+  File "game/scripts/map/locations/flower_camp.rpy", line 1181, in script call
+    call unknown_girl_doggy
+  File "game/scripts/map/locations/flower_camp.rpy", line 1224, in script
+    ukg "Grrrrrr!!!"
+Exception: Sayer 'ukg' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -249,39 +251,20 @@ Full traceback:
     call change_location_to(location)
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
-  [Previous line repeated 16 more times]
-  File "game/scripts/map/map.rpy", line 108, in script
+  [Previous line repeated 53 more times]
+  File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/scripts/map/map.rpy", line 108, in <module>
-    $ renpy.call_screen(screen_name)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\exports.py", line 3181, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 4103, in interact_core
-    renpy.audio.audio.periodic()
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1166, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1144, in periodic_thread_main
-    periodic_pass()
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1086, in periodic_pass
-    c.periodic()
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\audio\audio.py", line 517, in periodic
-    topf = load(filename)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\audio\audio.py", line 70, in load
-    rv = renpy.loader.load(fn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'Adolescence.ogg'.
+  File "game/scripts/map/locations/flower_camp.rpy", line 1181, in script call
+    call unknown_girl_doggy
+  File "game/scripts/map/locations/flower_camp.rpy", line 1224, in script
+    ukg "Grrrrrr!!!"
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'ukg' is not defined.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
-Isekai Lust 1.0.0
-Thu Apr 13 01:02:44 2023
+Isekai Lust 1.0.1
+Sat Apr 15 01:40:16 2023

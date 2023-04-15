@@ -42,29 +42,29 @@ label monica_bath:
         "Now would be good":
             mc "Right now would be really good indeed."
             mon "Okay, im going to open the door, wait a little."
-            mc_thought "Is she actually going to open the bathroom?"
+            mc_thought "(Is she actually going to open the bathroom?)"
             mon "You can enter now."
         "No, not at all":
             mon "Ok than, I will tell you when I leave."
             mc "Okay, thanks mon."
             return False
     show bathroom monica1
-    mc_thought "Man this is so strange."
-    mc_thought "I mean, Im actually in the bathroom while monica is showering."
-    mc_thought "She is actually a few meters away from me, fully naked."
+    mc_thought "(Man this is so strange.)"
+    mc_thought "(I mean, Im actually in the bathroom while monica is showering.)"
+    mc_thought "(She is actually a few meters away from me, fully naked.)"
     mon "Hey [player.name] was it an emergency? Are you okay?"
     mc "Hey mon, I am much better now that you opened the door."
-    mc_thought "I better start doing my things before she sees me here standing still."
+    mc_thought "(I better start doing my things before she sees me here standing still.)"
     show bathroom monica2
-    mc_thought "I never paid attention to it because I dont usually use the bathroom with other people in it but.."
-    mc_thought "I can actually see her in there!, I mean, I cant see her but, I can a little, I guess thats a blur or something."
-    mc_thought "Still Im happy that Im here."
+    mc_thought "(I never paid attention to it because I dont usually use the bathroom with other people in it but..)"
+    mc_thought "(I can actually see her in there!, I mean, I cant see her but, I can a little, I guess thats a blur or something.)"
+    mc_thought "(Still Im happy that Im here.)"
     show bathroom monica2
-    mc_thought "Man she has such a beautiful body....At least...I think she does."
-    mc_thought "I think I can see the outline of her boobs too."
-    mc_thought "I think they are bigger than I thought."
+    mc_thought "(Man she has such a beautiful body....At least...I think she does.)"
+    mc_thought "(I think I can see the outline of her boobs too.)"
+    mc_thought "(I think they are bigger than I thought.)"
     mon "Hey [player.name]."
-    mc_thought "Omg did she notice me staring?"
+    mc_thought "(Omg did she notice me staring?)"
     show bathroom monica6
     mon "Do you think that..."
     mon "Do you think that Im a good Mom?"
@@ -86,7 +86,7 @@ label monica_bath:
     mon "And its even better when it comes from you."
     mon "Because you are also family, dont you ever forget that."
     show bathroom monica5
-    mc_thought "I think she is a true angel."
+    mc_thought "(I think she is a true angel.)"
     mc "Thanks mom."
     mon "What did you call me?"
     show bathroom monica7
