@@ -8,13 +8,17 @@ label day_vars_reset:
     $ breakfasted = False
     $ monica_morning_kitchen = False
     $ pillow_removed = False
+    $ monica_looked = False
+    $ monica_sarah_water = False
+    $ talked_to_girls = False
+    $ monica_sarah_invited = False 
     return
 
 default linda_cards_first = True
 default first_sleep = True
 default monica_morning_kitchen = False
 # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT 
-define config.developer = True
+define config.developer = False
 default linda_floor_card = False
 # default while_var = 0
 default sleep_when_enter = False

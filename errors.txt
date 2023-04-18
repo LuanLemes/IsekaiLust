@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/kitchen.rpy", line 277: expected statement.
-    mc_thought
-              ^
+File "game/screens.rpy", line 770: is not terminated with a newline. (Check strings and parenthesis.)
+                        text _("A very special thanks to our Patreons! \n Discovery 🪐🇬🇧 \n Almir "
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 18 01:36:16 2023
+Tue Apr 18 12:46:48 2023

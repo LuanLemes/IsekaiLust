@@ -73,18 +73,18 @@ label monica_sarah_talking_home:
         sar "Now, thats something strange."
         sar "Hmmmm."
         show monica_sarah home15
-        mon "Now, thats so strange?"
-        sar "I Knew you lived with monica but, I kind of, forgot you lived here."
+        mon "Now, whats so strange?"
+        sar "I knew you lived with Monica but, I kind of, forgot you lived here."
         show monica_sarah home9
-        mon "Ha ha ha, Oh Sarah thats so you."
-        sar "Im sorry, the last two months were kind of harsh"
+        mon "Ha ha ha, oh Sarah thats so you."
         show monica_sarah home8 
+        sar "Im sorry, the last two months were kind of harsh"
         mon "Yeah, It was indeed."
         show monica_sarah home5
         mon "Anyway [player.name]..."
         show monica_sarah home5
     menu:
-        mon "How are you this evenning?"
+        mon "How are you this evening?"
         "Im fine thanks.":
             show monica_sarah home11
             mon "Oh dear thats good to hear."
@@ -92,8 +92,8 @@ label monica_sarah_talking_home:
             show monica_sarah home11
             mon "Good thing dear."
     if flowers_sarah_level <= 1 or flowers_monica_level <= 1:
-        mc_thought "I think its better leave, girls sometimes needs these momments."
-        mc "So, I think I fell like Im in the middle of a \'girl\' here, so Im going to leave."
+        mc_thought "I think its better to leave, girls sometimes need these moments alone."
+        mc "So, I feel like Im in the middle of a \'girl thing\' here, so Im going to leave."
         mc "Good night girls."
         show monica_sarah home5
         mon "Good night [player.name]."
@@ -111,7 +111,7 @@ label monica_sarah_talking_home:
     mc "You were?"
     show monica_sarah home16
     mon "Whaaat."
-    mon "Dont you say that Sarah."
+    mon "Dont say that Sarah."
     show monica_sarah home17
     sar "Oh mon mon its ok."
     mon_wisper "Sarahhh..."
@@ -123,10 +123,10 @@ label monica_sarah_talking_home:
     menu:
         mc_thought "..."
         "Leave them alone":
-            mc_thought "For some reason monica is not confortable with this talk."
+            mc_thought "For some reason Monica is not comfortable with this conversation."
             mc "Well girls."
             mc "I think I will let you two talk alone."
-            mc "Thank you for the talk."
+            mc "Thank you for the conversation."
             hide monica_sarah
             return
         "Invite them to go inside":
@@ -136,7 +136,7 @@ label monica_sarah_talking_home:
             show monica_sarah home20
             mon "Good idea [player.name]!"
             mon "We should get inside."
-            mon "Im going ahead."
+            mon "Im going in now."
             sar "Im going too."
             show monica_sarah home6
             mc_thought "Man, this place is too good for me."
@@ -149,11 +149,11 @@ label monica_sarah_talking_home:
             
         "What were you two talking about?":
             mc "Oh yeah? what were the two of you talking about?"
-            sar "Oh we were just talking that you have a Bi..."
+            sar "Oh we were just talking about how you have a bi..."
             show monica_sarah home20
             mon_shout "Nothing!" with vpunch
             mc "..."
-            mon "Ahn, we were talking about noghing."
+            mon "Ahn, we were talking about nothing."
             mc_thought "DAMN, I really want to know..."
             mc "Ok, I think its a \'girls talk\'."
             mc "I will leave you two to it then."

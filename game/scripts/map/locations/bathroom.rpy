@@ -9,6 +9,12 @@ screen bathroom():
         ysize 1080
 
         background (str(map_image))
+        imagebutton auto "overlays/bathroom toilet %s.webp":
+            focus_mask True
+            xpos -5
+            ypos -5
+            action Call("toilet")
+
         imagebutton:
             xpos 0.5
             xanchor 0.5
@@ -25,7 +31,7 @@ label bathroom:
     return
 
 label bathroom_on_enter:
-    if calendar.current_day_time == 2:
+    if calendar.current_day_time == 2 and calendar.current_week_day != 5:
         call monica_bath
         return _return
     return
@@ -94,10 +100,20 @@ label monica_bath:
     show bathroom monica6
     mc "I think I should go."
     call time_next
+    hide bathroom
     return False
 
+label toilet:
+    menu:
+        "Use the Toilet" :
+            play sound "audio/toilet.ogg" volume 0.4
+            return
+        "Masturbate(in development)" if 1 > 2:
+            return
+        "Nothing":
+            return
+    return
         
-    
     
 
         

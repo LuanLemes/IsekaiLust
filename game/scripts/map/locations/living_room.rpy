@@ -68,7 +68,7 @@ screen living_room():
                 ypos -5
                 action Call("linda_cards")
         # ashley dancing event
-        if calendar.current_week_day != 6 and calendar.current_week_day != 0 and calendar.current_day_time == 2 and monica_sarah_invited == False:
+        if calendar.current_week_day != 6 and calendar.current_week_day != 0 and calendar.current_day_time == 2 and monica_sarah_invited == False and calendar.current_week_day != 5:
             imagebutton auto "overlays/ashley monica overlay %s.webp":
                 focus_mask True
                 xpos -5

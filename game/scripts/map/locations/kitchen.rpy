@@ -10,8 +10,6 @@ screen kitchen():
 
         background (str(map_image))
 
-
-
         
         if monica_prologue == True:
 
@@ -91,13 +89,13 @@ label kitchen:
         show breakfast 3
         lin "Could you please stop that?"
         show breakfast 4
-        ash "Mooooom, this little imp is repeating me."
-        lin "Moooom this little imp is repeating me."
+        ash "Mooooom, this little imp is copying me."
+        lin "Moooom this little imp is copying me."
         show breakfast 4
         mon "Girls girls, behave your selves."
         show breakfast 1
-        ash "Ok mon."
-        lin "Ok mon."
+        ash "Ok mom."
+        lin "Ok mom."
         scene
         call update_image
     return
@@ -107,7 +105,7 @@ label kitchen_before_enter:
     return
 
 label kitchen_door:
-    mc_thought "There is a month since this door broke, I better get the right tools to fix it."
+    mc_thought "It has been a month since this door broke, I better get the right tools to fix it."
     return
 
 label monica_kitchen_morning:
@@ -120,23 +118,23 @@ label monica_kitchen_morning:
     mon "So good to see you are awake already."
     if renpy.random.randint(1,10) > 5:
         menu: 
-            "so, are you going to show up on the flower fields today?"
+            "So, are you going to show up on the Flower Fields today?"
             "Yes":
                 show monica half talking2
                 mon "I see, I will be waiting for you then."
             "No":
                 show monica half talking2
                 mon "Thats a pity....try to show up some other day then."
-            "I dont Know":
+            "I dont know":
                 show monica half talking2
-                mon "I see, if you decide to go, please try to find me, we can collect flowers together if you want to."
+                mon "I see, if you decide to go, please try to find me, we can collect flowers together if you want."
     else:
         menu:
             "How was your night?"
             "It was very good":
                 show monica half talking2
                 mon "Im glad to hear that."
-            "It had nightmares":
+            "I had nightmares":
                 show monica half talking2
                 mon "Oh my [mcmon] had nightmares, thats so bad."
                 mon "You know you can call me anytime if you need help forgeting nightmares right?"
@@ -149,7 +147,7 @@ label monica_kitchen_morning:
                         mon "Thats a pity."
                     "Tell her the dream (courage > 7)":
                         show monica half talking3
-                        "this part has not yet been developed yet."
+                        "This part has not yet been developed yet."
                         pass
     hide monica
     return
@@ -173,7 +171,7 @@ label monica_kitchen_morning:
         menu:
             "You are so funny":
                 pass
-            "Thats a beautifull song linda":
+            "Thats a beautiful song linda":
                 pass
         show breakfast girls5
         lin "Thank you [player.name]."
@@ -182,7 +180,7 @@ label monica_kitchen_morning:
         mon "Well, our little artist needs to be good and eat healthy food to keep being cute and funny."
         lin_shout "Thanks mooom!"
         show breakfast girls7
-        mon "No need to scream my little Baby."
+        mon "No need to scream my little baby."
         lin "Ok ok, Waaaaaw this smells greeeeat Thaaaaaanks."
         show breakfast girls8
         mon "You are welcome dear."
@@ -190,7 +188,7 @@ label monica_kitchen_morning:
         show breakfast girls9
         mon "To our big girl."
         ash "Thanks for the food mom."
-        mon "Oh, its nothing dear, you have to keep eating in order to being shiny and beautiful."
+        mon "Oh, its nothing dear, you have to keep eating in order to stay shiny and beautiful."
         show breakfast girls10 
         mon "And also."
         show breakfast girls11
@@ -199,9 +197,9 @@ label monica_kitchen_morning:
             "Thanks Monica":
                 mc "Oh thaanks Mon it looks very good."
             "...":
-                mon "How do we say?"
+                mon "What do we say?"
                 mc "Thanks mon you are the best."
-        mon "Its nothing sweet, always have in mind that you are also my big star, and you are also very important to me."
+        mon "Its nothing sweetie, always remember that you are also my big star, and you are very important to me."
         lin "Very important to us!!!, right sis?"
         ash "..."
         lin "Sis?"
@@ -214,7 +212,7 @@ label monica_kitchen_morning:
 
 label kitchen_on_exit:
     if monica_prologue == True:
-        mc_thought "(I should talk to monica before leaving.)"
+        mc_thought "(I should talk to Monica before leaving.)"
         return False
     return
 
@@ -223,7 +221,7 @@ label sarah_monica_kitchen:
         show kitchen cops overlay
         show monica sarah kitchen idle
     if monica_looked:
-        mc_thought "Im a little ashamed, better not get near monica right now."
+        mc_thought "Im a little ashamed, better not get near Monica right now."
         return
         hide kitchen cops overlay
         hide monica sarah kitchen idle
@@ -250,13 +248,13 @@ label sarah_monica_kitchen:
     mon "For me too dear please."
     mc "Right away!"
     show monica_sarah kitchen6 with dissolve
-    mc "Lets see, what we have here..."
+    mc "Lets see, what do we have here..."
     menu:
         "Water":
             mc_thought "I think this time I will go with water."
-        "Beer(Requires Beer - next updates)" if 1> 2:
+        "Beer (Requires Beer - in development)" if 1> 2:
             return
-        "Wine(Requires Wine - next updates)" if 1 > 2:
+        "Wine(Requires Wine - in development)" if 1 > 2:
             return
     show monica_sarah kitchen4 with dissolve
     mc_thought "And they are still talking."
@@ -269,29 +267,29 @@ label sarah_monica_kitchen:
     menu:
         "I dont want to interrupt a \'girls night\'.":
             mc "No, I dont want to interrupt a \'girls night\'."
-            mc_thought "I think I will be on the table and enjoy the view for a while."
+            mc_thought "I think I will sit at the table and enjoy the view for a while."
     hide kitchen cups
     show monica_sarah kitchen7
-    mc_thought "Thats it, thats all I needed a nice view of a nice ass in a tight short while I chill."
+    mc_thought "Thats it, thats all I needed a nice view of a nice ass in some tight short while I chill."
     mon "So, last year we were thinking about having a little birthday."
     mc_thought "...And they are still talking."
     mc_thought "Damn, how can a girl have an ass like that?"
-    mc_thought "Is like its just too big, too perfect."
+    mc_thought "Is like.. its just too big, too perfect."
     show monica_sarah kitchen8
     mc_thought "I want to slap that ass so badly?"
-    sar "Ha ha ha ha ha, Omg you didnt."
+    sar "Ha ha ha ha ha, OMG you didnt."
     show monica_sarah kitchen9
     sar "Wait, is there a fly on this glass?"
     mon "Is there?"
-    mc_thought "No, there isnt a fly on this glass I checked it."
-    mc_thought "But if any day a fly land on that ass I will make a point of killing that fly myself."
+    mc_thought "No, there isnt a fly on the glass I checked it."
+    mc_thought "But if there were a day that a fly landed on that ass I would kill it myself."
     mc_thought "What a big slap I would give, I can only imagine."
     show monica_sarah kitchen8
-    mc_thought "I dont know what to think, I will just stare at that ass and thats it."
-    mc_thought "Monica you sure know how to find the best friends."
+    mc_thought "I dont know what to think, I guess I will just stare at that ass and thats it."
+    mc_thought "Monica you sure know how to find some cute best friends."
     show monica_sarah kitchen10
     mc_thought "Or at least the best asses."
-    mc_thought "Wait..Oh nooo not again!!!"
+    mc_thought "Wait..oh nooo not again!!!"
     mc_thought "Why does she always have to look?"
     show monica_sarah kitchen11
     mc_thought "Yes, she saw me no doubt about that."

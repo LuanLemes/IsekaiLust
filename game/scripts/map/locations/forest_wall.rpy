@@ -1,7 +1,7 @@
 screen forest_wall():
     use top_screen()
     $ show_subtitle = False
-    text "thats the map babe"
+    text "Thats the map babe"
 
     frame:
         # xalign 0.0
@@ -48,7 +48,7 @@ label forest_wall:
         $ only_location_message = ["(Monica recomended the grocery store to sell these flowers.)"]
         return
     if calendar.current_day >= 1 and makoto_first == True and calendar.current_day_time <= 1:
-        mc_thought "Today seems like a good day to spent go to the guild and see how to become a member."
+        mc_thought "Today seems like a good day to go to the guild and see how to become a member."
         $ only_location = "Guild Gate"
         $ only_location_message = ["Today seems like a good day to go to the guild and see how to become a member."]
         return

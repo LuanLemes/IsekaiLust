@@ -174,3 +174,9 @@ screen character_screen(id):
             background  Frame(str("character_screen/" + low_name_of_the_girl + " hidden.webp"), 1920, 1080)
 
         # background Solid("#000000")
+
+init python:
+    def book_refresh():
+        if linda.phase == 1:
+            linda.book_phrase = "2"
+        return

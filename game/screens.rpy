@@ -766,6 +766,14 @@ screen about():
                         focus_mask True
                         yalign 0.5
                         action OpenURL("https://www.buymeacoffee.com/thelustarca")
+                text ("\n")
+                hbox:
+                    xalign 0.5
+                    text _("A very special thanks to our Patreons!\n") xalign 0.5
+                hbox:
+                    xalign 0.5
+                    text _("Discovery Channel GB \nAlmir")
+                text _("\n If you are a patreon and you want you name in the credits please send a message in  patreon or discord.")
                     
 
 

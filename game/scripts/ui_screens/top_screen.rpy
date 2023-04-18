@@ -169,5 +169,5 @@ screen top_screen:
                     yoffset -18
                     hover im.Scale("icons/book_hover.webp", 80,80)
                     idle im.Scale("icons/book.webp", 80,80)
-                    action [Show("book")]
+                    action [Function (book_refresh), Show("book")]
                     # action Call("inventory")

@@ -23,8 +23,8 @@ screen guild_gate():
         if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_day > 0:
             imagebutton auto "overlays/makoto overlay %s.webp":
                 focus_mask True
-                xpos -5
-                ypos -5
+                xpos image_button_offset
+                ypos image_button_offset
                 action Call("makoto_guild_gate")
     use top_screen()
     

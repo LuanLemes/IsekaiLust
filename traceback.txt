@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('icons/monica sarah friends.webp') at 0x00000000009b1940>:
+While running game code:
   File "game/scripts/Project/project_scenes.rpy", line 131, in script call
     call input_player_name
   File "game/scripts/Project/default_scenes.rpy", line 36, in script call
@@ -159,18 +159,52 @@ While loading <renpy.display.im.Image object ('icons/monica sarah friends.webp')
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 5 more times]
+  File "game/scripts/map/locations/bedroom.rpy", line 78, in script call
+    call change_location_to("Bedroom")
+  File "game/scripts/map/map.rpy", line 98, in script call
+    call expression map_reload_name
+  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
+    call sleep
+  File "game/scripts/map/locations/bedroom.rpy", line 78, in script call
+    call change_location_to("Bedroom")
+  File "game/scripts/map/map.rpy", line 98, in script call
+    call expression map_reload_name
+  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
+    call sleep
+  File "game/scripts/map/locations/bedroom.rpy", line 78, in script call
+    call change_location_to("Bedroom")
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
-  [Previous line repeated 16 more times]
+  [Previous line repeated 19 more times]
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 2 more times]
   File "game/scripts/map/map.rpy", line 108, in script
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in <module>
     $ renpy.call_screen(screen_name)
-OSError: Couldn't find file 'icons/monica sarah friends.webp'.
+  File "game/scripts/map/locations/living_room.rpy", line 1, in execute
+    screen living_room():
+  File "game/scripts/map/locations/living_room.rpy", line 1, in execute
+    screen living_room():
+  File "game/scripts/map/locations/living_room.rpy", line 3, in execute
+    frame:
+  File "game/scripts/map/locations/living_room.rpy", line 71, in execute
+    if calendar.current_week_day != 6 and calendar.current_week_day != 0 and calendar.current_day_time == 2 and monica_sarah_invited == False and calendar.week.current_week_day != 5:
+  File "game/scripts/map/locations/living_room.rpy", line 71, in <module>
+    if calendar.current_week_day != 6 and calendar.current_week_day != 0 and calendar.current_day_time == 2 and monica_sarah_invited == False and calendar.week.current_week_day != 5:
+AttributeError: 'Calendar' object has no attribute 'week'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -333,13 +367,37 @@ Full traceback:
     $ renpy.call_screen(screen_name)
   File "game/scripts/map/map.rpy", line 108, in script call
     $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 5 more times]
+  File "game/scripts/map/locations/bedroom.rpy", line 78, in script call
+    call change_location_to("Bedroom")
+  File "game/scripts/map/map.rpy", line 98, in script call
+    call expression map_reload_name
+  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
+    call sleep
+  File "game/scripts/map/locations/bedroom.rpy", line 78, in script call
+    call change_location_to("Bedroom")
+  File "game/scripts/map/map.rpy", line 98, in script call
+    call expression map_reload_name
+  File "game/scripts/map/locations/bedroom.rpy", line 31, in script call
+    call sleep
+  File "game/scripts/map/locations/bedroom.rpy", line 78, in script call
+    call change_location_to("Bedroom")
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
   File "game/scripts/map/map.rpy", line 163, in script call
     call change_location_to(location)
-  [Previous line repeated 16 more times]
+  [Previous line repeated 19 more times]
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  File "game/scripts/map/map.rpy", line 108, in script call
+    $ renpy.call_screen(screen_name)
+  [Previous line repeated 2 more times]
   File "game/scripts/map/map.rpy", line 108, in script
     $ renpy.call_screen(screen_name)
   File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
@@ -354,59 +412,35 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\behavior.py", line 885, in render
-    rv = super(Button, self).render(width, height, st, at)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
-    surf = image.load()
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
-    raise e
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
-    filelike = renpy.loader.load(self.filename)
-  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'icons/monica sarah friends.webp'.
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
+    callback(self)
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
+    self.update()
+  File "C:\Users\Luan\Documents\Work\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
+    self.screen.function(**self.scope)
+  File "game/scripts/map/locations/living_room.rpy", line 1, in execute
+    screen living_room():
+  File "game/scripts/map/locations/living_room.rpy", line 1, in execute
+    screen living_room():
+  File "game/scripts/map/locations/living_room.rpy", line 3, in execute
+    frame:
+  File "game/scripts/map/locations/living_room.rpy", line 71, in execute
+    if calendar.current_week_day != 6 and calendar.current_week_day != 0 and calendar.current_day_time == 2 and monica_sarah_invited == False and calendar.week.current_week_day != 5:
+  File "game/scripts/map/locations/living_room.rpy", line 71, in <module>
+    if calendar.current_week_day != 6 and calendar.current_week_day != 0 and calendar.current_day_time == 2 and monica_sarah_invited == False and calendar.week.current_week_day != 5:
+AttributeError: 'Calendar' object has no attribute 'week'
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 Isekai Lust 1.0.1
-Tue Apr 18 01:54:16 2023
+Tue Apr 18 11:32:48 2023
