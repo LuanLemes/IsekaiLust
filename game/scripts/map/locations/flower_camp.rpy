@@ -1318,7 +1318,8 @@ label unknown_girl_after_cum:
     mc "I never get tired of this view."
     play sound "audio/wolf howl.ogg"
     mc "And there she goes again."
-    mc "Bye...again."
+    mc "Bye...again..."
+    mc "Misterious wolf girl."
     call time_next
     hide unknown with dissolve
 

@@ -30,6 +30,14 @@ screen home():
             unhovered SetVariable("focus_location", location_object.name)
             action Call("change_location_to", "Forest Wall")
         text "Village" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+
+            #   monica and sarah talking scene at fridays
+        if calendar.current_day_time == 2 and calendar.current_week_day == 5 and monica_sarah_invited == False:
+            imagebutton auto "overlays/sarah monica house %s.webp":
+                focus_mask True
+                xpos -5
+                ypos -5
+                action Call("monica_sarah_talking_home")
     use top_screen()
 
 label home_check:
@@ -45,4 +53,120 @@ label home_check:
 
 label home:
     window hide
+    return
+
+label monica_sarah_talking_home:
+    show monica_sarah home1 with dissolve
+    menu:
+        mc_thought "Wow, the two of them here like this."
+        "Say \'Hey\'":
+            pass
+        "Let them chat":
+            hide monica_sarah
+            return
+    mc "Hey."
+    show monica_sarah home5
+    mon "Hi [player.name]."
+    sar "Oh, Hey [player.name]."
+    if monica_sarah_talking_first == True:
+        show monica_sarah home7 with dissolve
+        sar "Now, thats something strange."
+        sar "Hmmmm."
+        show monica_sarah home15
+        mon "Now, thats so strange?"
+        sar "I Knew you lived with monica but, I kind of, forgot you lived here."
+        show monica_sarah home9
+        mon "Ha ha ha, Oh Sarah thats so you."
+        sar "Im sorry, the last two months were kind of harsh"
+        show monica_sarah home8 
+        mon "Yeah, It was indeed."
+        show monica_sarah home5
+        mon "Anyway [player.name]..."
+        show monica_sarah home5
+    menu:
+        mon "How are you this evenning?"
+        "Im fine thanks.":
+            show monica_sarah home11
+            mon "Oh dear thats good to hear."
+        "Im very good thanks.":
+            show monica_sarah home11
+            mon "Good thing dear."
+    if flowers_sarah_level <= 1 or flowers_monica_level <= 1:
+        mc_thought "I think its better leave, girls sometimes needs these momments."
+        mc "So, I think I fell like Im in the middle of a \'girl\' here, so Im going to leave."
+        mc "Good night girls."
+        show monica_sarah home5
+        mon "Good night [player.name]."
+        sar "Good night."
+        hide monica_sarah
+        return
+            
+    sar "Anyway."
+    show monica_sarah home14
+    mon "..."
+    mc "..."
+    show monica_sarah home15
+    sar "We were just talking about you."
+    mc "You..."
+    mc "You were?"
+    show monica_sarah home16
+    mon "Whaaat."
+    mon "Dont you say that Sarah."
+    show monica_sarah home17
+    sar "Oh mon mon its ok."
+    mon_wisper "Sarahhh..."
+    sar "What?"
+    mon_wisper "..I...I didnt want him to..."
+    sar "Its ok Mon."
+    show monica_sarah home18
+    sar "Everything will be all right."
+    menu:
+        mc_thought "..."
+        "Leave them alone":
+            mc_thought "For some reason monica is not confortable with this talk."
+            mc "Well girls."
+            mc "I think I will let you two talk alone."
+            mc "Thank you for the talk."
+            hide monica_sarah
+            return
+        "Invite them to go inside":
+            mc "I think its starting to get darker, we better go inside."
+            mc "Maybe, you should get inside?"
+            mc "You know, just to be safer"
+            show monica_sarah home20
+            mon "Good idea [player.name]!"
+            mon "We should get inside."
+            mon "Im going ahead."
+            sar "Im going too."
+            show monica_sarah home6
+            mc_thought "Man, this place is too good for me."
+            mc "You two can go ahead."
+            $ monica_sarah_invited = True
+            mc "Im right behind you."
+            hide monica_sarah
+            return
+
+            
+        "What were you two talking about?":
+            mc "Oh yeah? what were the two of you talking about?"
+            sar "Oh we were just talking that you have a Bi..."
+            show monica_sarah home20
+            mon_shout "Nothing!" with vpunch
+            mc "..."
+            mon "Ahn, we were talking about noghing."
+            mc_thought "DAMN, I really want to know..."
+            mc "Ok, I think its a \'girls talk\'."
+            mc "I will leave you two to it then."
+            hide monica_sarah
+            return
+
+
+    # random question later
+    
+    
+    
+
+
+    
+
     return

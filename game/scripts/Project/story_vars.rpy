@@ -89,3 +89,10 @@ default linda_touch_one = False
 # unkown girl sex
 default first_unknown_girl = True
 default wolf_girl_fucked1 = False
+# monica sarah talking home
+default monica_sarah_invited = False
+default monica_sarah_talking_first = True
+# monica sarah talking kitchen
+default monica_looked = False
+default monica_sarah_water = False
+default talked_to_girls = False

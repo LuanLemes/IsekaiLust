@@ -38,6 +38,7 @@ default monica = Girl(3, "Monica", False, 0, "Human", "LandLady", "Friendly", 0,
 define mon = Character("Monica",image = "monica", namebox_background=AlphaMask(Solid("#943131"), "gui/namebox.png"), what_color = "#e5e5e5", what_outlines=[ (2, "#2f1515") ])
 define mon_shout = Character("Monica", image = "monica", what_size=43, namebox_background=AlphaMask(Solid("#943131"), "gui/namebox.png"), what_color = "#e5e5e5", what_outlines=[ (2, "#2f1515") ])
 define mon_thought = Character("Monica",  what_color = "#96989E", namebox_background=AlphaMask(Solid("#943131"), "gui/namebox.png"))
+define mon_wisper = Character("Monica", image = "monica" ,what_size = 15,  namebox_background=AlphaMask(Solid("#943131"), "gui/namebox.png"), what_color = "#e5e5e5", what_outlines=[ (2, "#321d1d") ])
 
 default ashley = Girl(4, "Ashley", False, 0, "Half Elf", "Friend", "Frenemy", 0, "2", 1, "Single", "She loves to be on comand")
 define ash = Character("Ashley", image = "ashley", namebox_background=AlphaMask(Solid("#372657"), "gui/namebox.png"), what_color = "#e5e5e5", what_outlines=[ (2, "#372657") ])

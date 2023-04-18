@@ -9,17 +9,9 @@ screen kitchen():
         ysize 1080
 
         background (str(map_image))
-        imagebutton:
-            xpos 0.5
-            ypos 0.95
-            xanchor 0.5
-            hover im.Scale("gui/idle.png", 340, 47)
-            idle im.Scale("gui/hover.png", 340, 47)
-            hovered SetVariable("focus_location", "Living Room")
-            unhovered SetVariable("focus_location", location_object.name)
-            action Call("change_location_to", "Living Room")
 
-        text "Living Room" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+
+
         
         if monica_prologue == True:
 
@@ -57,6 +49,33 @@ screen kitchen():
                 xpos -5
                 ypos -5
                 action Call("girls_kitchen_morning")
+    # sarah and monica
+        if calendar.current_week_day != 6 and calendar.current_week_day != 0 and calendar.current_day_time == 2 and monica_sarah_invited == True:
+            imagebutton auto "overlays/monica sarah kitchen %s.webp":
+                focus_mask True
+                xpos image_button_offset
+                ypos image_button_offset
+                action Call("sarah_monica_kitchen")
+                #  check if show water cups
+            if monica_sarah_water == True:
+                imagebutton:
+                    idle ("monica sarah friends/kitchen cops overlay.webp")
+                    hover ("monica sarah friends/kitchen cops overlay.webp")
+                    focus_mask True
+                    xpos image_button_offset
+                    ypos image_button_offset
+                    action NullAction()
+    imagebutton:
+        xpos 0.5
+        ypos 0.95
+        xanchor 0.5
+        hover im.Scale("gui/idle.png", 340, 47)
+        idle im.Scale("gui/hover.png", 340, 47)
+        hovered SetVariable("focus_location", "Living Room")
+        unhovered SetVariable("focus_location", location_object.name)
+        action Call("change_location_to", "Living Room")
+    text "Living Room" xpos 0.5 xanchor 0.5 ypos 0.95 color "#fff"
+
             
 
     use top_screen()
@@ -195,6 +214,101 @@ label monica_kitchen_morning:
 
 label kitchen_on_exit:
     if monica_prologue == True:
-        mc_thought "I should talk to monica before leaving."
+        mc_thought "(I should talk to monica before leaving.)"
         return False
     return
+
+label sarah_monica_kitchen:
+    if monica_sarah_water == True:
+        show kitchen cops overlay
+        show monica sarah kitchen idle
+    if monica_looked:
+        mc_thought "Im a little ashamed, better not get near monica right now."
+        return
+        hide kitchen cops overlay
+        hide monica sarah kitchen idle
+    if talked_to_girls:
+        mc_thought "I just talked to them."
+        return
+        hide kitchen cops overlay
+        hide monica sarah kitchen idle
+    show monica sarah kitchen idle
+    mc_thought "(Man, they are still talking.)"
+    mc_thought "(I dont think I could talk that much even in one entire week.)"
+    menu:
+        "They are probably thirsty."
+        "Offer them a drink":
+            show monica_sarah kitchen3
+            mon "No way, you got to be kidding me!"
+            sar "Im telling you!!!"
+            mc "Hey girls, want something to drink?"
+        "Leave them be":
+            hide monica
+            return
+    show monica_sarah kitchen5
+    sar "Oh Please yes, something cold."
+    mon "For me too dear please."
+    mc "Right away!"
+    show monica_sarah kitchen6 with dissolve
+    mc "Lets see, what we have here..."
+    menu:
+        "Water":
+            mc_thought "I think this time I will go with water."
+        "Beer(Requires Beer - next updates)" if 1> 2:
+            return
+        "Wine(Requires Wine - next updates)" if 1 > 2:
+            return
+    show monica_sarah kitchen4 with dissolve
+    mc_thought "And they are still talking."
+    show kitchen cups with dissolve
+    mc "Here you go."
+    show monica_sarah kitchen5
+    sar "You are so cute."
+    mon "Yes he is, he is my dear [mcmon]."
+    sar "Dont you want to stay with us?"
+    menu:
+        "I dont want to interrupt a \'girls night\'.":
+            mc "No, I dont want to interrupt a \'girls night\'."
+            mc_thought "I think I will be on the table and enjoy the view for a while."
+    hide kitchen cups
+    show monica_sarah kitchen7
+    mc_thought "Thats it, thats all I needed a nice view of a nice ass in a tight short while I chill."
+    mon "So, last year we were thinking about having a little birthday."
+    mc_thought "...And they are still talking."
+    mc_thought "Damn, how can a girl have an ass like that?"
+    mc_thought "Is like its just too big, too perfect."
+    show monica_sarah kitchen8
+    mc_thought "I want to slap that ass so badly?"
+    sar "Ha ha ha ha ha, Omg you didnt."
+    show monica_sarah kitchen9
+    sar "Wait, is there a fly on this glass?"
+    mon "Is there?"
+    mc_thought "No, there isnt a fly on this glass I checked it."
+    mc_thought "But if any day a fly land on that ass I will make a point of killing that fly myself."
+    mc_thought "What a big slap I would give, I can only imagine."
+    show monica_sarah kitchen8
+    mc_thought "I dont know what to think, I will just stare at that ass and thats it."
+    mc_thought "Monica you sure know how to find the best friends."
+    show monica_sarah kitchen10
+    mc_thought "Or at least the best asses."
+    mc_thought "Wait..Oh nooo not again!!!"
+    mc_thought "Why does she always have to look?"
+    show monica_sarah kitchen11
+    mc_thought "Yes, she saw me no doubt about that."
+    sar "Monica, are you alright?"
+    mon "Me?"
+    sar "Yes, you are acting strange all of sudden."
+    mon "Oh, Im super okay."
+    sar "Are you?"
+    show monica_sarah kitchen12
+    mon "I am"
+    mc_thought "Im not going to stay and spoil the fun."
+    mc_thought "Better to leave, I was thinking about masturbating in the bathroom anyway."
+    $ monica_looked = True
+    $ monica_sarah_water = True
+    $ talked_to_girls = True
+    hide monica_sarah
+    return
+
+
+
