@@ -18,7 +18,7 @@ default linda_cards_first = True
 default first_sleep = True
 default monica_morning_kitchen = False
 # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT 
-define config.developer = False
+define config.developer = True
 default linda_floor_card = False
 # default while_var = 0
 default sleep_when_enter = False
@@ -100,3 +100,14 @@ default monica_sarah_talking_first = True
 default monica_looked = False
 default monica_sarah_water = False
 default talked_to_girls = False
+default sarah_masturbate_after_water = False
+# sleeping phrase
+default sleeping_phrase = True
+# lilith first appear
+$ lilith_first_flower_field = False
+# wake naked monica
+default wake_naked_1 = False
+# masturbation related
+default masturbation_name = ""
+# monica shower scene
+default monica_shower_scene = False

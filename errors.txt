@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 770: is not terminated with a newline. (Check strings and parenthesis.)
-                        text _("A very special thanks to our Patreons! \n Discovery 🪐🇬🇧 \n Almir "
+File "game/scripts/map/locations/bathroom.rpy", line 167: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Say something"
+                   ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 18 12:46:48 2023
+Sat Apr 22 14:13:02 2023

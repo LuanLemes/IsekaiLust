@@ -333,7 +333,7 @@ label talk_with_debbie_grocery:
 
 label do_you_have_any_teddybears:
     $ debbie.book_phrase = "2"
-    $ debbie.phase = "1"
+    $ debbie.phase = 1
 
     $ teddybear_grocery_store = False
     show debbie half grocery7
@@ -404,9 +404,6 @@ label do_you_have_any_teddybears:
     show debbie half grocery with dissolve
     mc_thought "She is so polite, Sarah raised a good girl."
     deb "Ok, I will be waiting."
-    
-
-    
     return
 
 

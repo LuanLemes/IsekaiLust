@@ -26,6 +26,10 @@ screen bedroom():
     use top_screen()
 
 label bedroom_reload:
+    if int(debbie.phase) > 0 and flowers_monica_level > 1 and flowers_sarah_level > 1 and lilith.phase == 0 and calendar.current_day_time == 3:
+        mc_thought "I cant sleep with this noise on the roof."
+        mc_thought "I think there are cats walking there."
+        mc_thought "I better go take a look."
     if calendar.current_week_day == 6 or calendar.current_week_day == 0:
         dev "The game weekend has not yet prepared so the game is going to skip the weekend, (Im so very sorry updates are coming.)"
         call sleep
@@ -71,7 +75,10 @@ label sleep:
         $ ui_show_foward_time = True
     call day_next
     scene black with dissolve
-    mc "That was a really good night sleep."
+    if sleeping_phrase == True:
+        mc "That was a really good night sleep."
+        $ sleeping_phrase == True
+
     if renpy.get_screen("say"):
         pass
     else:
@@ -92,5 +99,113 @@ label take_a_nap:
     return
 
 label check_character_updates:
+    return
+
+label wake_naked_1:
+    $ wake_naked_1 = True
+    show bedroom1 monica1 with dissolve
+    mc_thought "(Hun, one more morning.)"
+    mc "Oh Gosh!"
+    mc "Im alive!!!!" with vpunch
+    mc "I didnt die!!!"
+    mc_thought "(I never thought I would be so happy only because I woke up.)"
+    mc_thought "(Wait, what is this?)"
+    show bedroom1 monica2 with dissolve
+    mc_thought "(Is this....a note?)"
+    mc_thought "Its writen: \"I can´t bear to live anymore. Even with my beautifull gigantic and enormous cock, that can make any girl, even a SUCCUBUS VERY HAPPY. I give up. My last wish is to be burried with an open coffin and using no underwear so all the girls may know the best part of me. ass [player.name].\""  
+    mc_thought "What the fuck did I just read?!?"
+    show bedroom1 monica3
+    mon_shout "Good morning!!!!"  with hpunch
+    mc "What the fuck?!?"
+    mon "You wont believe who was at the door asking for you this morning."
+    mc "Monica."
+    show bedroom1 monica4
+    mon "It was Deb and she said..."
+    mc "Monica I was just about to..."
+    show bedroom1 monica8
+    mon "Oh my..."
+    mc "Get dressed."
+    mon "Oh..."
+    mon "My..."
+    mc "..."
+    show bedroom1 monica5 
+    mon "Im s-sorry!" with vpunch
+    mon "I didnt know you were in such a b-b-big."
+    mon "Private moment!"
+    show bedroom1 monica6
+    mon "Im s-sorry!" with vpunch
+    menu:
+        mon "Oh this is so embarassing..."
+        "You didnt do it on purporse":
+            pass
+        "Its fine dont worry":
+            pass
+        "Im the one who sould be embarassed":
+            pass
+    show bedroom1 monica9
+    mon "Im used to living with ashley and linda so..."
+    mon "Well I didnt pay any attention to it when you got here."
+    mon "I would never look at my [mcmon] naked on purpose."
+    mon "Im your [monmc] and I respect you very much."
+    show bedroom1 monica10
+    mon "Im so sorry!" with vpunch
+    mc_thought "(Now I know why linda talks that way.)"
+    mc "Its alright."
+    mon "I will always knock before entering,"
+    show bedroom1 monica6
+    mon "Does that sound ok with you?"
+    menu:
+        "No need to do that":
+            mc "Its your house after all."
+    show bedroom1 monica9
+    mon "If you are ok with it."
+    show bedroom1 monica6
+    mon "But I think I will knock."
+    mc_thought "(Damn is she doesnt stop shaking that ass I will get hard.)"
+    mc_thought "(I need to get her out of here soon.)"
+    show bedroom1 monica10
+    mon "Anyway, Debbie was here a while ago asking for you."
+    mc "Debbie? Sarahs Daugher?"
+    mon "Yes."
+    mc_thought "Man, Im naked and she is right in front of me, I want to fuck her so badly."
+    mon "She said the bear will be arriving tomorrow."
+    mc "I understand, Thanks mom."
+    mon "Oh sweet!"
+    show bedroom1 monica11
+    mon "You called me mon!"
+    mc "..."
+    show bedroom1 monica5 
+    mon "I did it again?" with vpunch
+    show bedroom1 monica6
+    mon "I think I..."
+    mon "I better leave."
+    mon "Good morning [player.name]."
+    show bedroom1 monica7 with dissolve
+    mc_thought "*Laughs*"
+    mc_thought "(Cmon... it was kind of funny.)"
+    mc_thought "(Well, I often fantasize of I seeing monica naked and not the way around.)"
+    mc_thought "(At least she saw my cock in a good day.)"
+    mc_thought "(Oh come on its Monica Im talking about, she probably didnt even noticed my cock there.)"
+    ash "Good morning Mom."
+    mon "Good COCK my darling."
+    ash "What did you just say?"
+    mon "Oh. g-good LOCK of this door here."
+    ash "O..kay."
+    mc_thought "(Or maybe she did noticed it, he he.)"
+    $ sleeping_phrase = False
+    call sleep_from_where
+    return
+
+
+
+
     
+    
+
+
+
+
+
+
+
     return

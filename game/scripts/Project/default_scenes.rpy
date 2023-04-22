@@ -39,3 +39,11 @@ return
 label camera_reset:
     camera:
         pos ( 0, 0) yzoom 1.0 zoom 1.0
+    return
+    
+label sleep_from_where:
+    $ sleep_when_enter = True
+    $ dont_show_map_image = True
+    call change_location_to("Bedroom")
+    scene black with dissolve
+    return

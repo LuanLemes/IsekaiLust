@@ -9,6 +9,8 @@ image side sarah = "side/ssarah.webp"
 image side makoto = "side/smakoto.webp"
 image side book = "side/sbook.webp"
 image side ung = "side/sung.webp"
+image side lilith = "side/slilith.webp"
+
 default all_girls = []
 define narrator = Character('', what_color='#ffffff',namebox_background=AlphaMask(Solid("#ff7f7f00"), "gui/namebox.png"))
 define dev = Character("Developer", namebox_background=AlphaMask(Solid("#FF7F7F"), "gui/namebox.png"))
@@ -24,7 +26,7 @@ define unk = Character("?????", namebox_background=AlphaMask(Solid("#FF7F7F"), "
 
 define boo = Character("Book of Aphrodite",image = "book", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#433a02"), "gui/namebox.png") , what_outlines=[ (2, "#433a02") ])
 
-default aphrodite = Girl(1, "Aphrodite", False, 0, "Goddes", "Your Boss", "Friendly", 0, "0", 1, "?????", "She is nymphomaniac")
+default aphrodite = Girl(1, "Aphrodite", False, 0, "Goddes", "Your Boss", "Friendly", 0, all_for_this_update_phrase, 1, "?????", "She is nymphomaniac")
 define aph = Character("Aphrodite",image = "aphrodite", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png") , what_outlines=[ (2, "#540324ff") ])
 define aph_shout = Character("Aphrodite", image = "aphrodite", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 define aph_thought = Character("Aphrodite",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
@@ -89,5 +91,13 @@ define shi_thought = Character("Shino",  what_color = "#96989E", namebox_backgro
 define ung = Character("Wolf Girl?",image = "ung", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png") , what_outlines=[ (2, "#540324ff") ])
 define ung_shout = Character("Wolf Girl?", image = "ung", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 define ung_thought = Character("Aphrodite",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
+
+default lilith = Girl(13, "Lilith", False, 0, "Succubus", "Enemy", "Friendly", 0, "0", 1, "???????", "?????????")
+define lunk = Character("?????",image = "lilith", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png") , what_outlines=[ (2, "#540324ff") ])
+define lil = Character("Lilith",image = "lilith", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png") , what_outlines=[ (2, "#540324ff") ])
+define lil_shout = Character("Lilith", image = "lilith", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
+define lil_thought = Character("Lilith",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
+define lil_command = Character("?????",image = "lilith", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png") , what_outlines=[ (2, "#540324ff") ])
+
 
 define notif = Character("Notification", what_color ="#000000cf")

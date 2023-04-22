@@ -177,6 +177,7 @@ screen character_screen(id):
 
 init python:
     def book_refresh():
-        if linda.phase == 1:
-            linda.book_phrase = "2"
+        for girl in all_girls:
+            girl.book_check()
+            girl.book_phrase = str(girl.book_phrase)
         return

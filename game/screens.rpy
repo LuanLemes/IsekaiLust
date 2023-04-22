@@ -179,8 +179,6 @@ style centered_text:
     outlines [ (2, "#000000") ]
     color "#ffff"
 
-
-
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to

@@ -26,7 +26,7 @@ screen flower_camp():
                 ypos -5
                 action Call("sarah_flower_field")
         # monica flower fields
-        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_day > 1:
+        if calendar.current_day_time < 2 and calendar.current_week_day != 0 and calendar.current_week_day != 6 and calendar.current_day > 0:
             if calendar.current_week_day != 3 and calendar.current_day >= 12:
                 imagebutton auto "overlays/monica flower field %s.webp":
                     focus_mask True
@@ -914,6 +914,7 @@ label monica_flowers_level_2:
         $ monica.book_phrase = "2"
         $ monica.phase = 2
         return
+    return
     
 label sex_scene_with_unknown_girl:
     stop music

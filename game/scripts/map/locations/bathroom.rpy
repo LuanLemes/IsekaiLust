@@ -37,6 +37,7 @@ label bathroom_on_enter:
     return
 
 label monica_bath:
+    $ monica_shower_scene = True
     mc "My breath is awful, I really need to brush my teeth."
     mc "Oh maaaan locked again? ashley is that you?"
     mon "No [player.name] its me, Monica."
@@ -103,21 +104,84 @@ label monica_bath:
     hide bathroom
     return False
 
+
+
 label toilet:
     menu:
         "Use the Toilet" :
             play sound "audio/toilet.ogg" volume 0.4
             return
-        "Masturbate(in development)" if 1 > 2:
-            return
+        "Masturbate":
+            call bathroom_masturbate
         "Nothing":
             return
     return
         
     
-
-        
+label bathroom_masturbate:
     
+
+    # monica and sarah water
+    if monica_sarah_invited and monica_sarah_water:
+        call sarah_after_water_masturbate
+        return
+    
+    mc_thought "I think I need a momment for myself here."
+
+    return
+
+label sarah_after_water_masturbate:
+    $ sarah_masturbate_after_water = True
+    scene bathroom morning
+    show monica_sarah kitchen7:
+            matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    with dissolve
+    mc "I wonder, How can someone be so hot like that."
+    mc "Her body is perfect from top to bottom."
+    show monica_sarah home6:
+            matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+    with dissolve
+    mc "Oh I loved that momment."
+    mc "All I wanted was to grab that ass with my two hands and call it mine."
+    show monica_sarah kitchen9:
+            matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    with dissolve
+    mc "The way she bended over at that momment."
+    mc "It was so good...I really need to slap that ass."
+    mc "Sarah you ass is my mountain."
+    sar "Hey is someone in there?"
+    show monica_sarah kitchen9:
+        alpha 0.74 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    with dissolve
+    mc_thought "(Ah for fuck sake)"
+    sar "I hear some noise, Ashley is that you?"
+    show monica_sarah kitchen9:
+        alpha 0.60 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    with dissolve
+    mc_thought "(You have got to be kidding)"
+    hide monica_sarah kitchen9 with Dissolve(1.0)
+    mc "*Exales*"
+    mc_thought "Whatever"
+    sar "Hello?"
+    menu:
+        "Say something"
+            mc "Hello?"
+            sar "Oh so its you [player.name]"
+            mc_thought "How could you do that to me sarah?"
+            mc_thought "I was having a good momment thinking about you just a second ago."
+            sar "Yes it is, I kind of drank too much water I think."
+            mc "Just a little I will be out in a second."
+            sar_shout "Okay!"
+            mc "Unless you want to get in with me still inside the bathroom of course."
+            sar "You are funny *laughs*, Its ok, I can wait!"
+            mc_shout "Anyway, I better get out, the momment is ruined."
+        "Get out":
+            pass
+    mc "Hey"
+    show sarah masturbate1
+        
+
+
     
 
 
