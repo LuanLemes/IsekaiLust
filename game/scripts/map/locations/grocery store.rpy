@@ -52,7 +52,7 @@ label grocery_store_first:
     mc_thought "Just what is happening here?!!???" with vpunch
     deb "Moooom you are too heavyyyy."
     sar "Hold on dear, you have to hold firm there or I will fall."
-    deb "Shouldn't we use a stair or something?"
+    deb "Shouldn't we use a ladder or something?"
     sar "Yes we should but we don't have one here right now, just...just a little more my little Debbie."
     sar "Also, could you please use both of your hands?"
     deb "But mooooom, That's your ass, I shouldn't be touching it."
@@ -65,7 +65,7 @@ label grocery_store_first:
         mc "Should I say something?"
         "Say Hello":
             mc_whisper "Hello."
-            mc_thought "Oh...that's a pity...I think they didn’t hear me."
+            mc_thought "Oh...that's a pity...I think they didnt hear me."
             mc_thought "What can I say... I tried, didnt I?"
         "Keep quiet":
             mc_thought "I think I will enjoy the show a little more."
@@ -84,7 +84,7 @@ label grocery_store_first:
     deb "A candy? I think I deserve two because I am holding both sides of your ass."
     sar "Ok, I will give you two candies, I am sorry dear...your first day should be better than this."
     sar "But know that I love you."
-    deb "I love you too mom, and I always obey you no matter what. It’s just...I don't like this situation..."
+    deb "I love you too mom, and I always obey you no matter what. Its just...I don't like this situation..."
     deb "I shouldn't be touching you...especially not there and not for so long."
     mc_thought "Well if they turn around now and see me here in silence it will be awkward."
     menu: 
@@ -214,6 +214,9 @@ label talk_to_debbie_store:
     if debbie_first == False:
         show debbie half grocery
         deb "Hi [player.name], how are you?"
+    # teddy bear avilable dialog
+    if teddy_available_first_dialog == True:
+        call teddy_bear_available
 
     if debbie_first == True:
         $ debbie_first = False
@@ -228,7 +231,7 @@ label talk_to_debbie_store:
             "Is everything alright?":
                 mc "Hey...is everything alright?"
                 deb "It is...it's just...seriously...a shameful situation you just saw."
-        mc "It’s alright nothing to be ashamed of, you were just helping your mom"
+        mc "Its alright nothing to be ashamed of, you were just helping your mom"
         menu:
             deb "Yes, I guess so..."
             "That was impressive":
@@ -271,7 +274,8 @@ label talk_to_debbie_store:
                 call talk_with_debbie_grocery
             "Do you have any teddy bears for sale?::teddybear_grocery_store":
                 call do_you_have_any_teddybears
-
+            "I want to buy a teddy bear (30 coins)::can_buy_teddy" if player.money >= 30:
+                call buy_teddy_bear
             "Nothing for now, thank you":
 
                 show debbie half grocery7
@@ -427,3 +431,40 @@ label open_grocery_store:
     $ ui_can_inventory = True
     return
 
+label teddy_bear_available:
+    $ teddy_available_first_dialog = False
+    mc "Hi debbie, Monica told me you went to the house to...."
+    show debbie half grocery7
+    deb "Oh yes, I went there, she said you were sleeping but she went to wake you up."
+    show debbie half grocery6
+    deb "But then she came back all face red and told me you got the message."
+    mc_thought "So Monica was happy after that?"
+    show debbie half grocery7
+    deb "She looked, different. Did something happen?"
+    show bedroom1 monica5:
+            alpha 1.69 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.35)*BrightnessMatrix(-0.01)*HueMatrix(0.0) 
+    with dissolve
+    mc "If something happened?"
+    hide bedroom1 with dissolve
+    mc "No nothing special really."
+
+    show debbie half grocery6
+    deb "I see, maybe Im wrong then."
+    deb "Anyway the teddy bears arrived, if you want one it will be 30 coins."
+    return
+
+label buy_teddy_bear:
+    if player.money > 30:
+        $ can_buy_teddy = False
+        $ debbie.phase = 3
+        $ linda.phase = 2
+        $ player.money -= 30
+        show debbie half grocery6
+        deb "Ok [player.name]."
+        show debbie half grocery7
+        deb "Here it is."
+        $ player_inventory.add_item(300, 1)
+        "{color=#9fe58b}You got 1 TeddyBear{/color}"
+        mc "Thanks Debbie, you are the best!"
+        show debbie half grocery6
+        deb "Another happy client he he."

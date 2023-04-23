@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/bathroom.rpy", line 167: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Say something"
-                   ^
+File "game/screens.rpy", line 769: expected '=' not found.
+    define patreons["heathcliff flexner","John Doe","halowars87","Dead Throne","Andrew Hollingworth","Tittilov","Jonas Klus","Shredder1953","Ralphy Simmons","Luan Lemes"]                    
+                                                                                                                                                                                              ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Apr 22 14:13:02 2023
+Sun Apr 23 01:37:31 2023

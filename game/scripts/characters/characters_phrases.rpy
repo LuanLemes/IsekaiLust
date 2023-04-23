@@ -1,9 +1,11 @@
-define all_for_this_update_phrase = "Thats all for this update1"
+define all_for_this_update_phrase = "Thats all for this update"
 define no_tips_for_now = "No tips for now"
 
 define aphrodite_phase1 = all_for_this_update_phrase
 # ......
-define linda_phase1 = all_for_this_update_phrase
+define linda_phase1 = no_tips_for_now
+define linda_phase2 = "Give the teddy bear to her."
+define linda_phase3 = all_for_this_update_phrase
 # ......
 define monica_phase1 = "phase 1"
 define monica_phase2 = all_for_this_update_phrase
@@ -17,6 +19,8 @@ define ayame_phase1 = all_for_this_update_phrase
 define kogame_phase1 = all_for_this_update_phrase
 # ......
 define debbie_phase1 = no_tips_for_now
+define debbie_phase2 = "Buy the teddybear on the guild store."
+define debbie_phase3 = all_for_this_update_phrase
 # ......
 define anita_phase1 = all_for_this_update_phrase
 # ......

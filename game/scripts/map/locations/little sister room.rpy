@@ -42,7 +42,7 @@ screen linda_room():
                     action Call("linda_looking_for_bear")
 
     use top_screen()
-    
+
 label linda_room:
     if linda_room_first == True:
         $ linda_room_first = False
@@ -196,14 +196,22 @@ label linda_looking_for_bear:
         mc "So all I need to do is bring her teddy bear back? Easy enough."
         $ teddybear_grocery_store = True
         return
-    if linda_bear_first == True:
+    if linda_bear_first == True and linda.phase < 3 :
         show linda talking1
         menu:
-            lin "So, have you found the teddy bear yet?" 
+            lin "So, have you found the teddy bear yet?"
             "Not yet":
                 lin "Its ok, I trust you [player.name] you will surely find it."
                 hide linda
                 return
+            "Yes I did (Requires teddybear)" if player_inventory.item_exists(300) != -1:
+                call bear_found
+                return
+    else:
+        # show linda talking1
+        "In development."
+        # hide linda
+        return
     return
 
 label linda_sleeping_pillow:
@@ -217,7 +225,7 @@ label linda_sleeping_pillow:
 
     show linda sleep pillow idle
     mc_thought "(I think linda is already sleeping.)"
-    menu: 
+    menu:
         mc_thought "(I should....)"
         "Get closer just to see if she needs something":
             pass
@@ -302,6 +310,109 @@ label linda_sleeping_pillow:
             scene
             return
     return
-    
 
+label linda_teddy_delivery:
+    return
 
+label bear_found:
+    mc "Yes I did."
+    menu:
+        "Give her the teddy bear":
+            pass
+    mc "Here it is."
+    show linda teddy1
+    lin_shout "TIIIIMBERS!!!" with vpunch
+    show linda teddy2
+    lin "Timbers I will never lose you again."
+    show linda teddy3
+    lin "I swear I wont."
+    show linda teddy2
+    lin "I will take care of you."
+    show linda teddy3
+    lin "And tell you stories."
+    show linda teddy6
+    lin "And you are going to sleep with me, yes yes yes."
+    mc_thought "Linda is so cute."
+    mc_thought "Im happy because she is happy."
+    show linda teddy3
+    lin "Wait..."
+    mc_thought "Oh no, did she realize it?"
+    lin "Hmmm..."
+    show linda teddy4
+    lin "This"
+    show linda teddy5
+    lin "This is not Timbers...is it?"
+    menu:
+        "Tell her the truth":
+            mc "Look linda, I looked everywhere"
+            mc "And I didnt find it so I bought a new one for you"
+        "Lie":
+            mc "Look linda, I saw this guy that stole your bear."
+            mc "Turns out he is a international teddy bear stealer."
+            mc "He is wanted in several countries."
+            mc "I knew he was around here."
+            mc "But, to mess with My Linda? My [linmc]?"
+            mc "No no! that he can not do?"
+            mc "So I went after him."
+            mc "After several days looking for him."
+            mc "I found his hideout."
+            mc "There was in fact a whole gang of bear stealers."
+            mc "We had a reeeeeally huge fight"
+            mc "Sometimes I was getting beaten by them."
+            mc "Sometimes they were getting beaten by me."
+            mc "And so it was.."
+            mc "After hours of fighting that the leader jumped out with two bears in his hand."
+            mc "And as he faded into the dark I was able to grab one of the bears from his hand."
+            mc "I wished it was Timbers, but it was this one."
+    mc "Im sorry Linda I did my best."
+    lin "Waw, did you go through all this trouble for me?"
+    lin "Why would you do such a thing?"
+    show linda teddy7
+    mc_shout "BECAUSE THATS WHAT HEROES DO." with vpunch
+    show linda teddy8
+    lin "You are my hero [player.name]!"
+    mc "Wow Linda"
+    lin "I had to demonstrate my gratitude."
+    mc "I see but.."
+    show linda teddy9
+    lin "I always wanted to have someone like you."
+    mc "Someone like me?"
+    lin "Thanks for taking care of me."
+    lin "You really are my [mclin]."
+    show linda teddy10
+    lin "*Kiss*"
+    mc "Okay you won." with fade
+    show linda teddy11
+    mc "Now, tell me about the map, you promised."
+    show linda teddy12
+    lin "Ok, but first name my bear."
+    show linda teddy11
+    mc "Name your bear?"
+    show linda teddy12
+    lin "Yes, name it!"
+    show linda teddy11
+    mc "Ok, then his name will be:"
+    $ teddy_name = renpy.input("The name of the bear will be", length = 21, default = "Mr Pickles" )
+    show linda teddy12
+    lin "Ok then his name will be [teddy_name] then."
+    show linda teddy11
+    mc "Now tell me about the map"
+    show linda teddy12
+    lin "Ok."
+    lin "The last time I saw the map was a week ago."
+    show linda teddy11
+    mc "Where?"
+    show linda teddy12
+    lin "It was inside Ashleys room."
+    show linda teddy11
+    mc "Ashleys room?"
+    show linda teddy12
+    lin "Yes, I saw it in there, but please dont tell her. She cant know I go in there."
+    show linda teddy11
+    mc "Okay I wont."
+    mc "Thanks Linda."
+    show linda teddy12
+    lin "Thank you [player.name], thanks to you I now have [teddy_name]."
+    $ linda.phase = 3
+    $ player_inventory.remove_item(300,1)
+    return

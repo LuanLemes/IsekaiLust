@@ -301,7 +301,8 @@ label sarah_monica_kitchen:
     show monica_sarah kitchen12
     mon "I am"
     mc_thought "Im not going to stay and spoil the fun."
-    mc_thought "Better to leave, I was thinking about masturbating in the bathroom anyway."
+    mc_thought "Better to leave, I was thinking about {color=#FFAA00}masturbating in the bathroom{/color}
+     anyway."
     $ monica_looked = True
     $ monica_sarah_water = True
     $ talked_to_girls = True

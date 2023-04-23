@@ -18,6 +18,7 @@ label input_player_name:
 
 label age_check:
     scene black with Dissolve(0.5)
+    centered "All the characters in this story are 18+"
     centered "This game contains content of adult nature and is not suited for audiences  below the age of 18. If you are easily offended or are under the age of 18, close the game now."
     menu:
         "Are you +18 years old?"

@@ -366,22 +366,13 @@ screen navigation():
         ypos 10
         action OpenURL("https://discord.gg/CkTBa8Evpd")
     imagebutton:
-        idle im.Scale("icons/buy me a coffe idle.png", 280, 69)
-        hover im.Scale("icons/buy me a coffe hover.png", 280, 69)
-        focus_mask True
-        yalign 0.0
-        xpos 198
-        ypos 22
-        action OpenURL("https://www.buymeacoffee.com/thelustarca")
-    imagebutton:
         idle im.Scale("icons/patreon idle.png", 77, 77)
         hover im.Scale("icons/patreon hover.png", 77, 77)
         focus_mask True
         yalign 0.0
         xpos 105
         ypos 15
-        # action OpenURL("http://your_url.com")
-        action NullAction()
+        action OpenURL("https://www.patreon.com/IsekaiLust")
     vbox:
         style_prefix "navigation"
 
@@ -770,9 +761,12 @@ screen about():
                     text _("A very special thanks to our Patreons!\n") xalign 0.5
                 hbox:
                     xalign 0.5
-                    text _("Discovery Channel GB \nAlmir")
-                text _("\n If you are a patreon and you want you name in the credits please send a message in  patreon or discord.")
-                    
+                    vbox:
+                        for p in patreons:
+                            text _("- [p]")
+
+
+define patreons = ["heathcliff flexner","John Doe","halowars87","Dead Throne","Andrew Hollingworth","Tittilov","Jonas Klus","Shredder1953","Ralphy Simmons","Luan Lemes"]                    
 
 
 

@@ -119,15 +119,16 @@ label toilet:
         
     
 label bathroom_masturbate:
-    
-
     # monica and sarah water
+    if calendar.current_day_time == 4:
+        mc_thought "I think its too late for that."
+        return
     if monica_sarah_invited and monica_sarah_water:
         call sarah_after_water_masturbate
         return
     
-    mc_thought "I think I need a momment for myself here."
-
+    mc_thought "I think I need a moment for myself here."
+    call time_next
     return
 
 label sarah_after_water_masturbate:
@@ -141,14 +142,14 @@ label sarah_after_water_masturbate:
     show monica_sarah home6:
             matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0)
     with dissolve
-    mc "Oh I loved that momment."
+    mc "Oh I loved that moment."
     mc "All I wanted was to grab that ass with my two hands and call it mine."
     show monica_sarah kitchen9:
             matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
     with dissolve
-    mc "The way she bended over at that momment."
+    mc "The way she bended over."
     mc "It was so good...I really need to slap that ass."
-    mc "Sarah you ass is my mountain."
+    mc "Sarah your ass is my mountain."
     sar "Hey is someone in there?"
     show monica_sarah kitchen9:
         alpha 0.74 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.40)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
@@ -161,25 +162,82 @@ label sarah_after_water_masturbate:
     mc_thought "(You have got to be kidding)"
     hide monica_sarah kitchen9 with Dissolve(1.0)
     mc "*Exales*"
-    mc_thought "Whatever"
+    mc_thought "Whatever."
     sar "Hello?"
     menu:
-        "Say something"
+        "Say something":
             mc "Hello?"
-            sar "Oh so its you [player.name]"
+            sar "Oh so its you [player.name]."
             mc_thought "How could you do that to me sarah?"
-            mc_thought "I was having a good momment thinking about you just a second ago."
+            mc_thought "I was having a good moment thinking about you just a second ago."
             sar "Yes it is, I kind of drank too much water I think."
             mc "Just a little I will be out in a second."
             sar_shout "Okay!"
             mc "Unless you want to get in with me still inside the bathroom of course."
             sar "You are funny *laughs*, Its ok, I can wait!"
-            mc_shout "Anyway, I better get out, the momment is ruined."
+            mc_thought "Anyway, I better get out, the moment is ruined anyway."
         "Get out":
             pass
-    mc "Hey"
     show sarah masturbate1
+    $ side_image_activated = False
+    sar "Hey [player.name]"
+    mc "Oh hey."
+    show sarah masturbate3
+    $ side_image_activated = True
+    mc "OH MY GOSH!" with vpunch
+    show sarah masturbate4
+    sar "What? something went wrong?"
+    mc "Oh, its nothing."
+    mc "I just"
+    mc "Thought about something that I have to do thats all."
+    sar "Is that so?"
+    mc "*laughs* Yes, yes it is."
+    mc_thought "Damn Sarah!"
+    mc_thought "You interrupt my moment, only to make me want you even more."
+    sar "Can I ask a question [player.name]?"
+    mc "Yes of course."
+    show sarah masturbate5
+    $ side_image_activated = False
+    sar "Did you say my name while you were in the bathroom?"
+    mc "OH MY GOSH DID I SAY THAT OUT LOUD?"
+    sar "I couldnt hear much since I just got here but."
+    sar "I swear I heard you say my name in there."
+    menu:
+        mc_thought "What do I answer?"
+        "I was talking to myself":
+            mc "Oh, that? I was just talking to myself."
+            mc "While thinking things."
+            mc "I sometimes do that."
+        "I was thinking about work":
+            mc "Oh that? I was thinking about the flower camp."
+            mc "Might have said your name without realizing it."
+    sar "Oh, you need to relax dear."
+    $ side_image_activated = True
+    show sarah masturbate3
+    mc_thought "Sorry Sarah, but its impossible to relax while seeing that ass"
+    show sarah masturbate1
+    sar "So.."
+    sar "I just.."
+    sar "Remembered the reason I was here!"
+    show sarah masturbate2
+    sar "I really need to pee!!!" with hpunch
+    mc "Oh Sarah Im sorry please go ahead."
+    show sarah masturbate6
+    sar_shout "I will, Thanks [player.name]! {w=1.5} {nw}"
+    hide sarah
+    show hallway morning
+    call time_next
+    call change_location_to("Hallway")
+    return
+
         
+    
+        
+
+            
+    
+
+
 
 
     

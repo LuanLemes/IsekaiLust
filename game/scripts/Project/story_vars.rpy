@@ -18,7 +18,7 @@ default linda_cards_first = True
 default first_sleep = True
 default monica_morning_kitchen = False
 # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT 
-define config.developer = True
+define config.developer = False
 default linda_floor_card = False
 # default while_var = 0
 default sleep_when_enter = False
@@ -84,9 +84,12 @@ default is_witch_in_guild = False
 default where_witch = False
 default is_she_in_the_guild_now = False
 default witch_talk_first = False
-# linda bear
+# linda debbie bear
 default linda_bear_first = False
 default teddybear_grocery_store = False
+default teddy_name = "Mr Picles"
+default can_buy_teddy = False
+default teddy_available_first_dialog = True
 # linda sleep
 default pillow_removed = False
 default linda_touch_one = False

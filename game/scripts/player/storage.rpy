@@ -107,7 +107,8 @@ init python:
         mana_potion = InventoryItem(150, "Lust potion", 5, "Potion", False, 150, 100, 5,"Recovers Mana of the user")
         lust_potion = InventoryItem(151, "Mana potion", 5, "Potion", False, 150, 100, 5,"You may use this potion on special situations")
         healing_potion = InventoryItem(152, "Healing potion", 5, "Potion", False, 150, 100, 5,"Recovers Mana of the user")
-
+    #  Quest items
+        teddy_bear = InventoryItem(300, "Teddy Bear", 1, "Toy", False, 150, 100, 5,"Linda really wants one of this.")
 
 
 

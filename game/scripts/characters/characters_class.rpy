@@ -28,6 +28,8 @@ init python:
                 ashley.phase = 1
             if sarah.phase == 0 and flowers_sarah_level == 2:
                 sarah.phase = 1
+            if makoto.phase == 0 and witch_talk_first == True:
+                makoto.phase = 1
             # update everyone
             if self.phase == 0:
                 return
