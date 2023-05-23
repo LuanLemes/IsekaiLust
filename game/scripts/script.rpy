@@ -43,6 +43,8 @@ default Place14 = Place( 14, "Trees", 1200, 100, False, True, 1, False, True, "T
 default Place15 = Place( 15, "Kitchen", 1200, 100, False, True, 1, False, True, "Kitchen" )
 default Place16 = Place( 16, "Monica Room", 1200, 100, False, True, 1, False, True, "Monica Room" )
 default Place17 = Place( 17, "Guild Gate", 710, 820, True, True, 1, False, True, "Guild Gate" )
+default Place18 = Place( 18, "Milk Farm", 1020, 275, True, True, 0, False, False, "Milk Farm" )
+default Place19 = Place( 19, "Bath House", 1020, 275, False, True, 0, False, True, "Bath House" )
 
 label start:
     $ start_inventory_items()

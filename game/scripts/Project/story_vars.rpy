@@ -5,6 +5,7 @@ define config.default_voice_volume = 0.8
 default side_image_activated = True
 
 label day_vars_reset:
+    $ girls_bathed = False
     $ breakfasted = False
     $ monica_morning_kitchen = False
     $ pillow_removed = False
@@ -12,13 +13,14 @@ label day_vars_reset:
     $ monica_sarah_water = False
     $ talked_to_girls = False
     $ monica_sarah_invited = False 
+    $ cow_milked = False
     return
 
 default linda_cards_first = True
 default first_sleep = True
 default monica_morning_kitchen = False
 # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT # importante IMPORTANT 
-define config.developer = False
+define config.developer = True
 default linda_floor_card = False
 # default while_var = 0
 default sleep_when_enter = False
@@ -75,7 +77,8 @@ default linda_game_over = False
 default linda_games = 0
 
 # ashley dance living rooom
-default ashley_dances = 0
+default ashley_danced = False
+default monica_looked_sofa = False
 default ashley_poses_count = 0
 # makoto talk
 default witch_talk = False
@@ -97,6 +100,8 @@ default linda_touch_one = False
 default first_unknown_girl = True
 default wolf_girl_fucked1 = False
 # monica sarah talking home
+default first_monica_sarah_invited = False
+default monica_sarah_water_first = True
 default monica_sarah_invited = False
 default monica_sarah_talking_first = True
 # monica sarah talking kitchen
@@ -114,3 +119,11 @@ default wake_naked_1 = False
 default masturbation_name = ""
 # monica shower scene
 default monica_shower_scene = False
+# milk farm:
+default milk_farm_first = True
+default location_message = True
+default molly_first = True
+default bath_house_first = True
+default girls_bathed = False
+default anna_bath_house_first = True
+default cow_milked = False

@@ -39,7 +39,7 @@ return
 
 label camera_reset:
     camera:
-        pos ( 0, 0) yzoom 1.0 zoom 1.0
+        pos (0.0, 0.0) yzoom 1.0 xzoom 1.0 zoom 1.0
     return
     
 label sleep_from_where:

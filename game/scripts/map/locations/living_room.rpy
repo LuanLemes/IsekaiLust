@@ -1,7 +1,7 @@
 screen living_room():
 
     frame:
-        yoffset 0
+        xalign 0.0
         yalign 0.0
 
         xsize 1920
@@ -13,6 +13,7 @@ screen living_room():
         imagebutton:
             focus_mask True
             xpos -15
+            ypos -2
             hovered SetVariable("focus_location", "Monica Room")
             unhovered SetVariable("focus_location", location_object.name)
             hover ("overlays/living room to mom bedroom hover.webp")
@@ -31,7 +32,7 @@ screen living_room():
 
         imagebutton:
             focus_mask True
-            xpos -15
+            xpos -6
             ypos 0.0
             hovered SetVariable("focus_location", "Room")
             unhovered SetVariable("focus_location", location_object.name)
@@ -42,8 +43,8 @@ screen living_room():
 
         imagebutton:
             focus_mask True
-            xpos -15
-            ypos 0.0
+            xpos -16
+            ypos -5
             hovered SetVariable("focus_location", "Leave")
             unhovered SetVariable("focus_location", location_object.name)
             hover ("overlays/living room to map hover.webp")
@@ -326,6 +327,7 @@ label secret_room:
     return
 
 label ashley_dancing:
+    $ ashley_danced = True
     show ashley monica overlay idle
     mc_thought "Is Ashley exercising or something?"
     menu:
@@ -531,6 +533,7 @@ label awake_night_sofa:
     show monica ashley sofa32
     mon "..."
     mc_thought "She is looking at me!!" with vpunch
+    $ monica_looked_sofa = True
     menu:
         "!She is looking at me!"
         "Close your eyes!":
@@ -560,24 +563,11 @@ label awake_night_sofa:
         "Open your eyes":
             pass
     show monica ashley sofa33 with Dissolve(2.5)
-    
     mc_thought "They are gone, Its too late, I think I should go to my bed sleep too."
     # call change_location_to("")
+    call camera_reset
     $ sleep_when_enter = True
     $ dont_show_map_image = True
     call change_location_to("Bedroom")
     return
-
-        
-
-
-
-
-
-
-
-
-
-
-    
     

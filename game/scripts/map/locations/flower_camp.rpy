@@ -773,12 +773,13 @@ label check_monica_flower_level:
     $ flowers_to_next_level_monica -= 1
     # em caso de evoluir de level 
     if flowers_to_next_level_monica == 0:
-        "level uped"
+        # "level uped"
         $ flowers_monica_level += 1
         if len(monica_flower_levels) == flowers_monica_level:
-            "returned because there arent more levels"
+            pass
+            # "returned because there arent more levels"
         if len(monica_flower_levels) > flowers_monica_level:
-            "added the next level objective"
+            # "added the next level objective"
             $ flowers_to_next_level_monica = monica_flower_levels[flowers_monica_level]
     $ level_up_expression =  ""
     $ level_up_expression =  str("monica_flowers_level_") + str(flowers_monica_level)
@@ -905,7 +906,6 @@ label monica_flowers_level_2:
         mc "Ok."
         mon "Dream about angels."
         mon "My {b}Big{/b} [player.name]."
-
         $ monica_flowers_level_2 = True
         $ herbology += 1
         notif "You gained 1 point of Herbology"

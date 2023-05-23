@@ -30,6 +30,8 @@ init python:
                 sarah.phase = 1
             if makoto.phase == 0 and witch_talk_first == True:
                 makoto.phase = 1
+            if monica.phase == 2 and aphrodite.revealed == True and linda.phase == 3:
+                monica.phase = 3
             # update everyone
             if self.phase == 0:
                 return

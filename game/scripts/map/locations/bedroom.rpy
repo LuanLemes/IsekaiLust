@@ -24,7 +24,6 @@ screen bedroom():
             ypos -5
             action Call("bed")
     use top_screen()
-
 label bedroom_reload:
     if int(debbie.phase) > 0 and flowers_monica_level > 1 and flowers_sarah_level > 1 and lilith.phase == 0 and calendar.current_day_time == 3:
         mc_thought "I cant sleep with this noise on the roof."
@@ -63,7 +62,12 @@ label bed:
         mc_thought "I shouldnt go to sleep now, I have more important things to do."
         return
     menu:
+        "teste da cena":
+            show lilith roff23
+            "oh yeah"
+            $scene1.completion_check()
         "Sleep":
+
             jump sleep
         "Take a Nap":
             jump take_a_nap

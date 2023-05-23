@@ -28,6 +28,9 @@ label enter_map:
     return
 
 label change_location_to(new_location):
+    # update character phases on every location changed
+    $ book_refresh()
+    
     if new_location == location:
         $ is_reloading = True
     else:

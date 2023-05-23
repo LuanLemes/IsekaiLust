@@ -52,4 +52,15 @@ label forest_wall:
         $ only_location = "Guild Gate"
         $ only_location_message = ["Today seems like a good day to go to the guild and see how to become a member."]
         return
+    # if Place18.map_to_show == 1 and milk_farm_first == True:
+    return
+
+label forest_wall_reload:
+    if Place18.map_to_show == 1 and milk_farm_first == True:
+        if location_message == True:
+            mc_thought "So, there is the location linda showed me."
+            $ location_message = False
+        $ only_location = "Milk Farm"
+        $ only_location_message = ["I really think I should go to the milk farm."]
+        return
     return

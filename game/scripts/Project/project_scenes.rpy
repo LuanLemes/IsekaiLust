@@ -257,8 +257,9 @@ label prologue:
     show bedroom night
     with dissolve
     mc_thought "(She even offered me a room in her house in exchange for my help with the household chores, effectively becoming my landlady.)"
-    scene
-    show guild gate morning
+    scene black with dissolve
+    centered "A few months later"
+    show guild gate morning with dissolve
     with dissolve
     mc_thought "(I made numerous attempts to become a member of the guild, but they rejected me each time, because I wasn't strong enough nor) possessed any magical abilities.)"
     scene bedroom night with dissolve
@@ -464,7 +465,7 @@ label awake_at_home:
     $ linda.revealed = True
     show wakeup prologue with dissolve
     mc_thought "(It was just a dream...after all.)"
-    lin "Hi [linmc], did you sleep well?"
+    lin "Hi [mclin], did you sleep well?"
     show linda prologue with dissolve
     mc "Liiiiinda, what are you doing here?"
     lin "{color=#fc89ce}Mon{/color} told me to wake you up, she said {color=#fc89ce}she needs to talk with you.{/color}"

@@ -413,6 +413,7 @@ label bear_found:
     mc "Thanks Linda."
     show linda teddy12
     lin "Thank you [player.name], thanks to you I now have [teddy_name]."
+    hide linda
     $ linda.phase = 3
     $ player_inventory.remove_item(300,1)
     return

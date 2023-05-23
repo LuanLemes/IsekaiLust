@@ -43,7 +43,12 @@ label grocery_store_on_enter:
         $ grocery_store_first = False
         call grocery_store_first
         return True
+    if debbie.phase == 4:
+        call grocery_talk_about_milk
+        return
+
     return
+
 label grocery_store_first:
     mc_thought "Well, I think this is the place."
     scene grocery store morning
@@ -203,7 +208,7 @@ label grocery_store_first:
 label grocery_store_on_exit:
     if debbie_first == True:
         show debbie grocery idle
-        mc "I came to sell the flowers, I should at least talk with the girl to see how it works"
+        mc "I came to sell the flowers, I should at least talk with the girl to see how it works."
         hide debbie
         return False
     return True
@@ -468,3 +473,50 @@ label buy_teddy_bear:
         mc "Thanks Debbie, you are the best!"
         show debbie half grocery6
         deb "Another happy client he he."
+
+label grocery_talk_about_milk:
+    scene grocery in
+    show sarah grocery1
+    show debbie half grocery
+    deb "Hi [player.name] how are you?"
+    mc "Hi, Debbie, Im doing well."
+    show debbie half grocery2
+    deb "Glad to hear that."
+    menu:
+        "Do you have any milk?":
+            pass
+        "Can I buy some milk?":
+            pass
+    show debbie half grocery3
+    deb "Oh...milk."
+    deb "There is some time since the last time we had milk."
+    mc_thought "I kind of knew it wouldn´t be that easy."
+    show sarah grocery2
+    mc "Why is that?"
+    show debbie half grocery4
+    deb "Well, we dont know."
+    mc "How so?"
+    deb "They just stopped delivering milk to us just like that."
+    show debbie half grocery2
+    hide sarah
+    show sarah half normal:
+            xpos 105 
+    sar "Hello [player.name] I think they are facing problems at the farm."
+    sar "I didnt have the oportunity to go to the farm yet."
+    show sarah half normal2
+    sar "But I think it would be good both for you and our business if you could go there and maybe get some information."
+    mc_thought "This \"Milk quest\" is getting bigger by the second."
+    mc "Ok I think I will see if I can find something."
+    show sarah half normal3
+    sar "Good, Debbie will show you the way."
+    show debbie grocery surprised
+    $ Place18.map_to_show = 1
+    deb "I will what?"
+    hide sarah with dissolve
+    mc "she left..."
+    deb "Ok I will..."
+    $ debbie.phase = 5
+    call change_location_to("Forest Wall")
+    return
+    # $ change_location_to
+    

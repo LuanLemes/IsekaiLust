@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 769: expected '=' not found.
-    define patreons["heathcliff flexner","John Doe","halowars87","Dead Throne","Andrew Hollingworth","Tittilov","Jonas Klus","Shredder1953","Ralphy Simmons","Luan Lemes"]                    
-                                                                                                                                                                                              ^
+File "game/scripts/map/locations/milk_farm.rpy", line 647: expected 'label_name_declare' not found.
+    label call molly_milk_daily:
+         ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Apr 23 01:37:31 2023
+Mon May 22 20:17:45 2023

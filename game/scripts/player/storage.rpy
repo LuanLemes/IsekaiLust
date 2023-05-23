@@ -109,6 +109,7 @@ init python:
         healing_potion = InventoryItem(152, "Healing potion", 5, "Potion", False, 150, 100, 5,"Recovers Mana of the user")
     #  Quest items
         teddy_bear = InventoryItem(300, "Teddy Bear", 1, "Toy", False, 150, 100, 5,"Linda really wants one of this.")
+        teddy_bear = InventoryItem(301, "Bottle of Milk", 1, "Quest", False, 150, 100, 5,"Linda really wants one of this.")
 
 
 

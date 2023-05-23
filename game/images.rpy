@@ -35,3 +35,4 @@ image lilith roff19 = Movie(play= "lilith_outside_home/lilith roff19.webm", size
 image lilith roff20 = Movie(play= "lilith_outside_home/lilith roff20.webm", size= (1920,1080), loop = True)
 image lilith roff21 = Movie(play= "lilith_outside_home/lilith roff21.webm", size= (1920,1080), loop = True)
 image lilith roff22 = Movie(play= "lilith_outside_home/lilith roff22.webm", size= (1920,1080), loop = True)
+# monica swipe 

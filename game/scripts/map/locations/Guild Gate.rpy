@@ -632,7 +632,7 @@ label makoto_witch_talk:
                         xpos -345 
                 boo "Go to Lindas bedroom and ask her about the map."
                 mc_shout "It speaks!?!?!!??" with vpunch
-                $ linda.book_phrase = "Ask about the map (bedroom Night)."
+                $ linda.book_phrase = "Ask about the map (bedroom Night)"
                 $ makoto.book_phrase = "0"
                 show makoto scared1
                 mak "What? what speaks?"

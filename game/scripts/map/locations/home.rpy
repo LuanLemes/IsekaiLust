@@ -12,8 +12,8 @@ screen home():
 
         imagebutton:
             focus_mask True
-            xpos 0
-            ypos 0
+            xpos image_button_offset
+            ypos image_button_offset
             hovered SetVariable("focus_location", " Enter House")
             unhovered SetVariable("focus_location", location_object.name)
             hover ("overlays/house to living room hover.webp")
@@ -147,6 +147,7 @@ label monica_sarah_talking_home:
             mc_thought "Man, this place is too good for me."
             mc "You two can go ahead."
             $ monica_sarah_invited = True
+            $ first_monica_sarah_invited = True
             mc "Im right behind you."
             hide monica_sarah
             return

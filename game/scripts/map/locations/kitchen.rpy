@@ -105,7 +105,7 @@ label kitchen_before_enter:
     return
 
 label kitchen_door:
-    mc_thought "It has been a month since this door broke, I better get the right tools to fix it."
+    mc_thought "(It has been a month since this door broke, I better get the right tools to fix it.)"
     return
 
 label monica_kitchen_morning:
@@ -113,12 +113,57 @@ label monica_kitchen_morning:
         mc_thought "I just talked to her."
         return
     $ monica_morning_kitchen = True
+    if monica.phase == 3:
+        show monica half sad1
+        mon "Oh, good morning [player.name]."
+        mc_thought "Monica seems so sad."
+        menu:
+            "Is there something wrong?":
+                pass
+            "You look sad, are you ok?":
+                pass
+        show monica half sad2
+        mon "No, thats not, I mean, its nothing."
+        mc_thought "(Maybe it has something to do with...)"
+        menu:
+            mc_thought "(Not sure I should talk about this with her, but if even the book says so...)"
+            "Is this something to do with your husband?":
+                pass
+        show monica half sad3
+        mon "..."
+        mc_thought "She seems even more sad now."
+        mc "Im sorry I didnt mean to..."
+        show monica half sad1
+        mon "Its ok..."
+        mon "What happened is...He was a good husbad, until one day, he left."
+        mc "Im so sorry."
+        show monica half sad2
+        mon "Dont be, I think the worse part of it is..."
+        mon "You know, he never came to talk to me, he only left a note. After years together... A note."
+        mon "Telling me that he was leaving-me."
+        mc_thought "So, she doesnt know about the whole map thing."
+        mc_thought "I think to this point he may be dead."
+        $ monica.marital_status = "Single"
+        mc "Omg mon, Im very sorry."
+        show monica half sad3
+        mon "As I said, dont be, All I can do now is look towards the future and forget the past."
+        mc "You are right mom, you are right."
+        mc "I know you probably got sarah at this point but...If you ever need somebody to talk."
+        mc "Just know Im aways here for you."
+        show monica half talking
+        mon "Oh you are so sweet, thanks."
+        mon "Please, sit and have a breakfast with me and the girls."
+        mc "Ok mom."
+        call girls_kitchen_morning
+        return
+    
     show monica half talking
     mon "Oh, good morning [player.name]."
-    mon "So good to see you are awake already."
+
+
     if renpy.random.randint(1,10) > 5:
         menu: 
-            "So, are you going to show up on the Flower Fields today?"
+            mon "So, are you going to show up on the Flower Fields today?"
             "Yes":
                 show monica half talking2
                 mon "I see, I will be waiting for you then."
@@ -187,6 +232,77 @@ label monica_kitchen_morning:
         mon "And now."
         show breakfast girls9
         mon "To our big girl."
+        if monica.phase == 3:
+            show breakfast currel1 with dissolve
+            mon "Everything ok my little star?"
+            show breakfast currel2 with dissolve
+            ash "..."
+            mc_thought "Why do I have a bad feeling about this?"
+            mon "My little ash?"
+            ash "Mom the meal is beautifull....really it is."
+            ash "But..."
+            ash "The milk..."
+            ash "Why are we not having ANY milk?!"
+            show breakfast currel3 with dissolve
+            ash "I want milk mom!"
+            ash_shout "I want milk!" with vpunch
+            show breakfast currel4
+            mon "I understand dear, we all want, but the stores are all out of milk for months."
+            mon "I have an idea, Maybe we could have some juice."
+            show breakfast currel5
+            lin "Mon....I want milk too, I like it so much."
+            mon "I like it too dear but just there isnt anywhere we can get milk."
+            mc_thought "Geez, whats happening here? isnt there any milk in the entire city?"
+            menu:
+                "Ha... whats happening really?":
+                    pass
+                "Mon, whats happening?":
+                    pass
+            show breakfast currel6
+            mon "Oh sweet, you dont know do you?"
+            mon "There is some months since the milk stock in the city is out."
+            mc "I understand, is there something that I could do for helping?"
+            show breakfast currel7
+            ash_shout "Oh Yes [player.name] the \"Milk bringer\", as if a dumbass like you could do anything usefull here."
+            mon "Dont be like that ash, [player.name], is your [mcash], and he is willing to help."
+            show breakfast currel8
+            lin "Yes sis, he found my bear and I bet that if he say so he can also find the milk."
+            mc_thought "Well, this was unexpected."
+            ash "He wont find anything."
+            mc_thought "Maybe I could take some advantage of this situation."
+            menu:
+                "Wanna make a bet?":
+                    show breakfast currel12
+                    ash "What do you mean?"
+                    mc "I mean, if I somehow manage to bring the milk back you will have to leave your door unlocked from now on."
+                    ash "My door? why?"
+                    mc "I dont know I just thought of something that would be important to you."
+                    show breakfast currel11
+                    ash "*laughs* If you mange to bring the milk better I would let you por it in my mouth as if you were my owner."
+                    ash "But we both know this is never going to happen because you are a good for nothing."
+                    show breakfast currel13
+                    mc "Is that so?"
+                    ash "Yes it is."
+                    ash "And what if you can´t manage to bring the milk back?"
+                    mc "I will, so chosse whatever you want to."
+                    show breakfast currel12
+                    ash "If you dont manage to bring milk back you will have to clean my room every single day for an entire year."
+                    mc_thought "Shit, she is so drastic."
+                    ash "So [player.name] what will it be? will you accept or run?"
+                    mc "I accept!"
+                    show breakfast currel14
+                    ash "Its a bet then."
+            mc_thought "Shit...I have no idea of how to find this milk, I think the first thing I should do is.."
+            mc_thought "{color=#FFAA00}To take a look at the grocery store and see if they have it.{/color}" with vpunch
+
+            hide monica
+            hide breakfast
+            $ debbie.phase = 4
+            $ monica.phase = 4
+            $ breakfasted = True
+            $ ashley.phase = 2
+            return
+
         ash "Thanks for the food mom."
         mon "Oh, its nothing dear, you have to keep eating in order to stay shiny and beautiful."
         show breakfast girls10 
@@ -305,6 +421,7 @@ label sarah_monica_kitchen:
      anyway."
     $ monica_looked = True
     $ monica_sarah_water = True
+    $ monica_sarah_water_first = False
     $ talked_to_girls = True
     hide monica_sarah
     return
