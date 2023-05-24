@@ -14,6 +14,7 @@ label day_vars_reset:
     $ talked_to_girls = False
     $ monica_sarah_invited = False 
     $ cow_milked = False
+    $ molly_milked = False
     return
 
 default linda_cards_first = True
@@ -127,3 +128,7 @@ default bath_house_first = True
 default girls_bathed = False
 default anna_bath_house_first = True
 default cow_milked = False
+default molly_milked = False
+default molly_milked_count = 0
+default molly_stressed_first = True
+default fuck_molly_first = False

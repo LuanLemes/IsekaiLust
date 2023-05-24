@@ -658,6 +658,9 @@ label molly_milk_daily:
             mol "I know right?"
         "Yeah Yeah, right":
             mol "So strict."
+    if molly_milked_count > 3:
+        call molly_stressed
+        return
     $ phrase = renpy.random.choice(["Im ready mr", "Im in position mr", "My breasts are ready for you"])
     mol "[phrase]."
     show farm 48
@@ -678,6 +681,7 @@ label molly_milk_daily:
         "Lift her bra at once":
             call lift_molly_bra
             return
+    show farm 67
     menu:
         "You are also very cute today.":
             mol "Oh [player.name], you trully know how to treat a cow when you milk her."
@@ -685,74 +689,474 @@ label molly_milk_daily:
             mol "Oh [player.name], you trully know how to make a cow happy."
         "You are smelling good today.":
             mol "Oh, did you notice? thats my new shampoo."
-                
-
+    show farm 73
+    mc "Now...its about time we begin."
+    mol "I agree."
+    show farm 77
+    mc "They sure are big today."
+    mol "They always are when you touch them mr [player.name]."
+    mc "I will take that as a compliment."
+    show farm 78
+    mc "Sure one of the best feelings there is."
+    mc_thought "What I like the most is that I can."
+    menu:
+        "Lift her bra":
+            mc_thought "Move her bra up any time I want."
+            pass
+    show farm 80
+    mc "Now."
+    menu:
+        "How does it fell?":
+            mol "So good this freedom feeeling."
+        "Now they are all mine to do as I like.":
+            mol "So possessive."
+    show farm 84
+    mc "Indeed."
+    mc "But Im enjoying this."
+    mol "Me too."
+    menu:
+        "Grab her breast a little stronger.":
+            pass
+    show farm 85
+    mc "Everything ok?"
+    mol "Yes, everything ok."
+    mc_thought "I love watching her reactions."
+    call molly_after_bra
+    return
+    
 
 label lift_molly_bra:
-
-
-
-
-
-        
-
-
+    show farm 85:
+    mol "Oh, so rough all of sudden"
+    menu:
+        "Sometimes its necessary.":
+            mol "Oh, I understand."
+        "Who is on command again?":
+            mol "You are mr[player.name]."
+        "Say \"Thank you\" Molly.":
+            mol "Ahn...Thanks mr [player.name]."
+    mc_thought "I just love watching her reactions."
+    call molly_after_bra
     return
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-    
-
-
-    
-            
-        
-
-    
-
-    
-
-    
-
-    
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+label molly_after_bra:
+    mc "Now lets begin."
+    show farm 86
+    $ phrase = renpy.random.choice(["Aw", "Ah!", "Huu"])
+    mol "[phrase]."
+    mc "What was it?"
+    mol "I dont know its just...my nipples are kind of sensitive."
+    mc "I see, you always react in somewhey when I start messing with them."
+    mol "*breathing*"
+    mc "But its time to move on."
+    show farm 88
+    mc_thought "Man...her nipples are bigger right now, I know she likes it."
+    mc "Like this..."
+    mc "I fell your nipples getting bigger here."
+    mol "I feel it too."
+    mol "My breasts are more sensitive right now."
+    menu:
+        "play and turn her nipples a bit":
+            pass
+    show farm 89
+    mol "Ahhh."
+    mc "Steady now, you are doing good."
+    mol "*breathing faster* Ah, ok. Im holding on."
+    mc "Yes you are."
+    show farm 90
+    mc "A little more sensitive now right?"
+    mol "*breathing* Yes."
+    mc "we are advancing."
+    menu:
+        "But we need milk here!":
+            mol "I know."
+        "All very fun but I still see no milk.":
+            mol "Im sorry."
+            mc "Its ok, we are getting there."
+    show farm 95
+    mc "See?"
+    mc "There is a little of milk already."
+    mol "*breathing* Yes, thats good."
+    mol "Oh, good."
+    mc "Good indeed."
+    mc "Even the smell of your milk is good."
+    mol "Do you think?"
+    mc "Yes I do."
+    mol "Thanks, hehe."
+    menu:
+        "Now lets fill that bucket!":
+            pass
+    mol "What?"
+    mol "How?"
+    show farm 96
+    mc "Like this!" with vpunch    
+    mol "Haaaaaa!"
+    mc "Calm down Molly."
+    mc "Just a little big more."
+    menu:
+        mc_thought "Im feeling confident today, I think I could grab her ass right now."
+        "Grab her ass":
+            show farm 103
+            mol "Ahhhhhh."
+            mc_thought "At this point she just goes with it."
+            mc_thought "I feel like im in charge here."
+            return
+        "Just keep pressing her breast in a stronger way":
+            mc_thought "Not yet...Im enjoying it like this"
+    mol "Ahhhhh."
+    mc "Endure it."
+    show farm 97
+    mc "You are doing very good!"
+    mol "Am I?"
+    mc "Yes you are."
+    mc "Look at how much milk there is already."
+    mol "Than..."
+    show farm 98
+    mol_shout "THAAAAAANKS!!!!!"
+    mol_shout "HAAAAAAAAA!!!"
+    mc "We need to keep going or we wont fill the bucket."
+    mc_thought "I need to start caressing her making keep her mood up."
+    show farm 100
+    mc "what was this?"
+    mol "*heavily breathing* Nothing its just..."
+    mc "Just?"
+    mol "..."
+    show farm 98
+    mc "Its ok, you are doing so well today!"
+    mol "Am I really?"
+    show farm 100
+    mc "Yes you are."
+    mc "And because of that your milk is going to be even tastier than before."
+    mol "Th-*breathing* Thanks [player.name], your words really made my day."
+    menu:
+        "Grab her boob harder":
+            mol "ahhh!"
+        "Now just give yourself away to me and relax.":
+            mol "Okay"
+    show farm 101
+    mc "Thats it, good girl!"
+    mc "Good girl!"
+    mol "[player.name]."
+    mc "What?"
+    mol "*breathing*...ahh."
+    mc_thought "Man she is totally gone."
+    show farm 107
+    mc_thought "She is crying and feeling pleasure at the same time."
+    mc_thought "I can´t even imagine what she is going through."
+    mc_thought "Must be fun being a cow."
+    mc_thought "What the hell am I even thinking."
+    menu:
+        mc "Now for our grand finale!"
+        "Squeeze her breast with both hands as strong as I can.":
+            pass
+    show farm 108
+    mol_shout "HAAAAAAAAAAAAAAAA!!!!!!!" with vpunch
+    mol_shout "SO HAAAAAAAAAAAARD!" with vpunch
+    mc "I need to do it or the bucket wont be full."
+    mol_shout "I KNOOOOOWWWWWWW!!!!" with vpunch
+    mol "*HEAVILY BREATHING*"
+    menu:
+        "Keep squeezing as long as you can.":
+            show farm 109
+            mc "Just a little more and we will be done."
+            mc_thought "Man, she isnt even responding anymore."
+            mc_thought "She just looks and agrees."
+            show farm 110 
+            mc "I think she is finally empty."
+            mc "Not even a single drop is comming out anymore."
+        "Stop":
+            pass
+    mc "Such a good job we did today didnt we?"
+    mol "*slowly breathing*"
+    mc "Molly?"
+    mc "Han...Molly?"
+    mc "You really pass out every time dont you?"
+    show farm 113
+    mc "Well, we did a good job Molly."
+    mc "We really did."
+    show farm 114
+    mc "Always nice to look at that ass."
+    mc_thought "Better to deliver this bucket to Mayumi."
+    show farm 3
+    may "Good job kid."
+    may "Take you can take your bottles now."
+    $ cow_milked = True
+    $ player_inventory.add_item(301, 2)
+    $ molly_milked_count += 1
+    "{color=#FFAA00}You got 2 bottles of milk.{/color}"
+    call time_next
     return
+
+label molly_stressed:
+    if molly_stressed_first == True:
+        show farm 91
+        mc "So strange."
+        mc "We tried everything we always do but...the milk stopped coming out."
+        mc "And it doesnt seem to be back again any time soon."
+        mol "Im sorry I dont know what to say."
+        mol "Maybe its the fact that this week was so stressfull."
+        mol "Im really sorry."
+        mc "Its ok."
+        mol "Its probably my stress, Im sorry, cows get stressed every here and there I think."
+        mc "We will figure it out."
+        mc_thought "Now that Im thinking about it."
+        mc_thought "I think I saw something related to cows stress in the internet once."
+        mc_thought "If im not mistaken." 
+        mc_thought "They need to walk around listen to music or do something they like in order to de-stress."
+        mc_thought "But...how to free her from her stress?"
+        mc_thought "I think I got an idea"
+        show farm 119
+        mol "Han, [player.name]? what are you doing?"
+        mc "Its nothing I just....I had an idea that may help you and your stress."
+        mol "I see, in this case just go ahead then."
+        mc "Do you trust me?"
+        mol "Yes, I ...I do."
+        mc "Then everything will be allright."
+        mol "Ok then"
+    menu:
+        mc_thought "Mayumi doesnt seem to be around."
+        "Pull her panties down and take your dick off":
+            pass
+    show farm 120
+    mol "Han...what is this?"
+    mc "Its ok just...just trust me ok?"
+    mol "Err....ok then."
+    mc "Good, now relax."
+    show farm 121
+    mol "Im trying."
+    mc "Everything will be allright."
+    mc "Just enjoy it."
+    mol "Enjoy what?"
+    menu:
+        mol "Enjoy what?"
+        "Shove your dick inside her pussy":
+            pass
+    show farm 125
+    mol_shout "AAAAAAH!!!!" with vpunch
+    mc_thought "Im in."
+    mol_shout "What are you doing?" with vpunch
+    mc_thought "Its too late now, I cant stop now."    
+    mc_thought "I have to keep going."
+    show farm vid2 with dissolve
+    mc "You will thank me later."
+    mc_thought "Or this or im going to be fired."
+    mol "*Moaning* I will what? Ahhh!!!"
+    mc "Just relax, you stress will pass you will see."
+    mc "Just a little more."
+    mol "*Moaning*"
+    mc "Can you fell it? a good sensation feeling you up?"
+    show farm vid4 with dissolve
+    mol "*Moaning*"
+    mol "Ahhh, Yes I think."
+    mol "I think I can."
+    mc_thought "Man this is awesome, she is totally into it!"
+    mc "Good, just keep focusing on the sensation."
+    mol "Ok mr [player.name]."
+    mol "*Moaning*, So big!"
+    mc_thought "Man, her pussy fells so good, I even though we are doing it slowly."
+    mc_thought "She is very tight."
+    menu:
+        "Can you fell the stress leaving as we go?":
+            pass
+        "Can you fell my dick entering and the stress leaving?":
+            pass
+        "Can you fell a good sensation as we go?":
+            pass
+    show farm vid5 with dissolve
+    mol "Ahhh."
+    mol "Ah, Y-yes I can, I think I can."
+    mc "This means its working."
+    mol "I fell it as you shove inside."
+    mol "And when you take it out, the only thing I can think is that I want it inside of me again."
+    mol "Your dick is so big, it hurts a bit, but its so good when it feels me up."
+    mol "Oh mr [player.name], Im in such a shame."
+    mc "Its ok, no need to feel shame."
+    mc "This is a totally normal phenomenon to free cows from their stress."
+    mc_thought "At least from now on it is."
+    mol "Oh, is it?"
+    mc "Yes."
+    mol "Oh in this case I think its ok."
+    mc "Do you want me to make it faster?"
+    mol "No, I like this way."
+    mol "Besides, your dick is too big."
+    mol "I dont think I could take it any stronger."
+    may_shout "WHAT THE FUCK ARE YOU DOING?" with vpunch
+    show farm 132
+    mc_thought "SHIT! Thats it, molly, it was nice to know your pussy."
+    mc_thought "This is how I get fired."
+    may_shout "ANSWER DAMN IT!" with vpunch
+    menu:
+        mc "I....I...I..."
+        "Im taking the stress out of molly so she can produce milk...":
+            pass
+        "Molly wasnt producing any milk so I had to...":
+            pass
+        "This is a special method to make the cow produce more milk.":
+            pass
+    may_shout "Thats not that you idiot!"
+    mc_thought "Oh, Man..I cant hold on even with ms Mayumi here..."
+    mc_thought "I need to keep fucking her."
+    mc_thought "Even if she kills me, there is no stopping it now."
+    show farm vid10 with dissolve
+    mc_thought "Just what is she doing down there"
+    may "You idiots forgot to place the bucket at the right place."
+    mc "What?"
+    may "You are wasting the cows milk!"
+    mol "Im sorry May May."
+    may "No need to be sorry Molly, only mind the bucket the next time."
+    mc_thought "I didnt even realize that her breasts were dripping milk."
+    mc_thought "But, isnt she mad because Im fucking molly in the middle of the farm?"
+    may "Now, just a little bit to the right."
+    may "And.......all set."
+    mc_thought "Man...I dont know why but...the fact she is down there, makes me even more excited."
+    may "No, a little more to the left."
+    may "Now it is in the right place."
+    show farm vid11 with dissolve
+    mc_thought "Now she will stay and watch?"
+    mc_thought "Fine, watch all you want, your cowgirl is mine now."
+    mc "Im sorry for the bucket miss Ma...."
+    may "You have to be more firm."
+    mc "What?"
+    may "Cows like when you show dominance"
+    may "Your dick sure is big and beautifull, but you must make it stronger to show her who is on command."
+    mol "Miss molly I think this way is just good enough"
+    may "Sorry molly. You are not to decide it."
+    mc_thought "She said the cows are free to come and go as they wish."
+    mc_thought "But, man, the way she talks with Molly, its almost like she owns her."
+    mc_thought "Man I want to fuck her even more now."
+    may "Are you listening [player.name]?"
+    mc "Hun? What?"
+    may "Make it stronger!"
+    mc "But Molly told me."
+    may_shout "Just do it!" with vpunch
+    menu:
+        "Fuck her faster!":
+            pass
+    show farm vid9 with dissolve
+    mol_shout "Ahhhhh!!! I dont think I can take it!"
+    mol_shout "Its just too much!"
+    mol "*moaning harder*"
+    mc "*Breathing* you are doing very well Molly."
+    mol "AAAAAAH! thanks [player.name]!!!"
+    mol "My pussy never felt anything like this!"
+    mol "I dont think I can take it!!!!"
+    may "Keep going [player.name], she can take it."
+    mc_thought "Mayumi doesnt have any sense of compasion here."
+    mc_thought "Even I am getting near my limit here."
+    show farm vid12 with dissolve
+    may "HARDER!"
+    mol_shout "AAAAAAAAAH!"
+    may "Yes, like this."
+    may "Fuck her like you own her!" with vpunch
+    menu:
+        "Ok!":
+            pass
+        "Got it!":
+            pass
+    mc_thought "I dont think...."
+    mol "May May, this is too much for me!"
+    may "Yes you can."
+    mc_thought "She is at her limit."
+    mc_thought "Even her voice changed."
+    mol "Ahhhhhh!"
+    mol "I dont think so."
+    mol "*moaning*"
+    may "Keep going [player.name]."
+    may "She can take it, she will take it!"
+    mc "I dont think I...can go much longer either!"
+    may "She is already having an orgasrsm so you need to keep going."
+    may "Dont stop."
+    mc "But I.."
+    mol "You are just going too rough on me!"
+    mc "Ms Mayumi, Im..."
+    may "What?"
+    mc "Im about to cum!"
+    may "Hold it, not yet."
+    mc "I dont think I can do it much longer!"
+    may "Just a little more."
+    may "You are owning her right now."
+    mol_shout "Ahhhhhhhhh!!!!"
+    mc "Im cumming!!!!" with vpunch
+    may "Keep going!"
+    mc "What?"
+    may "You listened, keep going!"
+    mc "I dont know if I...."
+    mc_thought "This is crazy"
+    mol "I can feel it, I can feel it inside me."
+    menu:
+        "Keep going":
+            may "Keep fucking her till your limit"
+            mc "Im ....fucking her!"
+            may "Yes show her."
+            mc "I...I dont know if I can..."
+            mc "I cant anymore, this is my limit."
+        "Just stop":
+            pass
+    show farm 137
+    mc "*breathing*"
+    mc "Oh man, that was crazy."
+    mol "*heavily breathing*"
+    mc_thought "I never...had any sex like this in my life."
+    mc_thought "So intense."
+    mc_thought "Mayumi turned this into something else."
+    may "Good!"
+    mol "Than-*breathing*-Thanks."
+    may "Very good"
+    mc "What?"
+    may "No she knows you are on command."
+    mol "*heavily breathing*"
+    may "do this in a more frequent rithim and your milking life will get a lot easyer from now on."
+    mc "Oh...I see"
+    show farm 141
+    mc_thought "Man..I hate to admit it but, even my dick is tired."
+    may "Your dick is all wet and full of cum."
+    mol "*heavily breathing*"
+    mc "I know.."
+    may "It seems like its not as hard as before but is still hard."
+    mc "Yes *breathing*, at least for a while."
+    may "Then put it back in."
+    mol "What?"
+    mc "What?"
+    may "Put it back inside."
+    mc "But we finished."
+    may "Your dick says otherwise."
+    may "Even if you dont have enough energy, put it back inside and do it slowly."
+    show farm vid13 with dissolve
+    pause 0.9
+    show farm vid11 with dissolve
+    mol "Please miss mayumi."
+    may "Not now Molly, be a good cowgirl and do your job."
+    mol "Okay."
+    scene black with Dissolve(1.0)
+    mc_thought "She made me fuck her again."
+    mc_thought "I cant really complain."
+    mc_thought "But Im so tired!"
+    hide blacked
+    show farm 156 with dissolve
+    mc_thought "And she passed out again."
+    mc_thought "Beautifull view though."
+    $ molly_milked_count = 0
+    call time_next
+    call time_next
+    $ fuck_molly_first = True
+    return
+
+    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+
+
+    
+
+    
+    
