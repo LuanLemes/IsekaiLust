@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/map/locations/milk_farm.rpy", line 1131: 'with' is not a keyword argument or valid child for the screen statement.
-    screen black with dissolve
-                     ^
+File "game/scripts/map/locations/big sister room.rpy", line 293: invalid syntax
+    monica.phase =
+    
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed May 24 19:27:03 2023
+Fri May 26 21:06:17 2023

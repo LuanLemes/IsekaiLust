@@ -55,6 +55,7 @@ label milk_farm:
 
 label mayummi_front_farm:
     if molly_first == True:
+        $ mayumi.phase = 1
         show farm 3
         may "Have you found molly yet?"
         mc "No I didnt."
@@ -621,6 +622,10 @@ label molly_farm_well:
     $ player_inventory.add_item(301, 2)
     $ Place18.can_map = True
     "{color=#FFAA00}You got 2 bottles of milk.{/color}"
+    $ mayumi.phase = 2
+    $ molly.phase = 1
+    call time_next
+    call time_next
     hide farm
     return
 
@@ -800,7 +805,6 @@ label molly_after_bra:
             mol "Ahhhhhh."
             mc_thought "At this point she just goes with it."
             mc_thought "I feel like im in charge here."
-            return
         "Just keep pressing her breast in a stronger way":
             mc_thought "Not yet...Im enjoying it like this"
     mol "Ahhhhh."
@@ -881,14 +885,15 @@ label molly_after_bra:
     may "Good job kid."
     may "Take you can take your bottles now."
     $ cow_milked = True
-    $ player_inventory.add_item(301, 2)
+    $ player_inventory.add_item(301, 1)
     $ molly_milked_count += 1
-    "{color=#FFAA00}You got 2 bottles of milk.{/color}"
+    "{color=#FFAA00}You got 1 bottles of milk.{/color}"
     call time_next
     return
 
 label molly_stressed:
     if molly_stressed_first == True:
+        $ molly.phase = 2
         show farm 91
         mc "So strange."
         mc "We tried everything we always do but...the milk stopped coming out."
@@ -913,8 +918,8 @@ label molly_stressed:
         mol "Yes, I ...I do."
         mc "Then everything will be allright."
         mol "Ok then"
-    menu:
         mc_thought "Mayumi doesnt seem to be around."
+    menu:
         "Pull her panties down and take your dick off":
             pass
     show farm 120
@@ -980,24 +985,43 @@ label molly_stressed:
     mol "No, I like this way."
     mol "Besides, your dick is too big."
     mol "I dont think I could take it any stronger."
-    may_shout "WHAT THE FUCK ARE YOU DOING?" with vpunch
-    show farm 132
-    mc_thought "SHIT! Thats it, molly, it was nice to know your pussy."
-    mc_thought "This is how I get fired."
-    may_shout "ANSWER DAMN IT!" with vpunch
-    menu:
-        mc "I....I...I..."
-        "Im taking the stress out of molly so she can produce milk...":
-            pass
-        "Molly wasnt producing any milk so I had to...":
-            pass
-        "This is a special method to make the cow produce more milk.":
-            pass
-    may_shout "Thats not that you idiot!"
-    mc_thought "Oh, Man..I cant hold on even with ms Mayumi here..."
-    mc_thought "I need to keep fucking her."
-    mc_thought "Even if she kills me, there is no stopping it now."
-    show farm vid10 with dissolve
+    if molly_stressed_first == True:
+        may_shout "WHAT THE FUCK ARE YOU DOING?" with vpunch
+        show farm 132
+        mc_thought "SHIT! Thats it, molly, it was nice to know your pussy."
+        mc_thought "This is how I get fired."
+        may_shout "ANSWER DAMN IT!" with vpunch
+        menu:
+            mc "I....I...I..."
+            "Im taking the stress out of molly so she can produce milk...":
+                pass
+            "Molly wasnt producing any milk so I had to...":
+                pass
+            "This is a special method to make the cow produce more milk.":
+                pass
+        may_shout "Thats not that you idiot!"
+        mc_thought "Oh, Man..I cant hold on even with ms Mayumi here..."
+        mc_thought "I need to keep fucking her."
+        mc_thought "Even if she kills me, there is no stopping it now."
+        show farm vid10 with dissolve
+    else:
+        may "So, she is stressed out again hun?"
+        show farm 132
+        menu:
+            mc "..."
+            "Yes, yes she is stressed out again.":
+                pass
+            "Who would say cows could get stressed so often hun?.":
+                pass
+            "No, this time I only wanted to do some extra work":
+                may "In this case do your extra work right."
+                mc "Yes mam."
+        may "The two of you always missplace that bucket."
+        mc_thought "Oh, Man..I cant hold on even with ms Mayumi here..."
+        mc_thought "I need to keep fucking her."
+        mc_thought "There is no stopping it now."
+        show farm vid10 with dissolve
+
     mc_thought "Just what is she doing down there"
     may "You idiots forgot to place the bucket at the right place."
     mc "What?"
@@ -1048,7 +1072,7 @@ label molly_stressed:
     mol_shout "AAAAAAAAAH!"
     may "Yes, like this."
     may "Fuck her like you own her!" with vpunch
-    menu:
+    menu:   
         "Ok!":
             pass
         "Got it!":
@@ -1139,7 +1163,7 @@ label molly_stressed:
     call time_next
     call time_next
     $ fuck_molly_first = True
-    return
+    return  
 
     
 

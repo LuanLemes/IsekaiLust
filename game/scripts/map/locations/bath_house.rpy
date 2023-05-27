@@ -144,6 +144,7 @@ label bath_girls_night:
     ann "NEVER!" with vpunch
     hide farm
     call time_next
+    $ anna.revealed = True
     return
 
 label anna_bath_house:

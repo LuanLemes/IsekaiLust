@@ -103,27 +103,27 @@ define lil = Character("Lilith",image = "lilith", what_color = "#e5e5e5", namebo
 define lil_shout = Character("Lilith", image = "lilith", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 define lil_thought = Character("Lilith",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 
-default mayumi = Girl(14, "Mayumi", False, 0, "Human", "Friend", "Friendly", 0, "0", 1, "single", "She really likes milk")
+default mayumi = Girl(14, "Mayumi", False, 1, "Human", "Friend", "Friendly", 0, "0", 1, "single", "She really likes milk")
 define may = Character("Mayumi",image = "mayumi", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#130645ff"), "gui/namebox.png") , what_outlines=[ (2, "#130645ff") ])
 define may_shout = Character("Mayumi", image = "mayumi", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#130645ff"), "gui/namebox.png"), what_outlines=[ (2, "#130645ff") ])
 define may_thought = Character("Mayumi",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#130645ff"), "gui/namebox.png"), what_outlines=[ (2, "#130645ff") ])
 
-default anna = Girl(15, "Anna", False, 0, "Human", "Friend", "Friendly", 0, "0", 1, "single", "She thinks cows deserve more respect")
+default anna = Girl(15, "Anna", False, 1, "Cowgirl", "Friend", "Friendly", 0, "0", 1, "single", "She thinks cows deserve more respect")
 define ann = Character("Anna",image = "anna", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png") , what_outlines=[ (2, "#540324ff") ])
 define ann_shout = Character("Anna", image = "anna", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 define ann_thought = Character("Anna",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#c02566ff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 
-default sugar = Girl(16, "Sugar", False, 0, "Human", "Friend", "Friendly", 0, "0", 1, "single", "She sees her mom as an example.")
+default sugar = Girl(16, "Sugar", False, 1, "Cowgirl", "Friend", "Friendly", 0, "0", 1, "single", "She sees her mom as an example.")
 define sug = Character("Sugar",image = "sugar", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png") , what_outlines=[ (2, "#540324ff") ])
 define sug_shout = Character("Sugar", image = "sugar", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 define sug_thought = Character("Sugar",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png"), what_outlines=[ (2, "#540324ff") ])
 
-default molly = Girl(17, "Molly", False, 0, "Human", "Friend", "Friendly", 0, "0", 1, "single", "She really likes being a cow")
+default molly = Girl(17, "Molly", False, 1, "Cowgirl", "Friend", "Friendly", 0, "0", 1, "single", "She really likes being a cow")
 define mol = Character("Molly",image = "molly", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png") , what_outlines=[ (2, "#413204ff") ])
 define mol_shout = Character("Molly", image = "molly", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png"), what_outlines=[ (2, "#413204ff") ])
 define mol_thought = Character("Molly",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png"), what_outlines=[ (2, "#413204ff") ])
 
-default daisy = Girl(18, "Daisy", False, 0, "Human", "Friend", "Friendly", 0, "0", 1, "single", "She loves her daugher more than anything.")
+default daisy = Girl(18, "Daisy", False, 1, "Cowgirl", "Friend", "Friendly", 0, "0", 1, "single", "She loves her daugher more than anything.")
 define dai = Character("Daisy",image = "daisy", what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png") , what_outlines=[ (2, "#413204ff") ])
 define dai_shout = Character("Daisy", image = "daisy", what_color = "#e5e5e5",  what_size=43, namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png"), what_outlines=[ (2, "#413204ff") ])
 define dai_thought = Character("Daisy",  what_color = "#e5e5e5", namebox_background=AlphaMask(Solid("#bb8f0cff"), "gui/namebox.png"), what_outlines=[ (2, "#413204ff") ])

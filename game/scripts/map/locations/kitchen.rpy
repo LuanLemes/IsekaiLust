@@ -232,6 +232,105 @@ label monica_kitchen_morning:
         mon "And now."
         show breakfast girls9
         mon "To our big girl."
+        if player_inventory.item_exists(301) != -1 and breakfast_milk_bottle == False and ashley.phase == 2:
+            # bottle on ashleys mouth scene
+            show breakfast currel1 with dissolve
+            scene
+            show breakfast currel1 
+            mon "Everything ok my little star?"
+            show breakfast currel2 with dissolve
+            ash "..."
+            mc_thought "Why do I have a bad feeling about this?"
+            mon "My little ash?"
+            ash "Mom the meal is beautifull....really it is."
+            ash "But..."
+            ash "The milk..."
+            ash "Why are we not having ANY milk?!"
+            show breakfast currel3 with dissolve
+            ash "I want milk mom!"
+            ash "And as I said, this useless boy didnt recover any milk."
+            menu:
+                "Oh, I didnt, DID I?":
+                    pass
+            show breakfast currel12
+            ash "What are you saying?" with dissolve
+            mc "Im saying that I got the milk right here."
+            ash "You are lying."
+            mc "Oh, am I?"
+            menu:
+                "Show the bottle of milk.":
+                    pass
+            show breakfast currel14
+            ash_shout "Shit!"
+            show breakfast currel11
+            lin "Mom what did she say?"
+            mon "My star!, watch your mouth..."
+            show breakfast currel12
+            mc "Anyway."
+            mc "I remember you saying that \"If I got any milk you would let me pour it in your mouth so...\"."
+            show breakfast milk12 with dissolve
+            ash "Hey...what are you doing?" with vpunch
+            mc "Im only fufilling our agreement Ashley, or your word doesnt have any value?"
+            mon "Oh my."
+            ash "..."
+            ash "You are an evil one you know that?"
+            ash "..."
+            show breakfast milk9 with dissolve
+            ash "Fine!"
+            ash "Do it at once."
+            mc "If you say so."
+            menu:
+                "Pour the milk in her mouth":
+                    pass
+            show breakfast milk10 with dissolve
+            mc "It will be a pleasure."
+            mc_thought "Here it is Ashley, a little payback for the way you treat me."
+            show breakfast milk3 with dissolve
+            mon "Oh my little dauther!"
+            show breakfast milk4 with dissolve
+            lin "Cooooooooool!!!"
+            ash "*Drinking*"
+            mc "Just a little more."
+            show breakfast milk12
+            ash_shout "STOP SPEAKING WHILE YOU DO IT!" 
+            hide breakfast
+            show breakfast milk4:
+                    xpos -212 yzoom 1.03 zoom 1.22
+
+
+            lin_shout "DO IT AGAIN!" with vpunch
+            hide breakfast
+            show breakfast milk12
+            ash "Shut up linda!"
+            lin "Mooom."
+            mon "Ashley, watch your mouth."
+            mc "Yes ashley more milk and less words."
+            ash "What did you say?!?!..."
+            mc "Lets continue."
+            ash "Arent we finished already?!!?" with vpunch
+            mc "What? you only drank a tiny bit."
+            ash "..."
+            ash "Ok, go ahead."
+            show breakfast milk5
+            mc "Yes, all the way into your mouth."
+            mc "Veeeeery goood."
+            lin "Maaaaan, This is so fun!"
+            show breakfast milk12
+            ash_shout "Thats enough!" with vpunch
+            mc "Wait, there is still a lot of milk!"
+            hide breakfast
+            show breakfast milk1:
+                    xpos -32 zoom 1.18 
+            ash "Im out of here!"
+            hide breakfast
+            show breakfast milk0
+            lin "Best breakfast EVER!"
+            $ breakfasted = True
+            $ ashley_room_locked = False
+            $ ashley.phase = 3
+            return
+
+
         if monica.phase == 3:
             show breakfast currel1 with dissolve
             mon "Everything ok my little star?"
@@ -278,7 +377,7 @@ label monica_kitchen_morning:
                     ash "My door? why?"
                     mc "I dont know I just thought of something that would be important to you."
                     show breakfast currel11
-                    ash "*laughs* If you mange to bring the milk better I would let you por it in my mouth as if you were my owner."
+                    ash "*laughs* If you mange to bring the milk better I would let you pour it in my mouth as if you were my owner."
                     ash "But we both know this is never going to happen because you are a good for nothing."
                     show breakfast currel13
                     mc "Is that so?"

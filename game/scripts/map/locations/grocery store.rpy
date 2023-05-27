@@ -26,13 +26,6 @@ screen grocery_store():
     
 
 label grocery_store:
-    # menu:
-    #     "Talk to Sally":
-    #         call talk_to_sally
-    #     "Do Nothing":
-    #         jump reload_location
-    # window hide
-    # return
     return
 
 label grocery_store_on_enter:
@@ -219,6 +212,100 @@ label talk_to_debbie_store:
     if debbie_first == False:
         show debbie half grocery
         deb "Hi [player.name], how are you?"
+    if player_inventory.item_exists(301) != -1 and grocery_store_milk == False:
+        $ grocery_store_milk = True
+        show debbie half grocery3
+        deb "WAIT!" with vpunch
+        show debbie half grocery3:
+                matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.65)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+        mc "What?"
+        deb "Omg!"
+        show debbie half grocery3:
+                matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.55)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+        mc "What?"
+        show debbie half grocery3:
+                matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.45)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+        deb "Is..."
+        mc_thought "Wait...is her color changing?"
+        deb "That..."
+        mc_thought "What the fuck?"
+        hide debbie
+        show debbie half crazy1
+        deb "Milk?!?!?!?" with vpunch
+        show debbie half crazy1
+        mc_thought "Ok...what the fuck is happening here?!?!?"
+        menu:
+            "Yes it is milk.":
+                pass
+            "Yes, it is.":
+                pass
+        deb "Whe-whe-whe..." with vpunch
+        mc "What?"
+        deb "Whe-whe-whe-whe-whe-whe-whe..."with vpunch
+        mc "Are you ok?"
+        deb "Whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe..."with vpunch
+        deb "Whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe-whe..."with vpunch
+        mc_thought "I think she is having a stroke."
+        show debbie half crazy2
+        deb "......Where did you get it?!?!?!" with vpunch
+        mc "Oh, that? I went to the farm and milked the cow myself, cool right?"
+        deb "*strange breathing*"
+        mc "Debbie are you ok?"
+        deb "Mike."
+        mc "Mike? Who is Mike?"
+        deb "Miiiiiiiiiiiiiiiiiiike."
+        mc_thought "I think she went nuts."
+        deb_shout "Mike!!!!!" with vpunch
+        mc "Mike what?"
+        deb_shout "Mike!!!!!" with vpunch
+        mc_shout "OK NOW I HAD ENOUGH, NOW TELL ME WHO THE FUCK IS MIKE?!?" with vpunch
+        menu:
+            deb_shout "Miiiiiiiiiiiike!!!!!" with vpunch
+            "My name is [player.name] not Mike!":
+                pass
+            "Who the fuck is Mike?":
+                pass
+            "Mike who?!?!?":
+                pass
+        show debbie half crazy3
+        deb_shout "MY Cli-ents need it!" with vpunch
+        mc_shout "Whaaaaaaat?" with vpunch
+        show debbie half crazy3:
+            matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+        show grocery:
+            matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+        dev "Please become a patreon if you like bad jokes."
+        dev "Anyway...."
+        show debbie half crazy3:
+            matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+        show grocery:
+            matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+        deb_shout "MY Cli-ents need it!!!!" with vpunch
+        mc "Debbie....Its only milk."
+        deb_shout "ONLY MILK?" with vpunch
+        deb "*Laughs*"
+        deb_shout "ONLY MILK YOU SAY?!?!?" with vpunch
+        deb_shout "EVERY SINGLE ONE."
+        deb_shout "EVERYONE, EVERY SINGLE ONE IN THIS LITTLE TOWN WANTS THAT MILK."
+        mc "So...you want me to handle it to you right?"
+        show debbie half crazy4
+        deb "Yeeeeeeeeees, \"give us the milk wipe away your debt.\""
+        mc "What are you talking about? what debt?"
+        deb "Never mind, just...give me the milk. and promisse to bring more!"
+        mc "Yes...you are my friend so ....yes...I think."
+        menu:
+            "Give one bottle of milk to Debbie as a gift.":
+                pass
+        mc "Ok, here it is."
+        $ player_inventory.remove_item(301,1)
+        show debbie half grocery
+        deb "Thanks [player.name], you really are a good friend, my clients will be happy."
+        mc_thought "SHE CHANGED BACK SO FAST!!!!" with vpunch
+        mc "You are welcome...I think."
+        $ debbie.role = "Friend"
+        $ debbie.phase = 6
+        return
+
     # teddy bear avilable dialog
     if teddy_available_first_dialog == True:
         call teddy_bear_available
@@ -472,7 +559,7 @@ label buy_teddy_bear:
         "{color=#9fe58b}You got 1 TeddyBear{/color}"
         mc "Thanks Debbie, you are the best!"
         show debbie half grocery6
-        deb "Another happy client he he."
+        deb "Another happy client hehe."
 
 label grocery_talk_about_milk:
     scene grocery in

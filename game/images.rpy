@@ -49,3 +49,9 @@ image farm vid10 = Movie(play= "milk farm/farm vid10.webm", size = (1920, 1080),
 image farm vid11 = Movie(play= "milk farm/farm vid11.webm", size = (1920, 1080), loop = True)
 image farm vid12 = Movie(play= "milk farm/farm vid12.webm", size = (1920, 1080), loop = True)
 image farm vid13 = Movie(play= "milk farm/farm vid13.webm", size = (1920, 1080), loop = True)
+# scene masturbating to monica
+image ashleyr handjob1 = Movie(play= "ashley room/ashleyr handjob1.webm", size = (1920, 1080), loop = True)
+image ashleyr handjob3 = Movie(play= "ashley room/ashleyr handjob3.webm", size = (1920, 1080), loop = True)
+image ashleyr handjob4 = Movie(play= "ashley room/ashleyr handjob4.webm", size = (1920, 1080), loop = True)
+image ashleyr handjob5 = Movie(play= "ashley room/ashleyr handjob5.webm", size = (1920, 1080), loop = True)
+image ashleyr handjob6 = Movie(play= "ashley room/ashleyr handjob6.webm", size = (1920, 1080), loop = True)

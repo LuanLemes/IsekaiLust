@@ -129,6 +129,9 @@ default girls_bathed = False
 default anna_bath_house_first = True
 default cow_milked = False
 default molly_milked = False
-default molly_milked_count = 0
+default molly_milked_count = -3
 default molly_stressed_first = True
 default fuck_molly_first = False
+#milk quests
+default grocery_store_milk = False
+default breakfast_milk_bottle = False
